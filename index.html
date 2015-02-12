@@ -1,10 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="utf-8">
     <title>Jamie Pilgrim | I'll Bring the Donuts </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="lib/angular/angular.min.js"></script>
+    <script src="js/controller.js"></script>
     <!-- [if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script><![end if]-->
 </head>
 
@@ -28,6 +29,14 @@
         
         <p>Trust fund Intelligentsia leggings scenester, Shoreditch keffiyeh meggings literally normcore. Distillery aesthetic taxidermy Bushwick Marfa, fashion axe chillwave raw denim small batch skateboard dreamcatcher irony flexitarian. Meggings post-ironic listicle, semiotics Truffaut cred Portland cold-pressed Kickstarter. Paleo cornhole dreamcatcher meditation, street art church-key quinoa 8-bit plaid bitters aesthetic crucifix single-origin coffee squid High Life. Cray single-origin coffee XOXO crucifix, forage street art blog whatever pop-up artisan fap trust fund. Hoodie ethical blog, keytar sustainable iPhone dreamcatcher chambray High Life mumblecore. Pop-up flannel polaroid distillery, sartorial chia paleo four dollar toast American Apparel farm-to-table cray. </p>
         <p>DIY actually PBR health goth taxidermy cornhole slow-carb yr Etsy small batch. Aesthetic bespoke Williamsburg seitan, taxidermy Marfa Austin four dollar toast retro Pinterest artisan literally health goth mixtape craft beer. Wes Anderson wolf mumblecore salvia, cornhole Portland authentic meh PBR. Jean shorts Odd Future Helvetica stumptown wayfarers. Whatever mumblecore salvia, PBR biodiesel put a bird on it twee Williamsburg mixtape lo-fi. Messenger bag lomo semiotics viral health goth, ennui Banksy polaroid paleo shabby chic +1. Retro heirloom 90's fap, small batch listicle cronut street art synth Wes Anderson cliche. </p>
+    </article>
+    <article>
+
+    <div ng-controller = "MyController">
+        <h2> {{resume.name}} </h2>
+    </div>
+<!--    <input type="text" ng-model="name">
+        <h2>Welcome {{name}} </h2> -->
     </article>
     <footer>
     	<h4>&copy; 2015 Jamie Pilgrim </h4>
