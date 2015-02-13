@@ -17,7 +17,7 @@
     </div>
 
     <ul>
-        <li ng-repeat='item in resumes | filter: query | orderBy: resumeOrder:direction'><p>{{item.name}}, {{item.title}}</p></li>
+        <li ng-repeat='item in resumes | filter: query | orderBy: resumeOrder:direction'><p><a href="#/details/{{resumes.indexOf(item)}}">{{item.name}}, {{item.title}} </a></p></li>
     </ul>
 
 </section>
