@@ -9,7 +9,20 @@ myApp.controller('MyController', function MyController($scope) {
 	{
 		'name' : "Pilgrim Jamie",
 		'title' : "Web Designer"
-	}]
+	},
+		{
+		'name' : "John Doe",
+		'title' : "Master Chef"
+	},
+		{
+		'name' : "Prince",
+		'title' : "Singer"
+	},
+		{
+		'name' : "Pluto",
+		'title' : "Star"
+	}];
+	$scope.resumeOrder ='name';
 })
 
 
