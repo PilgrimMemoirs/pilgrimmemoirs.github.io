@@ -33,7 +33,15 @@
     <article>
 
     <div ng-controller = "MyController">
-        <h2> {{resume.name}} </h2>
+        <div class="search">
+        <h1> Directory </h1>
+        <label>search</label>
+        <input ng-model="query" placeholder="Search for resumes" autofocus>
+        </div>
+        <ul>
+            <li ng-repeat='item in resumes | filter: query'><p>{{item.name}}</p></li>
+        </ul>
+        <!-- <h2> {{resume.name}} </h2> -->
     </div>
 <!--    <input type="text" ng-model="name">
         <h2>Welcome {{name}} </h2> -->
