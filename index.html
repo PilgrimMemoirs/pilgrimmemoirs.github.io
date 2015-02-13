@@ -34,16 +34,22 @@
 
     <div ng-controller = "MyController">
         <div class="search">
-        <h1> Directory </h1>
-        <label>search</label>
-        <input ng-model="query" placeholder="Search for resumes" autofocus>
+            <h1> Directory </h1>
+            <label>search</label>
+            <input ng-model="query" placeholder="Search for resumes" autofocus>
+
+            <label class ="formgroup">by:
+                <select ng-model="resumeOrder">
+                    <option value="name"> Name </option>
+                    <option value="title"> Title </option>
+                </select>
+            </label>
         </div>
         <ul>
-            <li ng-repeat='item in resumes | filter: query'><p>{{item.name}}</p></li>
+            <li ng-repeat='item in resumes | filter: query | orderBy: resumeOrder'><p>{{item.name}}, {{item.title}}</p></li>
         </ul>
-        <!-- <h2> {{resume.name}} </h2> -->
     </div>
-<!--    <input type="text" ng-model="name">
+<!-- <input type="text" ng-model="name">
         <h2>Welcome {{name}} </h2> -->
     </article>
     <footer>
