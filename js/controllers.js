@@ -26,7 +26,7 @@ resumeControllers.controller('ListController', function MyController($scope) {
 });
 
 
-resumeControllers.controller('DetailsController', '$routeParams', function MyController($scope, $routeParams) {
+resumeControllers.controller('DetailsController', ['$scope', '$http', function MyController($scope) {
 	$scope.resumes = [ {
 		'name' : "Jamie Pilgrim",
 		'title' : "Web Developer"
@@ -47,8 +47,21 @@ resumeControllers.controller('DetailsController', '$routeParams', function MyCon
 		'name' : "Pluto",
 		'title' : "Star"
 	}];
-	$scope.whichItem = $routeParams.itemId;
-});
+	$scope.person = $routeParams.itemId;
+
+	if ($routeParams.itemId > 0) {
+		$scope.prevItem = Number($routeParams.itemId)-1;
+	} else {
+		$scope.prevItem = $scope.resumes.length-1;
+	}
+	
+	if ($routeParams.itemId < $scope.resumes.length-1) {
+		$scope.prevItem = Number($routeParams.itemId)+1;
+	} else {
+		$scope.prevItem = 0;
+	}
+
+}]);
 // Use something like this to get from a json file: 
 
 // var myApp = angular.module('myApp', []);
