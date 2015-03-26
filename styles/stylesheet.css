@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-figure {
+figure img{
 	text-align: center;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 /* ============================================================
@@ -36,6 +38,7 @@ nav ul img:hover {
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
+
 /* ============================================================
   	LINKS
 ============================================================ */
@@ -311,7 +314,6 @@ footer h4{
 footer ul {
 	float: right;
 	list-style: none;
-	
 	overflow: auto;
 }
 
@@ -319,5 +321,12 @@ footer ul li {
     margin: 0px 15px;
     display: inline;
     margin-right: 30px;
+}
+
+@media (min-width: 600px) {
+
+	footer {
+		height: 140px;
+	}
 }
 
