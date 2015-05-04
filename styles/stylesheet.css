@@ -74,11 +74,6 @@ nav ul img {
     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
-nav ul li:hover {
-  font-size: 1.2em;
-  transition-timing-function: ease-out;
-}
-
 nav ul img:hover {
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
