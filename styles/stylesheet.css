@@ -232,8 +232,7 @@ footer.scrolling {
 	}
 }
 
-@media (max-width: 640px) 
-{
+@media (max-width: 640px) {
     nav ul
     {
         display: none;
@@ -256,3 +255,4 @@ footer.scrolling {
     transform:rotate(-15deg);
   }
 }
+
