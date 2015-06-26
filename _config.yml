@@ -1,0 +1,12 @@
+# Site settings
+title: My Mutha Ukin' Blog
+email: hello@jamiepilgrim.com
+description: > # this means to ignore newlines until "baseurl:"
+  Cats on Code. 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://illbringthedonuts.com" # the base hostname & protocol for your site
+twitter_username: pilgrimmemoirs
+github_username:  pilgrimmemoirs
+
+# Build settings
+markdown: kramdown
