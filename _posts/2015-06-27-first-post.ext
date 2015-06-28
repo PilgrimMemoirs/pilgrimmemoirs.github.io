@@ -1,18 +1,16 @@
 ---
 layout: post
-title:  "First Post"
-date:   2015-06-27 19:05:08
-categories: test 
+title:  "Welcome"
+date:   2015-06-27 05:05:08
+categories: welcome introduction
 ---
 
-Testing new page
+<h2> The code behind the Cats </h2>
 
-Jekyll also offers powerful support for code snippets:
+<p>Heirloom gentrify ennui drinking vinegar. Paleo freegan chillwave Wes Anderson beard meggings. Street art leggings put a bird on it organic, art party Truffaut fanny pack. Direct trade Echo Park literally street art Portland. Bespoke mustache health goth, High Life mlkshk plaid hashtag master cleanse four loko migas sustainable Helvetica letterpress stumptown chillwave. Gluten-free kale chips freegan fixie Etsy, raw denim Truffaut hoodie tote bag fap Tumblr. Cornhole DIY yr, forage four loko PBR&B cred Bushwick next level wolf Vice flannel chia lomo photo booth.</p>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<p>Roof party shabby chic lomo bitters put a bird on it, messenger bag Thundercats ennui Austin you probably haven't heard of them gluten-free migas twee. Mumblecore four loko organic gastropub, fashion axe 8-bit four dollar toast craft beer before they sold out wayfarers pour-over meggings. Gluten-free cred street art, Truffaut salvia normcore squid tattooed. Godard tilde flannel, Brooklyn Austin master cleanse cray. Swag deep v fap, put a bird on it Marfa distillery small batch stumptown tilde bicycle rights mlkshk twee keytar VHS dreamcatcher. Carles health goth tote bag messenger bag bespoke ethical kogi meggings, Banksy before they sold out post-ironic crucifix cronut beard ugh. Sartorial raw denim fingerstache yr Etsy.</p>
+
+<p>Schlitz trust fund brunch readymade tousled American Apparel. Squid lumbersexual church-key cold-pressed stumptown. Whatever squid art party, Thundercats bicycle rights locavore forage synth Helvetica master cleanse. Normcore dreamcatcher Intelligentsia, put a bird on it sartorial four loko drinking vinegar hella hoodie shabby chic asymmetrical. Wayfarers asymmetrical tofu heirloom, lomo Blue Bottle keffiyeh Odd Future dreamcatcher squid readymade food truck. Shoreditch seitan Pitchfork, blog ethical chillwave retro. Bitters Thundercats DIY kitsch, fingerstache seitan chambray American Apparel butcher paleo occupy trust fund VHS pickled Marfa. </p>
+
+<p>Normcore narwhal pop-up, retro post-ironic art party meggings fap listicle. Freegan sartorial photo booth Kickstarter narwhal. Before they sold out Etsy synth Portland. Seitan biodiesel readymade before they sold out, hella Marfa pop-up dreamcatcher crucifix iPhone tofu mlkshk. Pitchfork plaid 90's kogi beard, pug before they sold out raw denim asymmetrical chambray leggings. Flannel YOLO High Life, occupy typewriter squid selvage wayfarers. Hella pop-up tousled fashion axe pour-over tilde, cold-pressed next level food truck +1 kitsch taxidermy cred DIY. </p>

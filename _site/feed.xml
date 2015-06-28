@@ -6,55 +6,95 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Jun 2015 19:36:41 -0500</pubDate>
-    <lastBuildDate>Sat, 27 Jun 2015 19:36:41 -0500</lastBuildDate>
+    <pubDate>Sat, 27 Jun 2015 19:57:29 -0500</pubDate>
+    <lastBuildDate>Sat, 27 Jun 2015 19:57:29 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>First Post</title>
-        <description>Testing new page
-
-Jekyll also offers powerful support for code snippets:
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-        <pubDate>Sat, 27 Jun 2015 14:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/test/2015/06/27/first-post.html</link>
-        <guid isPermaLink="true">http://catsoncode.com/test/2015/06/27/first-post.html</guid>
+        <title>Ruby Intro</title>
+        <description></description>
+        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
+        <link>http://catsoncode.com/ruby/noob/intro/2015/06/27/ruby-intro.html</link>
+        <guid isPermaLink="true">http://catsoncode.com/ruby/noob/intro/2015/06/27/ruby-intro.html</guid>
         
         
-        <category>test</category>
+        <category>ruby</category>
+        
+        <category>noob</category>
+        
+        <category>intro</category>
         
       </item>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 25 Jun 2015 14:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/jekyll/update/2015/06/25/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://catsoncode.com/jekyll/update/2015/06/25/welcome-to-jekyll.html</guid>
+        <title>Ruby Arrays and Hashes</title>
+        <description></description>
+        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
+        <link>http://catsoncode.com/ruby/noob/arrays/hashes/2015/06/27/ruby-array-and-hashes.html</link>
+        <guid isPermaLink="true">http://catsoncode.com/ruby/noob/arrays/hashes/2015/06/27/ruby-array-and-hashes.html</guid>
+        
+        
+        <category>ruby</category>
+        
+        <category>noob</category>
+        
+        <category>arrays</category>
+        
+        <category>hashes</category>
+        
+      </item>
+    
+      <item>
+        <title>Setup a blog with Jekyll &amp; Github Pages</title>
+        <description></description>
+        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
+        <link>http://catsoncode.com/jekyll/noob/setup/2015/06/27/jekyll-start.html</link>
+        <guid isPermaLink="true">http://catsoncode.com/jekyll/noob/setup/2015/06/27/jekyll-start.html</guid>
         
         
         <category>jekyll</category>
         
-        <category>update</category>
+        <category>noob</category>
+        
+        <category>setup</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome</title>
+        <description>&lt;h2&gt; The code behind the Cats &lt;/h2&gt;
+
+&lt;p&gt;Heirloom gentrify ennui drinking vinegar. Paleo freegan chillwave Wes Anderson beard meggings. Street art leggings put a bird on it organic, art party Truffaut fanny pack. Direct trade Echo Park literally street art Portland. Bespoke mustache health goth, High Life mlkshk plaid hashtag master cleanse four loko migas sustainable Helvetica letterpress stumptown chillwave. Gluten-free kale chips freegan fixie Etsy, raw denim Truffaut hoodie tote bag fap Tumblr. Cornhole DIY yr, forage four loko PBR&amp;B cred Bushwick next level wolf Vice flannel chia lomo photo booth.&lt;/p&gt;
+
+&lt;p&gt;Roof party shabby chic lomo bitters put a bird on it, messenger bag Thundercats ennui Austin you probably haven&#39;t heard of them gluten-free migas twee. Mumblecore four loko organic gastropub, fashion axe 8-bit four dollar toast craft beer before they sold out wayfarers pour-over meggings. Gluten-free cred street art, Truffaut salvia normcore squid tattooed. Godard tilde flannel, Brooklyn Austin master cleanse cray. Swag deep v fap, put a bird on it Marfa distillery small batch stumptown tilde bicycle rights mlkshk twee keytar VHS dreamcatcher. Carles health goth tote bag messenger bag bespoke ethical kogi meggings, Banksy before they sold out post-ironic crucifix cronut beard ugh. Sartorial raw denim fingerstache yr Etsy.&lt;/p&gt;
+
+&lt;p&gt;Schlitz trust fund brunch readymade tousled American Apparel. Squid lumbersexual church-key cold-pressed stumptown. Whatever squid art party, Thundercats bicycle rights locavore forage synth Helvetica master cleanse. Normcore dreamcatcher Intelligentsia, put a bird on it sartorial four loko drinking vinegar hella hoodie shabby chic asymmetrical. Wayfarers asymmetrical tofu heirloom, lomo Blue Bottle keffiyeh Odd Future dreamcatcher squid readymade food truck. Shoreditch seitan Pitchfork, blog ethical chillwave retro. Bitters Thundercats DIY kitsch, fingerstache seitan chambray American Apparel butcher paleo occupy trust fund VHS pickled Marfa. &lt;/p&gt;
+
+&lt;p&gt;Normcore narwhal pop-up, retro post-ironic art party meggings fap listicle. Freegan sartorial photo booth Kickstarter narwhal. Before they sold out Etsy synth Portland. Seitan biodiesel readymade before they sold out, hella Marfa pop-up dreamcatcher crucifix iPhone tofu mlkshk. Pitchfork plaid 90&#39;s kogi beard, pug before they sold out raw denim asymmetrical chambray leggings. Flannel YOLO High Life, occupy typewriter squid selvage wayfarers. Hella pop-up tousled fashion axe pour-over tilde, cold-pressed next level food truck +1 kitsch taxidermy cred DIY. &lt;/p&gt;</description>
+        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
+        <link>http://catsoncode.com/welcome/introduction/2015/06/27/first-post.html</link>
+        <guid isPermaLink="true">http://catsoncode.com/welcome/introduction/2015/06/27/first-post.html</guid>
+        
+        
+        <category>welcome</category>
+        
+        <category>introduction</category>
+        
+      </item>
+    
+      <item>
+        <title>Ruby Environment Setup</title>
+        <description></description>
+        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
+        <link>http://catsoncode.com/ruby/noob/setup/2015/06/27/env-setup.html</link>
+        <guid isPermaLink="true">http://catsoncode.com/ruby/noob/setup/2015/06/27/env-setup.html</guid>
+        
+        
+        <category>ruby</category>
+        
+        <category>noob</category>
+        
+        <category>setup</category>
         
       </item>
     
