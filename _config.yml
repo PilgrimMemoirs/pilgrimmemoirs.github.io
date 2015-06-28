@@ -1,10 +1,11 @@
 # Site settings
-title: My Mutha Ukin' Blog
+title: Cats on Code
 email: hello@jamiepilgrim.com
 description: > # this means to ignore newlines until "baseurl:"
-  Cats on Code. 
+  The cattiest web development blog on the interwebz.  
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://illbringthedonuts.com" # the base hostname & protocol for your site
+url: "http://catsoncode.com" # the base hostname & protocol for your site
+url2: "http://illbringthedonuts.com"
 twitter_username: pilgrimmemoirs
 github_username:  pilgrimmemoirs
 

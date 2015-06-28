@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Cats on Code is an online publication dedicated to the teaching of beginer to intermediate web development in the cattiest way possible. Inspired by my teachings with Flatiron School's precollege program in Chicago, I have started this blog to help clarify all the crazy that exists in coding with ruby and sinatra. 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
