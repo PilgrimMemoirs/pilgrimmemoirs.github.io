@@ -3,7 +3,6 @@ title: Cats on Code
 email: hello@jamiepilgrim.com
 description: > # this means to ignore newlines until "baseurl:"
   The cattiest web development blog on the interwebz.  
-baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://catsoncode.com" # the base hostname & protocol for your site
 url2: "http://illbringthedonuts.com"
 twitter_username: pilgrimmemoirs
@@ -11,3 +10,4 @@ github_username:  pilgrimmemoirs
 
 # Build settings
 markdown: kramdown
+permalink: /:title

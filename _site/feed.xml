@@ -6,16 +6,98 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Jun 2015 19:57:29 -0500</pubDate>
-    <lastBuildDate>Sat, 27 Jun 2015 19:57:29 -0500</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2015 18:45:16 -0500</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2015 18:45:16 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
+        <title>MVC with Sinatra &amp; Ruby</title>
+        <description>&lt;h2&gt; MVC &lt;/h2&gt;
+
+&lt;ul class=&quot;mvc_desc&quot;&gt;
+  &lt;li&gt;Connects frontend with backend&lt;/li&gt;
+  &lt;li&gt;Provides separation of concerns &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div id=&quot;mvc&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h4&gt; Model &lt;/h4&gt;
+      Your logic. 
+    &lt;/li&gt;
+
+    &lt;li&gt;
+      &lt;h4&gt; Controller &lt;/h4&gt; 
+      Directs the backend logic in your model to connect with your frontend html views.
+    &lt;/li&gt;
+
+    &lt;li&gt;
+      &lt;h4&gt; View &lt;/h4&gt;
+      Your html pages
+    &lt;/li&gt;
+
+
+  &lt;/ul&gt;
+&lt;/div&gt; 
+
+
+&lt;h3&gt;
+  Fat models skinny controllers
+&lt;/h3&gt;
+
+&lt;p&gt; Brief Spiel here &lt;/p&gt;
+
+
+
+&lt;div id=&quot;sinatra&quot;&gt;
+  &lt;h2&gt; Sinatra &lt;/h2&gt;
+
+  &lt;ul class=&quot;mvc_desc&quot;&gt;
+    &lt;li&gt; web application framework with ruby &lt;/li&gt;
+    &lt;li&gt; difference between routes and domain &lt;/li&gt;
+    &lt;li&gt; requests and responses. Explain what a GET request is &lt;/li&gt;
+  &lt;/ul&gt;
+
+
+  &lt;h3&gt; Project Folder &lt;/h3&gt;
+  &lt;div class=&quot;tab&quot;&gt;
+   &lt;h4&gt; Model Folder &lt;span class=&quot;folder_desc&quot;&gt; &lt;&lt; ruby files &lt;/span&gt; &lt;/h4&gt;
+   &lt;h4&gt; Public Folder &lt;span class=&quot;folder_desc&quot;&gt; &lt;&lt; css &amp; images &lt;/span&gt; &lt;/h4&gt;
+   &lt;h4&gt;View Folder &lt;span class=&quot;folder_desc&quot;&gt; &lt;&lt; html files &lt;/span&gt;&lt;/h4&gt;
+
+  &lt;h4&gt; Gemfile &lt;/h4&gt;
+  &lt;p&gt;Specifies the gems required for this project. Running bundle install will automatically install all for you. Make sure to have: &lt;p&gt;
+
+  &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://rubygems.org&amp;quot;&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;sinatra&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;shotgun&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;pry&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+
+  &lt;h4&gt; Application_controller &lt;/h4&gt;
+  &lt;p&gt;Traffic director&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Tue, 30 Jun 2015 00:05:08 -0500</pubDate>
+        <link>http://catsoncode.com/mvc</link>
+        <guid isPermaLink="true">http://catsoncode.com/mvc</guid>
+        
+        
+        <category>sinatra</category>
+        
+        <category>ruby</category>
+        
+      </item>
+    
+      <item>
         <title>Ruby Intro</title>
-        <description></description>
+        <description>&lt;h2&gt;  &lt;/h2&gt;</description>
         <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/ruby/noob/intro/2015/06/27/ruby-intro.html</link>
-        <guid isPermaLink="true">http://catsoncode.com/ruby/noob/intro/2015/06/27/ruby-intro.html</guid>
+        <link>http://catsoncode.com/ruby-intro</link>
+        <guid isPermaLink="true">http://catsoncode.com/ruby-intro</guid>
         
         
         <category>ruby</category>
@@ -30,8 +112,8 @@
         <title>Ruby Arrays and Hashes</title>
         <description></description>
         <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/ruby/noob/arrays/hashes/2015/06/27/ruby-array-and-hashes.html</link>
-        <guid isPermaLink="true">http://catsoncode.com/ruby/noob/arrays/hashes/2015/06/27/ruby-array-and-hashes.html</guid>
+        <link>http://catsoncode.com/ruby-array-and-hashes</link>
+        <guid isPermaLink="true">http://catsoncode.com/ruby-array-and-hashes</guid>
         
         
         <category>ruby</category>
@@ -48,8 +130,8 @@
         <title>Setup a blog with Jekyll &amp; Github Pages</title>
         <description></description>
         <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/jekyll/noob/setup/2015/06/27/jekyll-start.html</link>
-        <guid isPermaLink="true">http://catsoncode.com/jekyll/noob/setup/2015/06/27/jekyll-start.html</guid>
+        <link>http://catsoncode.com/jekyll-start</link>
+        <guid isPermaLink="true">http://catsoncode.com/jekyll-start</guid>
         
         
         <category>jekyll</category>
@@ -72,8 +154,8 @@
 
 &lt;p&gt;Normcore narwhal pop-up, retro post-ironic art party meggings fap listicle. Freegan sartorial photo booth Kickstarter narwhal. Before they sold out Etsy synth Portland. Seitan biodiesel readymade before they sold out, hella Marfa pop-up dreamcatcher crucifix iPhone tofu mlkshk. Pitchfork plaid 90&#39;s kogi beard, pug before they sold out raw denim asymmetrical chambray leggings. Flannel YOLO High Life, occupy typewriter squid selvage wayfarers. Hella pop-up tousled fashion axe pour-over tilde, cold-pressed next level food truck +1 kitsch taxidermy cred DIY. &lt;/p&gt;</description>
         <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/welcome/introduction/2015/06/27/first-post.html</link>
-        <guid isPermaLink="true">http://catsoncode.com/welcome/introduction/2015/06/27/first-post.html</guid>
+        <link>http://catsoncode.com/welcome</link>
+        <guid isPermaLink="true">http://catsoncode.com/welcome</guid>
         
         
         <category>welcome</category>
@@ -86,8 +168,8 @@
         <title>Ruby Environment Setup</title>
         <description></description>
         <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/ruby/noob/setup/2015/06/27/env-setup.html</link>
-        <guid isPermaLink="true">http://catsoncode.com/ruby/noob/setup/2015/06/27/env-setup.html</guid>
+        <link>http://catsoncode.com/env-setup</link>
+        <guid isPermaLink="true">http://catsoncode.com/env-setup</guid>
         
         
         <category>ruby</category>

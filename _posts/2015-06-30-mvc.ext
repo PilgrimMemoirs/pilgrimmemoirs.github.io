@@ -1,0 +1,79 @@
+---
+layout: post
+title:  "MVC with Sinatra & Ruby"
+date:   2015-06-30 05:05:08
+categories: Sinatra Ruby
+author: Jamie Pilgrim
+---
+
+<h2> MVC </h2>
+
+<ul class="mvc_desc">
+  <li>Connects frontend with backend</li>
+  <li>Provides separation of concerns </li>
+</ul>
+
+
+<div id="mvc">
+  <ul>
+    <li>
+      <h4> Model </h4>
+      Your logic. 
+    </li>
+
+    <li>
+      <h4> Controller </h4> 
+      Directs the backend logic in your model to connect with your frontend html views.
+    </li>
+
+    <li>
+      <h4> View </h4>
+      Your html pages
+    </li>
+
+
+  </ul>
+</div> 
+
+
+<h3>
+  Fat models skinny controllers
+</h3>
+
+<p> Brief Spiel here </p>
+
+
+
+<div id="sinatra">
+  <h2> Sinatra </h2>
+
+  <ul class="mvc_desc">
+    <li> web application framework with ruby </li>
+    <li> difference between routes and domain </li>
+    <li> requests and responses. Explain what a GET request is </li>
+  </ul>
+
+
+  <h3> Project Folder </h3>
+  <div class="tab">
+   <h4> Model Folder <span class="folder_desc"> << ruby files </span> </h4>
+   <h4> Public Folder <span class="folder_desc"> << css & images </span> </h4>
+   <h4>View Folder <span class="folder_desc"> << html files </span></h4>
+
+  <h4> Gemfile </h4>
+  <p>Specifies the gems required for this project. Running bundle install will automatically install all for you. Make sure to have: <p>
+
+  {% highlight ruby %}
+  source "https://rubygems.org"
+
+  gem 'sinatra'
+  gem 'shotgun'
+  gem 'pry'
+  {% endhighlight %}
+
+
+
+  <h4> Application_controller </h4>
+  <p>Traffic director</p>
+  </div>
+</div>
