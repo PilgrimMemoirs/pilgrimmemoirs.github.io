@@ -3,4 +3,6 @@ layout: post
 title:  "Setup a blog with Jekyll & Github Pages"
 date:   2015-06-27 05:05:08
 categories: Jekyll noob setup
+comments: true
+published: false
 ---

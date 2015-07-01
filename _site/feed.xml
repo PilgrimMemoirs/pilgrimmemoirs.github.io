@@ -6,8 +6,8 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jun 2015 19:04:42 -0500</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2015 19:04:42 -0500</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2015 19:22:22 -0500</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2015 19:22:22 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -96,56 +96,6 @@ Please feel free to leave a comment with your thoughts on this post! Any suggest
       </item>
     
       <item>
-        <title>Ruby Intro</title>
-        <description>&lt;h2&gt;  &lt;/h2&gt;</description>
-        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/ruby-intro</link>
-        <guid isPermaLink="true">http://catsoncode.com/ruby-intro</guid>
-        
-        
-        <category>ruby</category>
-        
-        <category>noob</category>
-        
-        <category>intro</category>
-        
-      </item>
-    
-      <item>
-        <title>Ruby Arrays and Hashes</title>
-        <description></description>
-        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/ruby-array-and-hashes</link>
-        <guid isPermaLink="true">http://catsoncode.com/ruby-array-and-hashes</guid>
-        
-        
-        <category>ruby</category>
-        
-        <category>noob</category>
-        
-        <category>arrays</category>
-        
-        <category>hashes</category>
-        
-      </item>
-    
-      <item>
-        <title>Setup a blog with Jekyll &amp; Github Pages</title>
-        <description></description>
-        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/jekyll-start</link>
-        <guid isPermaLink="true">http://catsoncode.com/jekyll-start</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>noob</category>
-        
-        <category>setup</category>
-        
-      </item>
-    
-      <item>
         <title>Welcome</title>
         <description>&lt;h2&gt; The code behind the Cats &lt;/h2&gt;
 
@@ -164,22 +114,6 @@ Please feel free to leave a comment with your thoughts on this post! Any suggest
         <category>welcome</category>
         
         <category>introduction</category>
-        
-      </item>
-    
-      <item>
-        <title>Ruby Environment Setup</title>
-        <description></description>
-        <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/env-setup</link>
-        <guid isPermaLink="true">http://catsoncode.com/env-setup</guid>
-        
-        
-        <category>ruby</category>
-        
-        <category>noob</category>
-        
-        <category>setup</category>
         
       </item>
     
