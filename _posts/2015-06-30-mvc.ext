@@ -7,6 +7,8 @@ author: Jamie Pilgrim
 comments: true
 ---
 
+<p><em> Web applications are composed of two main parts, the front and backend. In order for them to live in harmony together (as well as the developers) a systematic structure of organizing code became popular; MVC, short for Model View Controller. </em></p>
+
 <h2> MVC </h2>
 
 <ul class="mvc_desc">
@@ -19,30 +21,42 @@ comments: true
   <ul>
     <li>
       <h4> Model </h4>
-      Your logic. 
+      <strong>Your logic. <br><br> </strong><br> In a Restaurant, <br>this would be the chef.
     </li>
 
     <li>
       <h4> Controller </h4> 
-      Directs the backend logic in your model to connect with your frontend html views.
+      <strong>Directs the backend logic in your model to connect with your frontend html views.</strong><br><br>
+       <br> In a Restaurant, <br> this would be the waiter.
+       <br> <br>
+       <p> The waiter is what takes requests from the customer (aka client), tells the chef what the client requested and then returns the chef's output back to the client. </p>
     </li>
 
     <li>
       <h4> View </h4>
-      Your html pages
+      <strong>Your html pages</strong><br><br>
+      <br> In a Restaurant, <br> this would be the Customer.
     </li>
 
 
   </ul>
 </div> 
 
-
+<br> <br>
 <h3>
   Fat models skinny controllers
 </h3>
 
-<p> Brief Spiel here </p>
+<p> The main idea behind this MVC model is to seperate your concerns, in other words keeping your shiz organized. To do so we seperate the two major functionalities of a web application, the frontend and the backend. In general, doing so will help make your code easier to follow and change later on. But, more imporantly, when applications start getting larger, you'll typically have seperate teams for the frontend and backend work. Splitting it up in with the MVC model keeps both teams from stepping on each other's toes!  </p>
 
+<p> The controllers themselves are meant only to act as a means of routing information between your views and models. Therefore, none of your ruby logic should be mixed into the routes. Keep it simple! </p>
+
+<br> <br>
+<h3>
+  How the Internetz works
+</h3>
+
+<p>  </p>
 
 
 <div id="sinatra">
@@ -54,12 +68,12 @@ comments: true
     <li> requests and responses. Explain what a GET request is </li>
   </ul>
 
-
+  <br> <br>
   <h3> Project Folder Layout</h3>
   <div class="tab">
    <h4> Model Folder <span class="folder_desc"> << ruby logic live here </span> </h4>
    <h4> Public Folder <span class="folder_desc"> << folders with css & images live here </span> </h4>
-   <h4>View Folder <span class="folder_desc"> << html files live here</span></h4>
+   <h4>View Folder <span class="folder_desc"> << HTML files live here, or in this case ERB file. We need to use ERB files instead of HTML since we will be embeding ruby code into our html. </span></h4>
 
   <h4> Gemfile </h4>
   <p>Specifies the gems required for this project. Running bundle install will automatically install all for you. Make sure to have: <p>
@@ -73,11 +87,30 @@ comments: true
   {% endhighlight %}
 
 
-
+  <br> <br>
   <h4> Application_controller </h4>
-  <p>Traffic director</p>
+  <p>The controller acts as your waiter between your client (view files) and chef (ruby model files). In order to know what the browser should display, we use the url to determin what to show.</p>
+
+  <p> Here we started off with a 'get' route for the root of your site, also more populary known as a homepage. The '/' refers to your site domain. In this example we have the index.erb being called to show up when we </p>
+
+    {% highlight ruby %}
+    require 'bundler'
+    Bundler.require
+
+    class MyApp < Sinatra::Base
+
+      get '/' do
+        erb :index
+      end
+
+    end
+  {% endhighlight %}
+
+  <br> <br>
+  <h4> Shotgun </h4>
+  <p> When you're ready to hit the code, seeing instant feedback is the besssst! Fortunately there is shotgun which runs a server on your local machine to do so. </p>
   </div>
 </div>
 
-
+<br> <br>
 Please feel free to leave a comment with your thoughts on this post! Any suggestions for improvement are welcome! Source code is available <a href="">here</a> if you're smancy and want to submit an issue or pull request!
