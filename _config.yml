@@ -7,7 +7,6 @@ url: "http://catsoncode.com" # the base hostname & protocol for your site
 url2: "http://illbringthedonuts.com"
 twitter_username: pilgrimmemoirs
 github_username:  pilgrimmemoirs
-photos: "../images/cats/welcome/3.jpg"
 # Build settings
 markdown: kramdown
 permalink: /:title
