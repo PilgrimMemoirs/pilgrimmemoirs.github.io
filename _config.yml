@@ -11,3 +11,4 @@ github_username:  pilgrimmemoirs
 # Build settings
 markdown: kramdown
 permalink: /:title
+

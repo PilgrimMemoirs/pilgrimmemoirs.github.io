@@ -6,6 +6,7 @@ categories: Sinatra Ruby
 author: Jamie Pilgrim
 comments: true
 permalink: /code
+photo: "../images/flatiron/class_1/mvc.png"
 ---
 
 <p><em> Web applications are composed of two main parts, the front and backend. In order for them to live in harmony together (as well as the developers) a systematic structure of organizing code became popular; MVC, short for Model View Controller. </em></p>
