@@ -2,12 +2,13 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
+ position:fixed !important;
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+ background-color: yellow;
+ width: 50%;
 }
 
 .site-title {
@@ -236,3 +237,40 @@
         }
     }
 }
+
+/**
+ * Index
+ */
+
+ .page-heading {
+    font-size: 2.5em;
+ }
+
+ #index-list {
+    li {
+        display: block;
+        width: 25%;
+        background-color: #ecf0f1;
+        border-radius: 10px;
+        float: left;
+        height: 350px;
+        overflow: auto;
+        margin: 1.5%;
+        padding: 2%;
+    }
+ }
+
+ .rss-subscribe {
+    text-align: right;
+ }
+
+
+ @media (max-width: 700px) { 
+    #index-list li{
+        width: 100%;
+        margin: 2em auto;
+        float: none;
+        border-radius: 0;
+        height: 150px;
+    }
+ }

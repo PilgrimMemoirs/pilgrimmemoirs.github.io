@@ -146,10 +146,13 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
-  position: relative; }
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  width: 50%; }
 
 .site-title {
   font-size: 26px;
@@ -311,6 +314,33 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
+/**
+ * Index
+ */
+.page-heading {
+  font-size: 2.5em; }
+
+#index-list li {
+  display: block;
+  width: 25%;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  float: left;
+  height: 350px;
+  overflow: auto;
+  margin: 1.5%;
+  padding: 2%; }
+
+.rss-subscribe {
+  text-align: right; }
+
+@media (max-width: 700px) {
+  #index-list li {
+    width: 100%;
+    margin: 2em auto;
+    float: none;
+    border-radius: 0;
+    height: 150px; } }
 /**
  * Syntax highlighting styles
  */

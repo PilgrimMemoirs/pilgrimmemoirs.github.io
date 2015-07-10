@@ -6,13 +6,40 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jun 2015 19:43:24 -0500</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2015 19:43:24 -0500</lastBuildDate>
+    <pubDate>Thu, 09 Jul 2015 21:25:43 -0500</pubDate>
+    <lastBuildDate>Thu, 09 Jul 2015 21:25:43 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
+        <title>Graduating my First Cohort of Students</title>
+        <description>&lt;p&gt;&lt;em&gt;Two weeks ago I taught my first class in front of 13 teenagers who had no idea what they were getting themselves into. Much like them, I had no idea what I was getting myself into either but I knew it was the start of someting great. &lt;/em&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2243.JPG&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot;&gt;
+  &lt;figcaption&gt; My first group of students graduating from Flatiron School&#39;s precollege program in Chicago.  &lt;/figcaption&gt;
+&lt;/figure
+&lt;br&gt;&lt;br&gt;
+
+&lt;h2&gt; Learn. Love. Code. &lt;/h2&gt;
+
+&lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebz to see.  &lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Jul 2015 00:25:08 -0500</pubDate>
+        <link>http://catsoncode.com/first-cohort</link>
+        <guid isPermaLink="true">http://catsoncode.com/first-cohort</guid>
+        
+        
+        <category>teaching,</category>
+        
+        <category>flatiron</category>
+        
+      </item>
+    
+      <item>
         <title>MVC with Sinatra &amp; Ruby</title>
-        <description>&lt;h2&gt; MVC &lt;/h2&gt;
+        <description>&lt;p&gt;&lt;em&gt; Web applications are composed of two main parts, the front and backend. In order for them to live in harmony together (as well as the developers) a systematic structure of organizing code became popular; MVC, short for Model View Controller. &lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt; MVC &lt;/h2&gt;
 
 &lt;ul class=&quot;mvc_desc&quot;&gt;
   &lt;li&gt;Connects frontend with backend&lt;/li&gt;
@@ -24,30 +51,42 @@
   &lt;ul&gt;
     &lt;li&gt;
       &lt;h4&gt; Model &lt;/h4&gt;
-      Your logic. 
+      &lt;strong&gt;Your logic. &lt;br&gt;&lt;br&gt; &lt;/strong&gt;&lt;br&gt; In a Restaurant, &lt;br&gt;this would be the chef.
     &lt;/li&gt;
 
     &lt;li&gt;
       &lt;h4&gt; Controller &lt;/h4&gt; 
-      Directs the backend logic in your model to connect with your frontend html views.
+      &lt;strong&gt;Directs the backend logic in your model to connect with your frontend html views.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
+       &lt;br&gt; In a Restaurant, &lt;br&gt; this would be the waiter.
+       &lt;br&gt; &lt;br&gt;
+       &lt;p&gt; The waiter is what takes requests from the customer (aka client), tells the chef what the client requested and then returns the chef&#39;s output back to the client. &lt;/p&gt;
     &lt;/li&gt;
 
     &lt;li&gt;
       &lt;h4&gt; View &lt;/h4&gt;
-      Your html pages
+      &lt;strong&gt;Your html pages&lt;/strong&gt;&lt;br&gt;&lt;br&gt;
+      &lt;br&gt; In a Restaurant, &lt;br&gt; this would be the Customer.
     &lt;/li&gt;
 
 
   &lt;/ul&gt;
 &lt;/div&gt; 
 
-
+&lt;br&gt; &lt;br&gt;
 &lt;h3&gt;
   Fat models skinny controllers
 &lt;/h3&gt;
 
-&lt;p&gt; Brief Spiel here &lt;/p&gt;
+&lt;p&gt; The main idea behind this MVC model is to seperate your concerns, in other words keeping your shiz organized. To do so we seperate the two major functionalities of a web application, the frontend and the backend. In general, doing so will help make your code easier to follow and change later on. But, more imporantly, when applications start getting larger, you&#39;ll typically have seperate teams for the frontend and backend work. Splitting it up in with the MVC model keeps both teams from stepping on each other&#39;s toes!  &lt;/p&gt;
 
+&lt;p&gt; The controllers themselves are meant only to act as a means of routing information between your views and models. Therefore, none of your ruby logic should be mixed into the routes. Keep it simple! &lt;/p&gt;
+
+&lt;br&gt; &lt;br&gt;
+&lt;h3&gt;
+  How the Internetz works
+&lt;/h3&gt;
+
+&lt;p&gt;  &lt;/p&gt;
 
 
 &lt;div id=&quot;sinatra&quot;&gt;
@@ -59,12 +98,12 @@
     &lt;li&gt; requests and responses. Explain what a GET request is &lt;/li&gt;
   &lt;/ul&gt;
 
-
+  &lt;br&gt; &lt;br&gt;
   &lt;h3&gt; Project Folder Layout&lt;/h3&gt;
   &lt;div class=&quot;tab&quot;&gt;
    &lt;h4&gt; Model Folder &lt;span class=&quot;folder_desc&quot;&gt; &lt;&lt; ruby logic live here &lt;/span&gt; &lt;/h4&gt;
    &lt;h4&gt; Public Folder &lt;span class=&quot;folder_desc&quot;&gt; &lt;&lt; folders with css &amp; images live here &lt;/span&gt; &lt;/h4&gt;
-   &lt;h4&gt;View Folder &lt;span class=&quot;folder_desc&quot;&gt; &lt;&lt; html files live here&lt;/span&gt;&lt;/h4&gt;
+   &lt;h4&gt;View Folder &lt;span class=&quot;folder_desc&quot;&gt; &lt;&lt; HTML files live here, or in this case ERB file. We need to use ERB files instead of HTML since we will be embeding ruby code into our html. &lt;/span&gt;&lt;/h4&gt;
 
   &lt;h4&gt; Gemfile &lt;/h4&gt;
   &lt;p&gt;Specifies the gems required for this project. Running bundle install will automatically install all for you. Make sure to have: &lt;p&gt;
@@ -76,17 +115,34 @@
   &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;pry&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-
+  &lt;br&gt; &lt;br&gt;
   &lt;h4&gt; Application_controller &lt;/h4&gt;
-  &lt;p&gt;Traffic director&lt;/p&gt;
+  &lt;p&gt;The controller acts as your waiter between your client (view files) and chef (ruby model files). In order to know what the browser should display, we use the url to determin what to show.&lt;/p&gt;
+
+  &lt;p&gt; Here we started off with a &#39;get&#39; route for the root of your site, also more populary known as a homepage. The &#39;/&#39; refers to your site domain. In this example we have the index.erb being called to show up when we &lt;/p&gt;
+
+    &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;bundler&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;Bundler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;require&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyApp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sinatra&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;/&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;erb&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:index&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+  &lt;br&gt; &lt;br&gt;
+  &lt;h4&gt; Shotgun &lt;/h4&gt;
+  &lt;p&gt; When you&#39;re ready to hit the code, seeing instant feedback is the besssst! Fortunately there is shotgun which runs a server on your local machine to do so. &lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
-
+&lt;br&gt; &lt;br&gt;
 Please feel free to leave a comment with your thoughts on this post! Any suggestions for improvement are welcome! Source code is available &lt;a href=&quot;&quot;&gt;here&lt;/a&gt; if you&#39;re smancy and want to submit an issue or pull request!</description>
         <pubDate>Tue, 30 Jun 2015 00:05:08 -0500</pubDate>
-        <link>http://catsoncode.com/mvc</link>
-        <guid isPermaLink="true">http://catsoncode.com/mvc</guid>
+        <link>http://catsoncode.com/code</link>
+        <guid isPermaLink="true">http://catsoncode.com/code</guid>
         
         
         <category>sinatra</category>
@@ -97,7 +153,12 @@ Please feel free to leave a comment with your thoughts on this post! Any suggest
     
       <item>
         <title>Welcome</title>
-        <description>&lt;h2&gt; The code behind the Cats &lt;/h2&gt;
+        <description>&lt;p&gt;&lt;em&gt; Hellllllloooo World! The web would not exist without coding or cats. It only makes sense that the two join forces to make sense of it all. Inspired by my first teaching gig, I&#39;ve started this blog as yet another resource to help guide beginning to intermediate coders navigate through the craziness of code. Also, it&#39;s another excuse to show off my cats.  &lt;/em&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/gifs/hellothere.gif&quot;
+&lt;/figure&gt;
+&lt;h2&gt; The code behind the Cats &lt;/h2&gt;
 
 &lt;p&gt;Heirloom gentrify ennui drinking vinegar. Paleo freegan chillwave Wes Anderson beard meggings. Street art leggings put a bird on it organic, art party Truffaut fanny pack. Direct trade Echo Park literally street art Portland. Bespoke mustache health goth, High Life mlkshk plaid hashtag master cleanse four loko migas sustainable Helvetica letterpress stumptown chillwave. Gluten-free kale chips freegan fixie Etsy, raw denim Truffaut hoodie tote bag fap Tumblr. Cornhole DIY yr, forage four loko PBR&amp;B cred Bushwick next level wolf Vice flannel chia lomo photo booth.&lt;/p&gt;
 
