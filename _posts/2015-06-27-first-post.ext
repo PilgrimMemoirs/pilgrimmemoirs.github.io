@@ -6,13 +6,13 @@ categories: welcome introduction
 author: Jamie Pilgrim
 comments: true
 permalink: welcome
-photo: "../images/cats/welcome/3.jpg"
+photo: "../images/cats/welcome/3.JPG"
 ---
 
 <p><em> Hellllllloooo World! The web would not exist without coding or cats. It only makes sense that the two join forces to make sense of it all. Inspired by my first teaching gig, I've started this blog as yet another resource to help guide beginning to intermediate coders navigate through the craziness of code. Also, it's another excuse to show off my cats.  </em></p>
 
 <figure>
-  <img src="../images/gifs/hellothere.gif"
+  <img src="../images/gifs/hellothere.gif">
 </figure>
 <h2> The code behind the Cats </h2>
 
