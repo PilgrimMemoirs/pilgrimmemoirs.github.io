@@ -158,6 +158,9 @@ pre {
   background-size: cover;
   width: 50%; }
 
+.wrapper {
+  background-color: white; }
+
 .site-title {
   font-size: 26px;
   line-height: 56px;
@@ -208,6 +211,16 @@ pre {
       .site-nav .page-link {
         display: block;
         padding: 5px 10px; } }
+
+.social-icons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white; }
+  .social-icons ul {
+    text-align: center; }
+    .social-icons ul li {
+      display: inline-block; }
 
 /**
  * Site footer
