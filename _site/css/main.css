@@ -151,7 +151,10 @@ pre {
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: yellow;
+  background-image: url("../images/cats/welcome/3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 50%; }
 
 .site-title {
@@ -261,7 +264,14 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  /*    padding: $spacing-unit 0;*/
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  overflow: scroll; }
 
 .page-heading {
   font-size: 20px; }
