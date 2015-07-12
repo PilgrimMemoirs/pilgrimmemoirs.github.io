@@ -2,7 +2,8 @@
 layout: post
 title:  "MVC with Sinatra & Ruby"
 date:   2015-06-30 05:05:08
-categories: Sinatra Ruby
+categories: Code
+tags: Ruby Sinatra MVC
 author: Jamie Pilgrim
 comments: true
 permalink: /code
