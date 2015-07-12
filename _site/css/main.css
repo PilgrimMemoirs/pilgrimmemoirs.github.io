@@ -70,13 +70,11 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
-a {
+a, a:visited {
   color: #494949;
   text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
-  a:hover {
-    color: #aa90fd; }
+a:hover {
+  color: #aa90fd; }
 
 /**
  * Blockquotes
