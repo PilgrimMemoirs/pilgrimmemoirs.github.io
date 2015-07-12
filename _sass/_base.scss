@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900|Slabo+27px);
 /**
  * Reset some basic elements
  */
@@ -14,7 +15,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
+    font-family: 'Slabo';
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
@@ -35,6 +36,10 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans Pro";
+/*    font-weight: 900;*/
+}
 
 
 /**
@@ -89,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: #494949;
     text-decoration: none;
 
     &:visited {
@@ -97,8 +102,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: #aa90fd;
     }
 }
 

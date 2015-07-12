@@ -3,9 +3,18 @@ layout: default
 ---
 
 <div class="home">
-  <h1 id="title" class="page-heading"><span>Cats</span> on <span>Code</span></h1>
+  <h1 id="title" class="page-heading"><span>Cats</span><br> on <br><span>Code</span></h1>
 
-  <h2>Latest Posts</h2>
+  <h3> The cattiest code blog sharing experiences and slinging code knowledge around Ruby & fullstack web development </h3>
+
+  <p> The self-proclaimed cattiest code blog on the internez. In between hourly belly rubs and laser chasing, all sorts of magical code concations are stirred together. Some of them good, some of them pretty frightening. 
+  </p>
+
+  <p>
+    
+  </p>
+
+  <h2><strong>Latest Posts</strong></h2>
 
   <ul class="post-list" id="index-list">
     {% for post in site.posts  limit:3 %}
@@ -13,11 +22,32 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <p>{{ post.excerpt | truncatewords: 30}}</p>
+        <h3> {{ post.date | date: "%B %-d, %Y"  }} </h3>
+        <h4>{{ post.excerpt | truncatewords: 30}}</h4>
       </li>
     {% endfor %}
   </ul>
 
+
+  <h2><strong>Popular Topics</strong></h2>
+  <ul id="tag-list">
+  {% for tag in site.tags %}
+    {% assign t = tag | first %}
+    {% assign posts = tag | last %}
+
+    <li><h4>{{ t | upcase }}</h4></li>
+    <!-- <ul>
+    {% for post in posts %}
+      {% if post.tags contains t %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul> -->
+  {% endfor %}
+  </ul>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

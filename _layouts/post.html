@@ -12,9 +12,14 @@ layout: default
     {{ content }}
   </article>
 
+  <div id="next-prev">
+    <h4> <a href="{{page.next.url}}"> << Previous Post </a></h4>
+    <h4> <a href="{{page.previous.url}}"> Next Post >> </a></h4>
+  </div>
+
   {% if page.comments %}
     <div id="disqus_thread"></div>
-<script type="text/javascript">
+    <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'catsoncode';
     
@@ -24,8 +29,8 @@ layout: default
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
   {% endif %}
 
