@@ -435,7 +435,7 @@ body {
 footer {
   display: none; }
 
-@media screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 600px) {
   .site-header {
     display: none; }
 
