@@ -432,6 +432,36 @@ body {
     float: none;
     border-radius: 0;
     height: 150px; } }
+footer {
+  display: none; }
+
+@media (max-width: 400px) {
+  .site-header {
+    display: none; }
+
+  .page-content {
+    width: 90%;
+    padding-left: 0; }
+    .page-content .wrapper {
+      width: auto;
+      margin: 0 auto;
+      margin-left: -10px;
+      padding-bottom: 100px; }
+
+  #index-list li {
+    height: auto;
+    width: auto; }
+    #index-list li * {
+      display: block; }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background-color: yellow; }
+    footer ul {
+      display: none; } }
 /**
  * Syntax highlighting styles
  */
