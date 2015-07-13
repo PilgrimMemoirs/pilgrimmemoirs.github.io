@@ -425,7 +425,7 @@ body {
 #cat-list a:hover {
   color: #aa90fd; }
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
   #index-list li {
     width: 100%;
     margin: 2em auto;
@@ -435,7 +435,7 @@ body {
 footer {
   display: none; }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .site-header {
     display: none; }
 
@@ -459,9 +459,28 @@ footer {
     bottom: 0;
     display: block;
     width: 100%;
-    background-color: yellow; }
+    background-color: #2d2d2d;
+    text-align: center;
+    padding: 0; }
+    footer .mobile-nav {
+      width: 100%;
+      margin: 0; }
+    footer #down, footer #menu {
+      width: 100%;
+      font-size: 1.5em; }
     footer ul {
-      display: none; } }
+      display: none;
+      text-align: center;
+      list-style: none;
+      margin: 0; }
+      footer ul a {
+        display: block;
+        text-align: center; }
+        footer ul a, footer ul a:visited {
+          color: black; }
+        footer ul a:hover {
+          color: #aa90fd;
+          background-color: #141414; } }
 /**
  * Syntax highlighting styles
  */

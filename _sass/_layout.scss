@@ -411,7 +411,7 @@ body {
 
 
 
- @media (max-width: 700px) { 
+ @media (max-width: 680px) { 
     #index-list li{
         width: 100%;
         margin: 2em auto;
@@ -426,7 +426,7 @@ body {
  }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .site-header {
         display: none;
     }
@@ -458,10 +458,40 @@ body {
         bottom: 0;
         display: block;
         width: 100%;
-        background-color: yellow;
+        background-color: #2d2d2d;
+        text-align: center;
+        padding: 0;
+
+        .mobile-nav {
+            width: 100%;
+            margin: 0;
+        }
+
+    
+    #down, #menu {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
 
         ul {
             display: none;
+            text-align: center;
+            list-style: none;
+            margin: 0;
+
+            a {
+                display: block;
+                text-align: center;
+                &, &:visited {
+                    color: black;
+                }
+
+                &:hover {
+                    color: #aa90fd;
+                    background-color: #141414;
+                }
+            }
         }
     }
 }

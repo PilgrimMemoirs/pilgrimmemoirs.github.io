@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://catsoncode.com/">
   <link rel="alternate" type="application/rss+xml" title="Cats on Code" href="http://catsoncode.com/feed.xml" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 
@@ -231,10 +232,60 @@
     </div>
 
     <footer>
-  <h3> Menu </h3>
+  <h3 id="menu"><a> Menu </a></h3>
   <ul>
-    <li><a href="">Test </a></li>
+    <div class="mobile-nav">
+      <li><h4><a href="/"> Home </a></h4></li>
+        
+          
+          <li><h4><a class="page-link" href="/about/">About</a></h4></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li><h4><a class="page-link" href="/posts/">Posts</a></h4></li>
+          
+        
+          
+          <li><h4><a class="page-link" href="/topics/">Topics</a></h4></li>
+          
+        
+        
+          <li><h4>
+            <a href="https://github.com/pilgrimmemoirs">
+              <span class="username">Github</span>
+            </a></h4>
+          </li>
+          
+
+          
+          <li>
+            <h4><a href="https://twitter.com/pilgrimmemoirs">
+              <span class="username">Twitter</span>
+            </a></h4>
+          </li>
+          
+          <li><h4><a href="mailto:hello@jamiepilgrim.com">Email</a></h4></li>
+        <li id="down"><h4><a> Down </a></h4></li>
+    </div>
   </ul>
+
+<script type="text/javascript">
+  $('#menu').click(function() {
+    $('footer ul').css("display", "block");
+    console.log("hey");
+  });
+
+  $('#down').click(function(){
+    $('footer ul').css('display', 'none');
+    console.log("Whoah!")
+  })
+</script>
 </footer>
   </body>
 
