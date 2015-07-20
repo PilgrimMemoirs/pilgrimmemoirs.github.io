@@ -6,23 +6,14 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Jul 2015 21:13:57 -0500</pubDate>
-    <lastBuildDate>Sun, 12 Jul 2015 21:13:57 -0500</lastBuildDate>
+    <pubDate>Sun, 19 Jul 2015 17:41:07 -0500</pubDate>
+    <lastBuildDate>Sun, 19 Jul 2015 17:41:07 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Jekyll Intro</title>
         <description>&lt;p&gt;&lt;em&gt; An intro tutorial to setting a blog with Jekyll &amp; hosting it (fo free) with Github pages. &lt;/em&gt;&lt;/p&gt;
 
-&lt;h2&gt; The blogging platform of the only the biggest nerds. &lt;/h2&gt;
-
-&lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebz to see.  &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.JPG&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot;&gt;
-  &lt;figcaption&gt; Students showing off their code while attending Flatiron School&#39;s precollege program at 1871 in Chicago.  &lt;/figcaption&gt;
-&lt;/figure
-&lt;br&gt;&lt;br&gt;
 
 
 </description>
@@ -50,7 +41,7 @@
 &lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebz to see.  &lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.JPG&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot;&gt;
   &lt;figcaption&gt; Students showing off their code while attending Flatiron School&#39;s precollege program at 1871 in Chicago.  &lt;/figcaption&gt;
 &lt;/figure
 &lt;br&gt;&lt;br&gt;
@@ -190,20 +181,20 @@ Please feel free to leave a comment with your thoughts on this post! Any suggest
     
       <item>
         <title>Welcome</title>
-        <description>&lt;p&gt;&lt;em&gt; Hellllllloooo World! The web would not exist without coding or cats. It only makes sense that the two join forces to make sense of it all. Inspired by my first teaching gig, I&#39;ve started this blog as yet another resource to help guide beginning to intermediate coders navigate through the craziness of code. Also, it&#39;s another excuse to show off my cats.  &lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt; The internet is comprised entirely out of cats and code, it was only time before thier forces joined to collaborate. With thier powers combined, a blog  &lt;/em&gt;&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/gifs/hellothere.gif&quot;&gt;
 &lt;/figure&gt;
 &lt;h2&gt; The code behind the Cats &lt;/h2&gt;
 
-&lt;p&gt;Heirloom gentrify ennui drinking vinegar. Paleo freegan chillwave Wes Anderson beard meggings. Street art leggings put a bird on it organic, art party Truffaut fanny pack. Direct trade Echo Park literally street art Portland. Bespoke mustache health goth, High Life mlkshk plaid hashtag master cleanse four loko migas sustainable Helvetica letterpress stumptown chillwave. Gluten-free kale chips freegan fixie Etsy, raw denim Truffaut hoodie tote bag fap Tumblr. Cornhole DIY yr, forage four loko PBR&amp;B cred Bushwick next level wolf Vice flannel chia lomo photo booth.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;Roof party shabby chic lomo bitters put a bird on it, messenger bag Thundercats ennui Austin you probably haven&#39;t heard of them gluten-free migas twee. Mumblecore four loko organic gastropub, fashion axe 8-bit four dollar toast craft beer before they sold out wayfarers pour-over meggings. Gluten-free cred street art, Truffaut salvia normcore squid tattooed. Godard tilde flannel, Brooklyn Austin master cleanse cray. Swag deep v fap, put a bird on it Marfa distillery small batch stumptown tilde bicycle rights mlkshk twee keytar VHS dreamcatcher. Carles health goth tote bag messenger bag bespoke ethical kogi meggings, Banksy before they sold out post-ironic crucifix cronut beard ugh. Sartorial raw denim fingerstache yr Etsy.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;Schlitz trust fund brunch readymade tousled American Apparel. Squid lumbersexual church-key cold-pressed stumptown. Whatever squid art party, Thundercats bicycle rights locavore forage synth Helvetica master cleanse. Normcore dreamcatcher Intelligentsia, put a bird on it sartorial four loko drinking vinegar hella hoodie shabby chic asymmetrical. Wayfarers asymmetrical tofu heirloom, lomo Blue Bottle keffiyeh Odd Future dreamcatcher squid readymade food truck. Shoreditch seitan Pitchfork, blog ethical chillwave retro. Bitters Thundercats DIY kitsch, fingerstache seitan chambray American Apparel butcher paleo occupy trust fund VHS pickled Marfa. &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;Normcore narwhal pop-up, retro post-ironic art party meggings fap listicle. Freegan sartorial photo booth Kickstarter narwhal. Before they sold out Etsy synth Portland. Seitan biodiesel readymade before they sold out, hella Marfa pop-up dreamcatcher crucifix iPhone tofu mlkshk. Pitchfork plaid 90&#39;s kogi beard, pug before they sold out raw denim asymmetrical chambray leggings. Flannel YOLO High Life, occupy typewriter squid selvage wayfarers. Hella pop-up tousled fashion axe pour-over tilde, cold-pressed next level food truck +1 kitsch taxidermy cred DIY. &lt;/p&gt;</description>
+</description>
         <pubDate>Sat, 27 Jun 2015 00:05:08 -0500</pubDate>
         <link>http://catsoncode.com/welcome</link>
         <guid isPermaLink="true">http://catsoncode.com/welcome</guid>
