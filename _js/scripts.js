@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include mobile.html %}
-    <script>
-      var curScroll = 0;
+var curScroll = 0;
 
 $(window).bind('mousewheel DOMMouseScroll', function(e){
     var evt = window.event || e;
@@ -32,7 +14,3 @@ $(window).bind('mousewheel DOMMouseScroll', function(e){
     $('.page-content').scrollTop(curScroll);
     return true;
 }); 
-    </script>
-  </body>
-
-</html>

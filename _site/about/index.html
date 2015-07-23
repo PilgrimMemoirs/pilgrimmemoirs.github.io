@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
   <head>
@@ -14,6 +15,7 @@
   <link rel="canonical" href="http://catsoncode.com/about/">
   <link rel="alternate" type="application/rss+xml" title="Cats on Code" href="http://catsoncode.com/feed.xml" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 
 
@@ -165,6 +167,24 @@
   })
 </script>
 </footer>
+    <script>
+      var curScroll = 0;
+
+$(window).bind('mousewheel DOMMouseScroll', function(e){
+    var evt = window.event || e;
+    var delta = evt.detail? evt.detail*(-120) : evt.wheelDelta;
+    if(delta < 0) {
+        //scroll down
+        curScroll += 10;
+    }
+    else {
+        //scroll up
+        curScroll -= 10;
+    }
+    $('.page-content').scrollTop(curScroll);
+    return true;
+}); 
+    </script>
   </body>
 
 </html>
