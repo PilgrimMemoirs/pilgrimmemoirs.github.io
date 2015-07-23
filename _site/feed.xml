@@ -6,17 +6,37 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Jul 2015 21:56:18 -0500</pubDate>
-    <lastBuildDate>Sun, 19 Jul 2015 21:56:18 -0500</lastBuildDate>
+    <pubDate>Wed, 22 Jul 2015 17:27:09 -0500</pubDate>
+    <lastBuildDate>Wed, 22 Jul 2015 17:27:09 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Graduating my Web Design Students</title>
-        <description>&lt;p&gt;&lt;em&gt;Two weeks ago I taught my first class in front of 13 teenagers who had no idea what they were getting themselves into. Much like them, I had no idea what I was getting myself into by teaching them, but I knew it was the start of someting great. &lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt;In June I taugh my first software engineering class in front of 13 teenagers who had no idea what they were getting themselves into. Much like them, I had no idea what I was getting myself into by teaching them, but I knew it was the start of someting great. &lt;/em&gt;&lt;/p&gt;
 
 &lt;h2&gt; Learn. Love. Code. &lt;/h2&gt;
 
 &lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebz to see.  &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.jpg&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot;&gt;
+  &lt;figcaption&gt; Students showing off their code while attending Flatiron School&#39;s precollege program at 1871 in Chicago.  &lt;/figcaption&gt;
+&lt;/figure
+&lt;br&gt;&lt;br&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_1650.jpg&quot; alt=&quot;Instructors Jamie Pilgrim &amp; Jeff Astor watching a student present their code&quot;&gt;
+  &lt;figcaption&gt; Watching a student present thier code with my co-teacher, Jeff Astor.  &lt;/figcaption&gt;
+&lt;/figure
+&lt;br&gt;&lt;br&gt;
+
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot;&gt;
+  &lt;figcaption&gt; Students showing off their code while attending Flatiron School&#39;s precollege program at 1871 in Chicago.  &lt;/figcaption&gt;
+&lt;/figure
+&lt;br&gt;&lt;br&gt;
+
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot;&gt;
@@ -31,6 +51,10 @@
         <guid isPermaLink="true">http://catsoncode.com/graduated-design-students</guid>
         
         <category>Flatiron</category>
+        
+        <category>Teaching</category>
+        
+        <category>Culture</category>
         
         
         <category>teaching</category>
@@ -50,6 +74,35 @@
   &lt;figcaption&gt; Students showing off their code while attending Flatiron School&#39;s precollege program at 1871 in Chicago.  &lt;/figcaption&gt;
 &lt;/figure
 &lt;br&gt;&lt;br&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_1659.jpg&quot; alt=&quot;student drawing code example on poster&quot;&gt;
+  &lt;figcaption&gt; Off screen activities for the creative students include making posters to deck the classroom out in.  &lt;/figcaption&gt;
+&lt;/figure
+&lt;br&gt;&lt;br&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_1779.jpg&quot; alt=&quot;Codepen used to introduce html and css&quot;&gt;
+  &lt;figcaption&gt;   &lt;/figcaption&gt;
+&lt;/figure
+&lt;br&gt;&lt;br&gt;
+
+
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2186.JPG&quot; alt=&quot;The next generation of female coders&quot;&gt;
+  &lt;figcaption&gt; The brilliant team behind the &lt;strong&gt;&lt;a href=&quot;http://eatyourfeelingsapp.herokuapp.com&quot; target=&quot;_blank&quot;&gt; Eat Your Feelings &lt;/a&gt;&lt;/strong&gt; final project app. &lt;/figcaption&gt;
+&lt;/figure
+&lt;br&gt;&lt;br&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2244.JPG&quot; alt=&quot;The next generation of female coders&quot;&gt;
+  &lt;figcaption&gt; The brilliant team behind the &lt;strong&gt;&lt;a href=&quot;http://eatyourfeelingsapp.herokuapp.com&quot; target=&quot;_blank&quot;&gt; Dr Excuse Generator &lt;/a&gt;&lt;/strong&gt; final project app. &lt;/figcaption&gt;
+&lt;/figure
+&lt;br&gt;&lt;br&gt;
+
+
+
 
 
 </description>
