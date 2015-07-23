@@ -16,7 +16,7 @@ layout: default
     <h4> <a href="{{page.next.url}}"> << Previous Post </a></h4>
     <h4> <a href="{{page.previous.url}}"> Next Post >> </a></h4>
   </div>
-
+  {% include share.html %}
   {% if page.comments %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
