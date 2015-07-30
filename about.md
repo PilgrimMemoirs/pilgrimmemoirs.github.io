@@ -26,3 +26,12 @@ photo:  "../images/selfies/IMG_0222.JPG"
 <img src="../images/cats/welcome/3.JPG">
 <p> Octo (short for Octothorpe, black) & Amper (Ampersand, tabby) were adopted from PAWS chicago a month after I finished Dev Bootcamp. These little fur balls have kept me company through long hours of freelance coding at home. They've also better at making bugs than catching them. </p>
 <br><br><br>
+
+<h2><strong> The Blog </strong></h2>
+<!-- <h4> The human behind the code.</h4> -->
+
+<p> This blog is built using one of the most liberating bloggin technologies; with Jekyll and hosted on Github pages with a custom domain slapped on it. </p>
+
+<p> The best part of using Jekyll is having total creative control over how my blog looks and even functions. It also has snazz factor with using Ruby! </p>
+
+<p> Hang tight and I will most likely post a tutorial on getting started with making your own! </p>
