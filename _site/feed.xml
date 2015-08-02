@@ -6,23 +6,78 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Jul 2015 02:17:26 -0500</pubDate>
-    <lastBuildDate>Thu, 30 Jul 2015 02:17:26 -0500</lastBuildDate>
+    <pubDate>Sat, 01 Aug 2015 22:15:42 -0500</pubDate>
+    <lastBuildDate>Sat, 01 Aug 2015 22:15:42 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Graduating my Web Design Students</title>
+        <title>Graduating my Third Class: Intro to SE</title>
+        <description>&lt;p&gt;&lt;em&gt; My second round of the &#39;intro to Software Engineering&#39; class with my new co-teacher is yet another chapter down in this new summer teaching gig. &lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- Classtime  --&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0044.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
+  &lt;figcaption&gt;   &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br&gt;&lt;br&gt;
+
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0038.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
+  &lt;figcaption&gt; Whiteboarding final project ideation  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br&gt;&lt;br&gt;
+
+
+
+&lt;!-- Science Fair &amp; Graduation --&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0041.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
+  &lt;figcaption&gt;   &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0030.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
+  &lt;figcaption&gt; Each group setup a table to show off thier final projects to other classmates and visiting family.   &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br&gt;&lt;br&gt;
+
+
+&lt;img src=&quot;../images/flatiron/class_3/DSC_00202.jpg&quot; alt=&quot;Serious Group Photo&quot;&gt;
+&lt;img src=&quot;../images/flatiron/class_3/DSC_0023.jpg&quot; alt=&quot;Silly Group Photo&quot;&gt;
+&lt;img src=&quot;../images/flatiron/class_3/DSC_0021.jpg&quot; alt=&quot;Silly Group Photo&quot;&gt;</description>
+        <pubDate>Fri, 31 Jul 2015 00:25:08 -0500</pubDate>
+        <link>http://catsoncode.com/third-class</link>
+        <guid isPermaLink="true">http://catsoncode.com/third-class</guid>
+        
+        <category>Flatiron</category>
+        
+        <category>Teaching</category>
+        
+        <category>Culture</category>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Graduating my Second Class: Intro to Design</title>
         <description>&lt;p&gt;&lt;em&gt; When I saw that I was teaching a web design course I was stoked! I thought for sure that it would be a breeze since design and front end development come easy to me, but teaching something that came more intuitively proved to be more challenging than I thought.  &lt;/em&gt;&lt;/p&gt;
 
 &lt;h2&gt;Doing More Than &#39;Making Things Pretty&#39; &lt;/h2&gt;
 
-&lt;p&gt; During these two weeks my students went from zero to learning html, css, jquery and design theories. The last four of those days spent implementing what they learned into a final project. Craziness! &lt;/p&gt;
+&lt;p&gt; During these two weeks my students went from zero to learning html, css, jquery and design theories. The last four of those days spent implementing what they learned into a final project. Pure craziness! &lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_2/IMG_2154.JPG&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
   &lt;figcaption&gt; Supermodel and former Flatiron School student, Karli Kloss, made an appearance in our classroom. Several locations around the U.S. had the opportunity to ask her questions about her experience developing, her &#39;day job&#39; and being besties with Taylor Swift.  &lt;/figcaption&gt;
 &lt;/figure
 &lt;br&gt;&lt;br&gt;
+
+&lt;p&gt; I was lucky enough with this class that a good chunck had already taken the previous course and were familiar with the  &lt;/p&gt;
 
 
 &lt;figure&gt;
@@ -80,12 +135,12 @@
       </item>
     
       <item>
-        <title>Graduating my First Cohort of Students</title>
-        <description>&lt;p&gt;&lt;em&gt;I taught my first class this past June in front of 13 teenagers who had no idea what they were getting themselves into. Much like them, I had no idea what I was getting myself into by teaching. &lt;/em&gt;&lt;/p&gt;
+        <title>Graduating my First Class: Intro To SE</title>
+        <description>&lt;p&gt;&lt;em&gt;I taught my very first class this past June in front of 13 teenagers who, much like myself, had no idea what they were getting themselves into.  &lt;/em&gt;&lt;/p&gt;
 
 &lt;h2&gt; Learn. Love. Code. &lt;/h2&gt;
 
-&lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebs to see.&lt;/p&gt; &lt;p&gt; Having never formally taught teenagers, I was nervous on how quickly they&#39;d pick up the material or if they&#39;d even be interested in any of it. With the help of my co-teacher, we quickly built a class that was excited to come to class and learn programming!   &lt;/p&gt;
+&lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebs to see.&lt;/p&gt; &lt;p&gt; Having never formally taught teenagers, I was nervous on how quickly they&#39;d pick up the material or if they&#39;d even be interested in any of it. With the help of a fantastic co-teacher, we quickly built a class that was not only excited to come to class, but also code!   &lt;/p&gt;
 
 
 
