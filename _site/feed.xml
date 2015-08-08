@@ -6,15 +6,19 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Aug 2015 22:15:42 -0500</pubDate>
-    <lastBuildDate>Sat, 01 Aug 2015 22:15:42 -0500</lastBuildDate>
+    <pubDate>Sat, 08 Aug 2015 14:50:12 -0500</pubDate>
+    <lastBuildDate>Sat, 08 Aug 2015 14:50:12 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Graduating my Third Class: Intro to SE</title>
-        <description>&lt;p&gt;&lt;em&gt; My second round of the &#39;intro to Software Engineering&#39; class with my new co-teacher is yet another chapter down in this new summer teaching gig. &lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt; My second round of the Intro to Software Engineering class with my new co-teacher was yet another successful chapter in this amazing experience.  &lt;/em&gt;&lt;/p&gt;
 
 &lt;!-- Classtime  --&gt;
+
+&lt;h2&gt;It&#39;s all about the Experience &lt;/h2&gt;
+
+&lt;p&gt; In June I started teaching high schoolers the ins and out of web development in two week long intensive courses. Now, they&#39;re by no means experts by the end, however, they left with a solid foundation and, more importantly, enthusiasm to continue learning.   &lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_3/DSC_0044.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
@@ -30,6 +34,9 @@
 &lt;br&gt;&lt;br&gt;
 
 
+&lt;h2&gt; The Code is Incidental &lt;/h2&gt;
+
+&lt;p&gt;In our classes, as molded by many other coding bootcamps, the culture is just as essential as the code itself. Our goal is not only to get kids engaged in coding, but to also form strong relationships with thier peers. Doing so helps build a strong classroom culture that opens &lt;/p&gt;
 
 &lt;!-- Science Fair &amp; Graduation --&gt;
 &lt;figure&gt;
@@ -210,15 +217,15 @@
 
 &lt;p&gt; Hi and welcome! I&#39;m Jamie, the human behind the blog. I&#39;m starting this site as a way to not only help others get into web development, but to also help clarify the all the new web stuff I learn. &lt;/p&gt;
 
-&lt;p&gt;I recently started teaching in front of a class and am finding myself learning a tremendous amount while I jot my notes and lesson plan for the next day. I figured I would take what I have been working on to the next level and churn them out into posts to share.&lt;/p&gt;
+&lt;p&gt;I recently started teaching web development courses to high schoolers this summer and am finding myself learning a tremendous amount while I jot my notes and lesson plan for the next day. I figured I would take what I have been working on to the next level and churn them out into posts to share.&lt;/p&gt;
 
 &lt;p&gt;This blog will for sure evolve over time, but I aim to cover at least basic to intermediate web development topics, coder culture and my experiences going through a bootcamp and now teaching. &lt;/p&gt;
 
 &lt;p&gt; I also really like cats. &lt;/p&gt;
 
 
-&lt;blockquote&gt;“If you want to learn something, read about it. If you want to understand something, write about it. If you want to master something, teach it.”
-– Yogi Bhajan&lt;/blockquote&gt;
+&lt;!-- &lt;blockquote&gt;“If you want to learn something, read about it. If you want to understand something, write about it. If you want to master something, teach it.”
+– Yogi Bhajan&lt;/blockquote&gt; --&gt;
 
 &lt;p&gt;&lt;/p&gt;
 

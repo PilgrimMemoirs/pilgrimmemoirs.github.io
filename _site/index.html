@@ -105,7 +105,7 @@
           <a class="post-link" href="/third-class">Graduating my Third Class: Intro to SE</a>
         </h2>
         <h3> July 31, 2015 </h3>
-        <h4><p><em> My second round of the 'intro to Software Engineering' class with my new co-teacher is yet another chapter down in this new summer teaching gig. </em></p>
+        <h4><p><em> My second round of the Intro to Software Engineering class with my new co-teacher was yet another successful chapter in this amazing experience.  </em></p>
 
 </h4>
       </li>
@@ -275,20 +275,20 @@
     <script>
       var curScroll = 0;
 
-$(window).bind('mousewheel DOMMouseScroll', function(e){
-    var evt = window.event || e;
-    var delta = evt.detail? evt.detail*(-120) : evt.wheelDelta;
-    if(delta < 0) {
-        //scroll down
-        curScroll += 10;
-    }
-    else {
-        //scroll up
-        curScroll -= 10;
-    }
-    $('.page-content').scrollTop(curScroll);
-    return true;
-}); 
+      $(window).bind('mousewheel DOMMouseScroll', function(e){
+          var evt = window.event || e;
+          var delta = evt.detail? evt.detail*(-120) : evt.wheelDelta;
+          if(delta < 0) {
+              //scroll down
+              curScroll += 10;
+          }
+          else {
+              //scroll up
+              curScroll -= 10;
+          }
+          $('.page-content').scrollTop(curScroll);
+          return true;
+      }); 
     </script>
   </body>
 
