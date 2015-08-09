@@ -12,8 +12,10 @@ layout: default
     {{ content }}
   </article>
 
-  {% include next_prev.html %}
-  {% include share.html %}
+  <div class="bottom">
+    {% include next_prev.html %}
+    {% include share.html %}
+  </div>
   {% include comments.html %}
 
 </div>
