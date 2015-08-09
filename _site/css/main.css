@@ -366,14 +366,30 @@ body {
       display: inline-block; }
 
 #next-prev {
-  text-align: center; }
-  #next-prev * {
-    display: inline-block;
-    padding: 0  2%  30px;
-    color: #494949;
-    font-size: 1.25em; }
-    #next-prev *:hover {
-      color: #aa90fd; }
+  text-align: center;
+  margin-bottom: 20%; }
+  #next-prev #next, #next-prev #prev {
+    background-color: gray;
+    border-radius: 15px;
+    width: 45%; }
+  #next-prev #next {
+    float: left;
+    margin-left: 3%; }
+  #next-prev #prev {
+    float: right;
+    margin-right: 3%; }
+  #next-prev h3 {
+    font-weight: bold; }
+  #next-prev a:hover {
+    color: white; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
 
 /**
  * Index
