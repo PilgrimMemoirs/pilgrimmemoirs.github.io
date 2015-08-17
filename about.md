@@ -32,6 +32,6 @@ photo:  "../images/selfies/IMG_0222.JPG"
 
 <p> This blog is built using one of the most liberating blogging technologies; with Jekyll and hosted on Github pages with a custom domain slapped on it. </p>
 
-<p> The best part of using Jekyll is having total creative control over how my blog looks and even functions. It also has snazz factor with using Ruby! </p>
+<!-- <p> The best part of using Jekyll is having total creative control over how my blog looks and even functions. It also has snazz factor with using Ruby! </p>
 
-<p> Hang tight and I will most likely post a tutorial on getting started with making your own! </p>
+<p> Hang tight and I will most likely post a tutorial on getting started with making your own! </p> -->
