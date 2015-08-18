@@ -149,6 +149,9 @@ pre {
 body {
   background-color: #f7f7f7; }
 
+a {
+  transition: 0.4s ease-out; }
+
 /**
  * Site header
  */
@@ -371,32 +374,37 @@ body {
     #posts > li * {
       display: inline-block; }
 
+/* POST FOOTER */
 .bottom {
-  width: 94%;
-  background-color: #eaeaea;
-  padding: 3%;
+  width: 100%;
+  background-color: #D7D7D7;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
-  margin-bottom: 10%; }
+  margin-bottom: 10%;
+  padding-top: 0;
+  padding-bottom: 5%; }
 
 #next-prev {
   text-align: center;
-  margin-bottom: 10%; }
+  margin-bottom: 10%;
+  width: 100%;
+  /*    #next:hover, #prev:hover {
+          background-color: #something;
+      }*/ }
   #next-prev #next, #next-prev #prev {
-    background-color: #9e9e9e;
-    border-radius: 15px;
-    width: 40%;
-    padding: 0 2.5%; }
+    background-color: #E4E4E4;
+    width: 44%;
+    padding: 0 3%; }
   #next-prev #next {
     float: left;
-    margin-left: 3%; }
+    border-bottom-left-radius: 2em; }
   #next-prev #prev {
     float: right;
-    margin-right: 3%; }
+    border-bottom-right-radius: 2em; }
   #next-prev h3 {
     font-weight: bold; }
   #next-prev a:hover {
-    color: #e5e5e5; }
+    color: gray; }
 
 .share-page {
   text-align: center; }
