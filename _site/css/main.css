@@ -387,10 +387,7 @@ a {
 #next-prev {
   text-align: center;
   margin-bottom: 10%;
-  width: 100%;
-  /*    #next:hover, #prev:hover {
-          background-color: #something;
-      }*/ }
+  width: 100%; }
   #next-prev #next, #next-prev #prev {
     background-color: #E4E4E4;
     width: 44%;
