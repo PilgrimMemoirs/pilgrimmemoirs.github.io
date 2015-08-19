@@ -260,6 +260,7 @@ a {
 .post-content {
     background-color: #f2f2f2;
     padding-top: 5%;
+    padding-bottom: 5%;
 
     p, h1, h2, h3, h4, figcaption {
         padding: 0 2%;
@@ -333,15 +334,19 @@ a {
     margin-bottom: 10%;
     padding-top: 0;
     padding-bottom: 5%;
+    border-bottom: 5px solid #D1D1D1;
 }
 
 #next-prev {
     text-align: center;
     margin-bottom: 10%;
     width: 100%;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    background-color: #E4E4E4;
+    border-bottom: 5px solid #CFCFCF;
 
     #next, #prev{
-        background-color: #E4E4E4;
         width: 44%;
         padding: 0 3%;
         height: 145px;
@@ -349,12 +354,10 @@ a {
 
     #next {
         float: left;
-        border-bottom-left-radius: 2em;
     }
 
     #prev {
         float: right;
-        border-bottom-right-radius: 2em;
     }
 
     h3 {

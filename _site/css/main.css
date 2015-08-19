@@ -332,7 +332,8 @@ a {
 
 .post-content {
   background-color: #f2f2f2;
-  padding-top: 5%; }
+  padding-top: 5%;
+  padding-bottom: 5%; }
   .post-content p, .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content figcaption {
     padding: 0 2%; }
   .post-content * {
@@ -382,23 +383,25 @@ a {
   border-bottom-right-radius: 2em;
   margin-bottom: 10%;
   padding-top: 0;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  border-bottom: 5px solid #D1D1D1; }
 
 #next-prev {
   text-align: center;
   margin-bottom: 10%;
-  width: 100%; }
+  width: 100%;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  background-color: #E4E4E4;
+  border-bottom: 5px solid #CFCFCF; }
   #next-prev #next, #next-prev #prev {
-    background-color: #E4E4E4;
     width: 44%;
     padding: 0 3%;
     height: 145px; }
   #next-prev #next {
-    float: left;
-    border-bottom-left-radius: 2em; }
+    float: left; }
   #next-prev #prev {
-    float: right;
-    border-bottom-right-radius: 2em; }
+    float: right; }
   #next-prev h3 {
     font-weight: bold; }
   #next-prev a:hover {
