@@ -6,9 +6,58 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Aug 2015 23:21:02 -0500</pubDate>
-    <lastBuildDate>Tue, 18 Aug 2015 23:21:02 -0500</lastBuildDate>
+    <pubDate>Tue, 18 Aug 2015 23:32:34 -0500</pubDate>
+    <lastBuildDate>Tue, 18 Aug 2015 23:32:34 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Meowspace: Intro</title>
+        <description>&lt;p&gt;&lt;em&gt; You&#39;re hired! Yay! Welcome to the Meowspace team where you&#39;ll be building what the internet has been missing most, a cat social network. Lick those paws and lets get to work building this app with using Ember and Rails! &lt;/em&gt;&lt;/p&gt;&lt;br&gt;
+
+&lt;h2&gt; What is Meowspace? &lt;/h2&gt;
+
+&lt;p&gt;  &lt;/p&gt;
+
+&lt;h2&gt; Who is going to be using Meowspace? &lt;/h2&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2&gt; Cool, so, uh, how are we doing this? &lt;/h2&gt;
+
+&lt;p&gt; This tutorail is going to be split into three parts: &lt;/p&gt;
+  &lt;ul&gt; 
+    &lt;li&gt; Backend with Rails &lt;/li&gt;
+    &lt;li&gt; Frontend with Ember &lt;/li&gt;
+    &lt;li&gt; and Design &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;p&gt; Each of those parts will be split into multiple, easy to digest tutorials.  &lt;/p&gt;
+
+&lt;h2&gt; Lez get started!  &lt;/h2&gt;
+
+&lt;p&gt; Awesome Enthusiasm! I really like it, but, uh, give me another week until I give you the rest... &lt;/p&gt;
+
+&lt;p&gt; KTHNXBAI &lt;/p&gt;
+</description>
+        <pubDate>Wed, 19 Aug 2015 00:25:08 -0500</pubDate>
+        <link>http://catsoncode.com/meowspace-intro</link>
+        <guid isPermaLink="true">http://catsoncode.com/meowspace-intro</guid>
+        
+        <category>Meowspace</category>
+        
+        <category>Ember</category>
+        
+        <category>Rails</category>
+        
+        <category>Design</category>
+        
+        <category>Frontend</category>
+        
+        <category>Backend</category>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
     
       <item>
         <title>Graduating my Fourth Class: Advanced SE</title>
