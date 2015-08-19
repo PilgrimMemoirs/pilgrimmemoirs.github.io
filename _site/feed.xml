@@ -6,104 +6,82 @@
 </description>
     <link>http://catsoncode.com/</link>
     <atom:link href="http://catsoncode.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Aug 2015 01:01:42 -0500</pubDate>
-    <lastBuildDate>Tue, 18 Aug 2015 01:01:42 -0500</lastBuildDate>
+    <pubDate>Tue, 18 Aug 2015 22:30:17 -0500</pubDate>
+    <lastBuildDate>Tue, 18 Aug 2015 22:30:17 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Graduating my Fourth Class: Advanced SE</title>
-        <description>&lt;p&gt;&lt;em&gt; After eight weeks of teaching and getting to know some incredible kids, I have ended my summer teaching fellowship with Flatiron School with my final class, Advanced Software Engineering.  &lt;/em&gt;&lt;/p&gt;
-&lt;br&gt;&lt;br&gt;
+        <description>&lt;p&gt;&lt;em&gt; After eight weeks of teaching and getting to know some incredible kids, I have ended my summer teaching fellowship with Flatiron School with my final class, Advanced Software Engineering. &lt;/em&gt;&lt;/p&gt;&lt;br&gt;
 
 &lt;h2&gt; Getting Advanced &lt;/h2&gt;
 
-&lt;p&gt;  &lt;/p&gt;&lt;br&gt;
+&lt;p&gt; These seasoned Flatiron students came back for more, kicking up what they learned in SE 1 by putting databases and user sessions into their Sinatra apps. This class had a healthy mix of students from three different intro classes, two even coming from a class at the Flatiron HQ in New York.  &lt;/p&gt;
 
+
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0073.jpg&quot; alt=&quot;Flatiron Precollege Program Advanced Class&quot;&gt;
+&lt;br&gt;
 &lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0082.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt;   &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0078.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt;   &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0073.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt;   &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt;
-
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt; Whiteboarding final project ideation  &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot;&gt;
+  &lt;figcaption&gt; The advanced class revolved heavily around group projects.  &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;br&gt;&lt;br&gt;
 
 
 &lt;h2&gt; Upping the Game &lt;/h2&gt;
 
-&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;The Ninja. The Table Tennis. The Stickers. The Code. &lt;br&gt;
+All the above and then some were taken to a whole new level with this class. Lets just say, it got vicious. Not gonna lie, databases make you live dangerously. &lt;/p&gt;
 
-&lt;p&gt;  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;p&gt;  Sometimes, it got so dangerous, breaks to watch old reruns of Supermarket Sweep became necessary. Candied hams and  mother and daughters special for the win.  &lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0107.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt; Ping Pong  &lt;/figcaption&gt;
+
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0082.jpg&quot; alt=&quot;Demo of student&#39;s business site&quot;&gt;
+  &lt;figure&gt;&lt;img src=&quot;../images/flatiron/class_4/DSC_0107.jpg&quot; alt=&quot;Final Ping Pong Tournament&quot;&gt;
+  &lt;figcaption&gt; One 17 year old student was showing off the website of their business &amp; Daily lunch time ping pong matches.  &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;br&gt;&lt;br&gt;
 
 
 &lt;h2&gt; Hanging with the Big Devs &lt;/h2&gt;
 
-&lt;p&gt; Class field trip down to Braintree&#39;s Chicago HQ.  &lt;/p&gt;&lt;br&gt;&lt;br&gt;
+&lt;p&gt; On our final day I was fortunate enough to arrange a class field trip down to Braintree&#39;s Chicago HQ.  One of the many perks of holding class in the Merchandise Mart is being surrounded by all sorts of legit tech companies, another one may be having Doughnut Vault across the street. &lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0136.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt; Braintree    &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt;
+&lt;p&gt;During our tour of the Braintree’s HQ, we were teased with sights of all the free food, hanging out in their treehouse, devs working in giant bean bags and, best yet, their game room. &lt;/p&gt; 
 
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0148.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt; Braintree    &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt;
+&lt;p&gt;In the end, our tour guide (who’s normal day job is working as a tech recruiter) came out and surprised us all with swag on swag. We’re talking stickers, pens, notebooks and t-shirts. Ryan hooked us up!  &lt;/p&gt;
 
+
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0136.jpg&quot; alt=&quot;Braintree Tour inside the treehouse&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0148.jpg&quot; alt=&quot;Braintree tour Q and A with a tech recruiter&quot;&gt;
 &lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0143.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt; Braintree   &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0143.jpg&quot; alt=&quot;Group photo inside the Braintree offices in Chicago&quot;&gt;
+  &lt;figcaption&gt; A last day treat of getting to tour the Braintree head office. &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;br&gt;&lt;br&gt;
 
 &lt;h2&gt; The Final Finals &lt;/h2&gt;
 
-&lt;p&gt;  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;p&gt;As usual, the final days were spent in utter chaos, planning, learning new technologies and BUILDING AN ENTIRE APP FROM SCRATCH IN THREE DAYS! Insanity!   &lt;/p&gt;
+&lt;p&gt;But these kids not only pulled through, they took on major challenges and learned SO much. I couldn’t be more proud of the challenges they undertook and worked with. I don’t know if they realize how much they know  &lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0158.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt; Finals  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt;
 
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0158.jpg&quot; alt=&quot;Final Project showing code&quot;&gt;
 &lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0165.jpg&quot; alt=&quot;Jamie Pilgrim&quot;&gt;
-  &lt;figcaption&gt; Finals  &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0165.jpg&quot; alt=&quot;Final Project demo of app&quot;&gt;
+  &lt;figcaption&gt; The final final presentations of the summer.  &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;br&gt;&lt;br&gt;
 
 
 &lt;h2&gt; Learned. Loved. Coded. &lt;/h2&gt;
 
-&lt;p&gt; Learned  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;p&gt; This summer, I feel like I learned just as much as these kids did. I had never been great with explaining my code or how ‘things’ worked, but this summer reaaaally stretched me to do so.  It has been an invaluable experience with instilling syntax, concepts and various technologies with myself. &lt;/p&gt;
 
-&lt;p&gt; Loved  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;p&gt; While I was absolutely stretched outside of my comfort zone, I loved every minute of it. I can’t remember a time I worked this hard or this many hours and had no complaints. It was never easy, but knowing I was making an impact on 30+ kids lives was exceptionally rewarding.   &lt;/p&gt;
 
-&lt;p&gt; Coded  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;p&gt; And guess what!? I even got some time to code! Crazy!  I know Sinatra like the back of my hand and a few wacky looking codepens saved in my account, but I’ll admit, I had way too much fun making projects to demo. #Meowspace4Lyfe &lt;/p&gt;
+
 
 
 &lt;img src=&quot;../images/flatiron/class_4/DSC_0122.jpg&quot; alt=&quot;Serious Group Photo&quot;&gt;

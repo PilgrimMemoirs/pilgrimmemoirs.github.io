@@ -391,7 +391,8 @@ a {
   #next-prev #next, #next-prev #prev {
     background-color: #E4E4E4;
     width: 44%;
-    padding: 0 3%; }
+    padding: 0 3%;
+    height: 145px; }
   #next-prev #next {
     float: left;
     border-bottom-left-radius: 2em; }
@@ -404,7 +405,8 @@ a {
     color: gray; }
 
 .share-page {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2%; }
   .share-page h4 {
     font-weight: bold;
     font-size: 1.25em; }
