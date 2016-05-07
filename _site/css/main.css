@@ -166,7 +166,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50%; }
+  width: 30%; }
   .site-header .wrapper {
     padding-top: 1%;
     border-bottom: 5px solid black !important;
@@ -237,6 +237,9 @@ a {
         display: block;
         padding: 5px 10px; } }
 
+.social-media-list {
+  margin-left: 0; }
+
 .social-icons {
   position: absolute;
   bottom: 0;
@@ -292,8 +295,10 @@ a {
   top: 0;
   bottom: 0;
   right: 0;
-  width: 50%;
+  width: 70%;
   overflow: scroll; }
+  .page-content .wrapper {
+    padding: 10%; }
 
 .page-heading {
   font-size: 20px; }

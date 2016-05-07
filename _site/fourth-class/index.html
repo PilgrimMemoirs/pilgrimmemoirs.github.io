@@ -229,7 +229,6 @@ All the above and then some were taken to a whole new level with this class. Let
 
       </div>
     </div>
-
     <footer>
   <h3 id="menu"><a> Menu </a></h3>
   <ul>
@@ -286,24 +285,6 @@ All the above and then some were taken to a whole new level with this class. Let
   })
 </script>
 </footer>
-    <script>
-      var curScroll = 0;
-
-      $(window).bind('mousewheel DOMMouseScroll', function(e){
-          var evt = window.event || e;
-          var delta = evt.detail? evt.detail*(-120) : evt.wheelDelta;
-          if(delta < 0) {
-              //scroll down
-              curScroll += 10;
-          }
-          else {
-              //scroll up
-              curScroll -= 10;
-          }
-          $('.page-content').scrollTop(curScroll);
-          return true;
-      }); 
-    </script>
   </body>
 
 </html>
