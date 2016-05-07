@@ -23,7 +23,7 @@ a {
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- width: 50%;
+ width: 30%;
 
 
  .wrapper {
@@ -130,6 +130,11 @@ a {
     }
 }
 
+
+.social-media-list {
+        margin-left: 0;
+}
+
 .social-icons {
     position: absolute;
     bottom: 0;
@@ -174,6 +179,8 @@ a {
     }
 }
 
+
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
@@ -207,8 +214,12 @@ a {
     top:0;
     bottom:0;
     right:0;
-    width: 50%;
+    width: 70%;
     overflow: scroll;
+
+    .wrapper {
+        padding: 10%;
+    }
 }
 
 .page-heading {
