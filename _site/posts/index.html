@@ -98,6 +98,13 @@
     
       <li>
         <h2>
+          <a class="post-link" href="/fav-ipsum">My Favorite Placeholder texts &amp; Images</a>
+        </h2>
+        <h4> May 7, 2016 </h4>
+      </li>
+    
+      <li>
+        <h2>
           <a class="post-link" href="/fourth-class">Fourth Flatiron Class: Advanced SE</a>
         </h2>
         <h4> August 17, 2015 </h4>
@@ -196,24 +203,7 @@
   })
 </script>
 </footer>
-    <script>
-      var curScroll = 0;
-
-      $(window).bind('mousewheel DOMMouseScroll', function(e){
-          var evt = window.event || e;
-          var delta = evt.detail? evt.detail*(-120) : evt.wheelDelta;
-          if(delta < 0) {
-              //scroll down
-              curScroll += 10;
-          }
-          else {
-              //scroll up
-              curScroll -= 10;
-          }
-          $('.page-content').scrollTop(curScroll);
-          return true;
-      }); 
-    </script>
+   
   </body>
 
 </html>

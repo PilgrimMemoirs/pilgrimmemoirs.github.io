@@ -23,7 +23,9 @@ a {
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- width: 50%;
+
+
+ width: 30%;
 
 
  .wrapper {
@@ -41,7 +43,8 @@ a {
 
 .wrapper {
    background-color: #f7f7f7;
-   padding-top: 10%;
+/*   padding-top: 10%;*/
+   padding: 10% 0 0 0;
 }
 
 
@@ -66,6 +69,7 @@ a {
 .site-nav {
     float: right;
     line-height: 56px;
+    padding-right: 5%;
 
     .menu-icon {
         display: none;
@@ -207,8 +211,12 @@ a {
     top:0;
     bottom:0;
     right:0;
-    width: 50%;
+    width: 70%;
     overflow: scroll;
+
+    .wrapper {
+        padding: 10%;
+    }
 }
 
 .page-heading {
