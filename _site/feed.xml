@@ -6,8 +6,8 @@
 </description>
     <link>pilgrimmemoirs.github.io/</link>
     <atom:link href="pilgrimmemoirs.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 May 2016 15:12:05 -0500</pubDate>
-    <lastBuildDate>Sat, 07 May 2016 15:12:05 -0500</lastBuildDate>
+    <pubDate>Sat, 07 May 2016 15:16:54 -0500</pubDate>
+    <lastBuildDate>Sat, 07 May 2016 15:16:54 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -61,9 +61,10 @@
 
 &lt;p&gt; These seasoned Flatiron students came back for more, kicking up what they learned in SE 1 by putting databases and user sessions into their Sinatra apps. This class had a healthy mix of students from three different intro classes, two even coming from a class at the Flatiron HQ in New York.  &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/flatiron/class_4/DSC_0073.jpg&quot; alt=&quot;Flatiron Precollege Program Advanced Class&quot; /&gt;
-&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0073.jpg&quot; alt=&quot;Flatiron Precollege Program Advanced Class&quot; /&gt;
+
   &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot; /&gt;
   &lt;figcaption&gt; The advanced class revolved heavily around group projects.  &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -76,8 +77,9 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;p&gt;  Sometimes, it got so dangerous, breaks to watch old reruns of Supermarket Sweep became necessary. Candied hams and  mother and daughters special for the win.  &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/flatiron/class_4/DSC_0082.jpg&quot; alt=&quot;Demo of student&#39;s business site&quot; /&gt;&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&quot;../images/flatiron/class_4/DSC_0107.jpg&quot; alt=&quot;Final Ping Pong Tournament&quot; /&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0082.jpg&quot; alt=&quot;Demo of student&#39;s business site&quot; /&gt;
+&lt;img src=&quot;../images/flatiron/class_4/DSC_0107.jpg&quot; alt=&quot;Final Ping Pong Tournament&quot; /&gt;
   &lt;figcaption&gt; One 17 year old student was showing off the website of their business &amp;amp; Daily lunch time ping pong matches.  &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -90,9 +92,9 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;p&gt;In the end, our tour guide (who’s normal day job is working as a tech recruiter) came out and surprised us all with swag on swag. We’re talking stickers, pens, notebooks and t-shirts. Ryan hooked us up!  &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/flatiron/class_4/DSC_0136.jpg&quot; alt=&quot;Braintree Tour inside the treehouse&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0148.jpg&quot; alt=&quot;Braintree tour Q and A with a tech recruiter&quot; /&gt;&lt;/p&gt;
 &lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0136.jpg&quot; alt=&quot;Braintree Tour inside the treehouse&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0148.jpg&quot; alt=&quot;Braintree tour Q and A with a tech recruiter&quot; /&gt;
   &lt;img src=&quot;../images/flatiron/class_4/DSC_0143.jpg&quot; alt=&quot;Group photo inside the Braintree offices in Chicago&quot; /&gt;
   &lt;figcaption&gt; A last day treat of getting to tour the Braintree head office. &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -103,8 +105,8 @@ All the above and then some were taken to a whole new level with this class. Let
 &lt;p&gt;As usual, the final days were spent in utter chaos, planning, learning new technologies and BUILDING AN ENTIRE APP FROM SCRATCH IN THREE DAYS! Insanity!   &lt;/p&gt;
 &lt;p&gt;But these kids not only pulled through, they took on major challenges and learned SO much. I couldn’t be more proud of the challenges they undertook and worked with. I don’t know if they realize how much they know  &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/flatiron/class_4/DSC_0158.jpg&quot; alt=&quot;Final Project showing code&quot; /&gt;&lt;/p&gt;
 &lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0158.jpg&quot; alt=&quot;Final Project showing code&quot; /&gt;
   &lt;img src=&quot;../images/flatiron/class_4/DSC_0165.jpg&quot; alt=&quot;Final Project demo of app&quot; /&gt;
   &lt;figcaption&gt; The final final presentations of the summer.  &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -118,16 +120,18 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;p&gt; And guess what!? I even got some time to code! Crazy!  I know Sinatra like the back of my hand and a few wacky looking codepens saved in my account, but I’ll admit, I had way too much fun making projects to demo. #Meowspace4Lyfe &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../images/flatiron/class_4/DSC_0122.jpg&quot; alt=&quot;Serious Group Photo&quot; /&gt;
-&lt;img src=&quot;../images/flatiron/class_4/DSC_0125.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
-&lt;img src=&quot;../images/flatiron/class_4/DSC_0126.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0122.jpg&quot; alt=&quot;Serious Group Photo&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0125.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0126.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt; It is surreal sitting here on my couch at home, on a Monday, when I would normally be welcoming a new class. Instead, I am sending my resume and working on code challenges. &lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../images/flatiron/class_4/DSC_0168.jpg&quot; alt=&quot;Final Flatiron Photo, looking forward to the future&quot; /&gt;&lt;/p&gt;
-
+&lt;figure&gt;
+  
+&lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;I&#39;m not 100% sure what my next steps are, but I am making plans to keep teaching alongside developing.  &lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
