@@ -6,8 +6,8 @@
 </description>
     <link>pilgrimmemoirs.github.io/</link>
     <atom:link href="pilgrimmemoirs.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 May 2016 15:18:41 -0500</pubDate>
-    <lastBuildDate>Sat, 07 May 2016 15:18:41 -0500</lastBuildDate>
+    <pubDate>Sat, 07 May 2016 15:47:05 -0500</pubDate>
+    <lastBuildDate>Sat, 07 May 2016 15:47:05 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -300,9 +300,8 @@ All the above and then some were taken to a whole new level with this class. Let
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot; /&gt;
   &lt;figcaption&gt; Students showing off their code in front of friends and family.  &lt;/figcaption&gt;
-&amp;lt;/figure
-&lt;br /&gt;&lt;br /&gt;
-
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt; Not your average classroom &lt;/h2&gt;
 
@@ -315,9 +314,7 @@ All the above and then some were taken to a whole new level with this class. Let
   &lt;img src=&quot;../images/flatiron/class_1/IMG_1779.jpg&quot; alt=&quot;Codepen used to introduce html and css&quot; /&gt;
   &lt;figcaption&gt; Making code fun with poster making and silly sites  &lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;br /&gt;&lt;br /&gt;
-
-
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt; Final Projects &lt;/h2&gt;
 
@@ -348,7 +345,7 @@ All the above and then some were taken to a whole new level with this class. Let
 
 
 
-&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/figure&gt;
+&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
 </description>
         <pubDate>Fri, 03 Jul 2015 00:25:00 -0500</pubDate>
         <link>pilgrimmemoirs.github.io/first-cohort</link>

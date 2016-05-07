@@ -22,7 +22,7 @@ photo: "../images/flatiron/class_1/IMG_2243bw.jpg"
 <figure>
   <img src="../images/flatiron/class_1/IMG_2223.jpg" alt="students graduating from flatiron precollege program inchicago">
   <figcaption> Students showing off their code in front of friends and family.  </figcaption>
-</figure
+</figure >
 <br><br>
 
 
