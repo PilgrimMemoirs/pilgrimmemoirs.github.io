@@ -49,10 +49,10 @@ photo: "../images/flatiron/class_3/DSC_0019bw.jpg"
 
 <p> Seriously, these kids knocked out AMAZING projects and absorbed so much in the two weeks we had them. It's crazy to think that we still managed to fit in improv games and just be silly with each other.</p>
 
-
-<img src="../images/flatiron/class_3/DSC_00202.jpg" alt="Serious Group Photo">
-<img src="../images/flatiron/class_3/DSC_0023.jpg" alt="Silly Group Photo">
-<img src="../images/flatiron/class_3/DSC_0021.jpg" alt="Silly Group Photo">
-
+<figure>
+  <img src="../images/flatiron/class_3/DSC_00202.jpg" alt="Serious Group Photo">
+  <img src="../images/flatiron/class_3/DSC_0023.jpg" alt="Silly Group Photo">
+  <img src="../images/flatiron/class_3/DSC_0021.jpg" alt="Silly Group Photo">
+</figure>
 
 <p> It was sad to let yet another class go, especially one so unique and diverse in thier talents. That said, I'm incredibly proud of the work they did and how well they all joined forces to make incredible projects! </p><br>
