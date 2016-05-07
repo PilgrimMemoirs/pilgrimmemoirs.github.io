@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fourth Flatiron Class: Advanced SE"
-date:   2015-08-17 05:25:08
+date:   2015-08-17 05:25:00
 categories: Teaching
 tags: Flatiron Teaching Culture
 author: Jamie Pilgrim

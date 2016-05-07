@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First Flatiron Class: Intro To SE"
-date:   2015-07-3 05:25:08
+date:   2015-07-3 05:25:00
 categories: Teaching
 tags: Flatiron 
 author: Jamie Pilgrim

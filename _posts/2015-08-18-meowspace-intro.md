@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Meowspace: Intro"
-date:   2015-08-19 05:25:08
+date:   2015-08-19 05:25:00
 categories: Tutorial
 tags: Meowspace Ember Rails Design Frontend Backend
 author: Jamie Pilgrim

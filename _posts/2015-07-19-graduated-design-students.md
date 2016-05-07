@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Second Flatiron Class: Intro to Design"
-date:   2015-07-19 05:25:08
+date:   2015-07-19 05:25:00
 categories: Teaching
 tags: Flatiron Teaching Culture
 author: Jamie Pilgrim

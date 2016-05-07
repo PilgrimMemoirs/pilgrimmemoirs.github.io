@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome"
-date:   2015-06-27 05:05:08
+date:   2015-06-27 05:05:00
 categories: Culture
 author: Jamie Pilgrim
 comments: true

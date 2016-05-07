@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Third Flatiron Class: Intro to SE"
-date:   2015-07-31 05:25:08
+date:   2015-07-31 05:25:00
 categories: Teaching
 tags: Flatiron Teaching Culture
 author: Jamie Pilgrim
