@@ -19,3 +19,14 @@ layout: default
   {% include comments.html %}
 
 </div>
+
+
+<script>
+  $('div.page-content').scroll(function() {
+      if ($('div.page-content').scrollTop() < 100) {
+          $('#pgtitle').hide();
+      } else {
+          $('#pgtitle').show();
+      }
+  });
+</script>

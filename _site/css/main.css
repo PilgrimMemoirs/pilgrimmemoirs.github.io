@@ -258,6 +258,11 @@ a {
           color: #fafaf5;
           text-decoration: none; }
 
+#pgtitle {
+  padding-top: 20%;
+  display: none;
+  opacity: .8; }
+
 /**
  * Site footer
  */

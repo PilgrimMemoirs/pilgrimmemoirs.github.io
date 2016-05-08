@@ -1,5 +1,6 @@
 <header class="site-header" style="background-image: url({% if page.photo %}{{ page.photo }}{%else%}{{"../images/cats/welcome/codingcatbw.jpg"}}{%endif%})";>
 
+
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
@@ -13,10 +14,11 @@
         {% endfor %}
       </div>
     </nav>
-
-
-
   </div>
+
+<div id="pgtitle"> <h1><strong><mark>{%if page.title%}{{page.title}} {%endif%}</mark></strong></h1> </div>
+
+
 
 <div class="social-icons">
         <ul class="social-media-list">
@@ -39,3 +41,9 @@
         </ul>
       </div>
 </header>
+
+
+
+
+
+

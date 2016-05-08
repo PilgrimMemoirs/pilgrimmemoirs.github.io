@@ -6,33 +6,84 @@
 </description>
     <link>pilgrimmemoirs.github.io/</link>
     <atom:link href="pilgrimmemoirs.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 May 2016 16:12:08 -0500</pubDate>
-    <lastBuildDate>Sat, 07 May 2016 16:12:08 -0500</lastBuildDate>
+    <pubDate>Sat, 07 May 2016 19:44:08 -0500</pubDate>
+    <lastBuildDate>Sat, 07 May 2016 19:44:08 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>My Favorite Placeholder texts &amp; Images</title>
+        <title>My Favorite Placeholder Texts &amp; Images</title>
         <description>&lt;p&gt;&lt;em&gt; As a designer &amp;amp; developer, I&#39;ve spent the past 10+ years needing placeholders while I build designs. While photos of my cats and vanilla Lorem Ipsum do the job, they get stale. Cure the Flava! Here&#39;s a list of my favorite (and easy to use) text and image placeholder generators. &lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2&gt;&lt;strong&gt; The Go-To Ipsums &lt;/strong&gt;&lt;/h2&gt;
+&lt;h2&gt; Why use Placeholders? &lt;/h2&gt;
+&lt;p&gt; &lt;/p&gt;
 
-&lt;p&gt; These seasoned   &lt;/p&gt;
+&lt;h2&gt;The Go-To Ipsums &lt;/h2&gt;
 
-&lt;h4&gt; &lt;a href=&quot;http://kahlidipsum.com&quot;&gt; Kahlid Ipsum &lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt; This ipsum is key &lt;/p&gt;
+&lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://www.catipsum.com/&quot;&gt; Cat Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.catipsum.com/&quot;&gt;
+    &lt;img src=&quot;../images/placeholders/catipsum.png&quot; alt=&quot;Cat Ipsum Screenshot&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt; Let&#39;s kick this off with the obvious, cat ipsum.  &lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;h4&gt; &lt;a href=&quot;http://kahlidipsum.com&quot;&gt; Kahlid Ipsum &lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt; This ipsum is key &lt;/p&gt;
+&lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://loremdimsum.com/&quot;&gt; Lorem Dimsum  &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://loremdimsum.com/&quot;&gt;
+    &lt;img src=&quot;../images/placeholders/dimsumipsum.png&quot; alt=&quot;Lorem Dimsum Screenshot&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt; Clever name and the greatest looking design. This one wins all the lorem awards. Not to mention, it makes me crave take-out. &lt;/figcaption&gt;
+&lt;/figure&gt;
 
+&lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://bluthipsum.com/&quot;&gt; Bluth Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://bluthipsum.com/&quot;&gt;
+    &lt;img src=&quot;../images/placeholders/bluthipsum.png&quot; alt=&quot;Hipster Ipsum Screenshot&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt; If you&#39;ve like got better things to do, like build shelters for misplaced pigeons, then this ipsum has you covered while you create prototypes for all your brilliant idea. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://kahlidipsum.com&quot;&gt; Kahlid Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://kahlidipsum.com&quot;&gt;
+    &lt;img src=&quot;../images/placeholders/kahledipsum.png&quot; alt=&quot;Kahleed Ipsum Screenshot&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt; This ipsum is key &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://hipsum.co/&quot;&gt; Hipster Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://hipsum.co/&quot;&gt;
+    &lt;img src=&quot;../images/placeholders/hipsteripsu.png&quot; alt=&quot;Hipster Ipsum Screenshot&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt; If you&#39;ve like got better things to do, like build shelters for misplaced pigeons, then this ipsum has you covered while you create prototypes for all your brilliant idea. &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://www.cipsum.com/&quot;&gt; Corporate Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;http://www.cipsum.com/&quot;&gt;
+    &lt;img src=&quot;../images/placeholders/corporateipsum.png&quot; alt=&quot;Corporate Ipsum Screenshot&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt; The evolution of this dynamic ipsum adds value and diversity to any strategically planned production application.  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 
-&lt;h2&gt;&lt;strong&gt; The Images &lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; The Images &lt;/h2&gt;
+
+&lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://www.fillmurray.com/&quot;&gt; Fill Murray &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;a href=&quot;https://placekitten.com/&quot;&gt;
+    &lt;img src=&quot;../images/placeholders/fillmurray.png&quot; alt=&quot;Fill Murray Screenshot&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt; Fill Murray: because Bill&#39;s always got your back. &lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h4&gt; &lt;a href=&quot;https://placekitten.com/&quot;&gt; Place Kitten &lt;/a&gt;&lt;/h4&gt;
-
-&lt;h4&gt; &lt;a href=&quot;http://www.fillmurray.com/&quot;&gt; Fill Murray &lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt; This ipsum is key &lt;/p&gt;
 
 &lt;h4&gt; &lt;a href=&quot;http://www.http://lorempixel.com/.com/&quot;&gt; Lorempixel &lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt; For when you need something a little more specific. Yeah, you&#39;re not always guranteed an artful still of America&#39;s  &lt;/p&gt;
