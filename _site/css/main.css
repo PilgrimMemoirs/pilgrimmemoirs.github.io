@@ -384,6 +384,11 @@ a {
     #posts > li * {
       display: inline-block; }
 
+.itc-list h4 {
+  margin-bottom: 5px; }
+.itc-list p {
+  margin-bottom: 60px; }
+
 /* POST FOOTER */
 .bottom {
   width: 100%;
