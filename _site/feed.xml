@@ -4,161 +4,40 @@
     <title>Cats on Code</title>
     <description>The cattiest web development blog on the interwebz.  
 </description>
-    <link>pilgrimmemoirs.github.io/</link>
-    <atom:link href="pilgrimmemoirs.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 May 2016 17:40:56 -0500</pubDate>
-    <lastBuildDate>Thu, 12 May 2016 17:40:56 -0500</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 12 Jul 2018 15:45:36 -0700</pubDate>
+    <lastBuildDate>Thu, 12 Jul 2018 15:45:36 -0700</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
     
       <item>
-        <title>Top Notch Placeholder Text &amp; Images</title>
-        <description>&lt;p&gt;&lt;em&gt; As a designer &amp;amp; developer, I&#39;ve spent the past 10+ years needing placeholders while I build designs. While photos of my cats and vanilla Lorem Ipsum do the job, they get stale. Cure the Flava! Here&#39;s a list of my favorite (and easy to use) text and image placeholder generators. &lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Why use Placeholders? &lt;/h2&gt;
-&lt;p&gt; When building a site. Duh. But really, It&#39;s difficult developing a site when you have a strong vision for the design, yet lack &lt;em&gt;all&lt;/em&gt; the content. &lt;/p&gt;
-
-&lt;p&gt; That&#39;s where placeholders come in! Instead of resorting solid gray boxes and vanilla lorem ipsum. Those days are behind us as the internet caught up with updating the drab tradition. Now there are [probably] thousands, if not bajillions, of options out there! No need to feel overwhelmed, I have chosen 13 top notch placeholder choices for all your text and image needs. Enjoy. &lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h2&gt;The Ipsums &lt;/h2&gt;
-
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;http://www.catipsum.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/catipsum.png&quot; alt=&quot;Cat Ipsum Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; 
-    &lt;strong&gt;&lt;a href=&quot;http://www.catipsum.com/&quot; target=&quot;_blank&quot;&gt; Cat Ipsum &lt;/a&gt; 
-    &lt;/strong&gt;
-  &lt;/h4&gt;
-  &lt;p&gt; Let&#39;s kick this off with the obvious, cat ipsum.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;http://loremdimsum.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/dimsumipsum.png&quot; alt=&quot;Lorem Dimsum Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://loremdimsum.com/&quot; target=&quot;_blank&quot;&gt; Lorem Dimsum  &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; Clever name and the greatest looking design. This one wins all the lorem awards. Not to mention, it makes me crave take-out. &lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;http://bluthipsum.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/bluthipsum.png&quot; alt=&quot;Hipster Ipsum Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://bluthipsum.com/&quot; target=&quot;_blank&quot;&gt; Bluth Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt;If you&#39;ve like got better things to do, like build shelters for misplaced pigeons, then this ipsum has you covered while you create prototypes for all your brilliant idea.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;http://kahlidipsum.com&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/kahledipsum.png&quot; alt=&quot;Kahleed Ipsum Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://kahlidipsum.com&quot; target=&quot;_blank&quot;&gt; Kahlid Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; This ipsum is key &lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;http://hipsum.co/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/hipsteripsu.png&quot; alt=&quot;Hipster Ipsum Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://hipsum.co/&quot; target=&quot;_blank&quot;&gt; Hipster Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; If you&#39;ve like got better things to do, like build shelters for misplaced pigeons, then this ipsum has you covered while you create prototypes for all your brilliant idea. &lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;http://www.cipsum.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/corporateipsum.png&quot; alt=&quot;Corporate Ipsum Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://www.cipsum.com/&quot; target=&quot;_blank&quot;&gt; Corporate Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; The evolution of this dynamic ipsum adds value and diversity to any strategically planned production application.  &lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;http://tinaipsum.rocks/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/tinaipsum.png&quot; alt=&quot;Tina Ipsum Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://tinaipsum.rocks//&quot; target=&quot;_blank&quot;&gt; Tina Ipsum &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; The evolution of this dynamic ipsum adds value and diversity to any strategically planned production application.  &lt;/p&gt;
-&lt;/section&gt;
+        <title>Post Name</title>
+        <description>&lt;p&gt;&lt;em&gt; brief description of post &lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2&gt;The Images&lt;/h2&gt;
+&lt;h2&gt; Title &lt;/h2&gt;
 
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;https://www.fillmurray.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/fillmurray.png&quot; alt=&quot;Fill Murray Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;http://www.fillmurray.com/&quot; target=&quot;_blank&quot;&gt; Fill Murray &lt;/a&gt; &lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; Fill Murray: because Bill&#39;s always got your back. &lt;/p&gt;
-&lt;/section&gt;
+&lt;p&gt; Paragraph  &lt;/p&gt;
 
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;http://place-hoff.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/place-hoff.png&quot; alt=&quot;Place-Hoff Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;https://http://place-hoff.com/&quot;&gt; Place-Hoff &lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; For when you find it hard to replace a photo of Bill, turn to the Hoff instead. Gets the job done.&lt;/p&gt;
-&lt;/section&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;https://www.placecage.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/placecage.png&quot; alt=&quot;Place Cage Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;https://www.placecage.com/&quot;&gt; Place Cage &lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; Ideal for when you need to get revenge against someone or you need motivation to wrangle up your own content.&lt;/p&gt;
-&lt;/section&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0073.jpg&quot; alt=&quot;Flatiron Precollege Program Advanced Class&quot; /&gt;
 
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;https://placeimg.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/placeimg.png&quot; alt=&quot;PlaceIMG Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-  &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;https://placeimg.com/&quot;&gt; PlaceIMG &lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-  &lt;p&gt; In case you&#39;re not in the market for older men, there&#39;s always the option to have your choosing of various categories, such as animals, architecture and nature. Bonus points for this site having a snazzier ux.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;itc-list&quot;&gt;
-  &lt;figure&gt;
-    &lt;a href=&quot;https://placekitten.com/&quot; target=&quot;_blank&quot;&gt;
-      &lt;img src=&quot;../images/placeholders/placekitten.png&quot; alt=&quot;Place Kitten Screenshot&quot; /&gt;
-    &lt;/a&gt;
-  &lt;/figure&gt;
-    &lt;h4&gt; &lt;strong&gt; &lt;a href=&quot;https://placekitten.com/&quot;&gt; Place Kitten &lt;/a&gt;&lt;/strong&gt;&lt;/h4&gt;
-    &lt;p&gt; Then there&#39;s kittens. Because kittens(!). In case you need further reasoning to use a kitten to fill in, even the &lt;a href=&quot;http://petapixel.com/2013/07/30/chicago-tribune-accidentally-publishes-a-cat-placeholder-photo-on-front-page/ &quot; target=&quot;_blank&quot;&gt;&lt;u&gt;Chicago Tribune&lt;/u&gt; does it. &lt;/a&gt;&lt;/p&gt;
-&lt;/section&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot; /&gt;
+  &lt;figcaption&gt; The advanced class revolved heavily around group projects.  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 07 May 2016 00:25:08 -0500</pubDate>
-        <link>pilgrimmemoirs.github.io/fav-ipsum</link>
-        <guid isPermaLink="true">pilgrimmemoirs.github.io/fav-ipsum</guid>
+        <pubDate>Wed, 11 Jul 2018 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/fourth-template</link>
+        <guid isPermaLink="true">http://localhost:4000/fourth-template</guid>
         
-        <category>Design</category>
-        
-        <category>Typography</category>
+        <category>Tags</category>
         
         
-        <category>design</category>
+        <category>Categories</category>
         
       </item>
     
@@ -188,7 +67,7 @@ All the above and then some were taken to a whole new level with this class. Let
 &lt;p&gt;  Sometimes, it got so dangerous, breaks to watch old reruns of Supermarket Sweep became necessary. Candied hams and  mother and daughters special for the win.  &lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0082.jpg&quot; alt=&quot;Demo of student&#39;s business site&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0082.jpg&quot; alt=&quot;Demo of student's business site&quot; /&gt;
 &lt;img src=&quot;../images/flatiron/class_4/DSC_0107.jpg&quot; alt=&quot;Final Ping Pong Tournament&quot; /&gt;
   &lt;figcaption&gt; One 17 year old student was showing off the website of their business &amp;amp; Daily lunch time ping pong matches.  &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -196,7 +75,7 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;h2&gt; Hanging with the Big Devs &lt;/h2&gt;
 
-&lt;p&gt; On our final day I was fortunate enough to arrange a class field trip down to Braintree&#39;s Chicago HQ.  One of the many perks of holding class in the Merchandise Mart is being surrounded by all sorts of legit tech companies, another one may be having Doughnut Vault across the street. &lt;/p&gt;
+&lt;p&gt; On our final day I was fortunate enough to arrange a class field trip down to Braintree's Chicago HQ.  One of the many perks of holding class in the Merchandise Mart is being surrounded by all sorts of legit tech companies, another one may be having Doughnut Vault across the street. &lt;/p&gt;
 
 &lt;p&gt;During our tour of the Braintree’s HQ, we were teased with sights of all the free food, hanging out in their treehouse, devs working in giant bean bags and, best yet, their game room. &lt;/p&gt;
 
@@ -243,12 +122,12 @@ All the above and then some were taken to a whole new level with this class. Let
   
 &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;m not 100% sure what my next steps are, but I am making plans to keep teaching alongside developing.  &lt;/p&gt;
+&lt;p&gt;I'm not 100% sure what my next steps are, but I am making plans to keep teaching alongside developing.  &lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 17 Aug 2015 00:25:00 -0500</pubDate>
-        <link>pilgrimmemoirs.github.io/fourth-class</link>
-        <guid isPermaLink="true">pilgrimmemoirs.github.io/fourth-class</guid>
+        <pubDate>Sun, 16 Aug 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/fourth-class</link>
+        <guid isPermaLink="true">http://localhost:4000/fourth-class</guid>
         
         <category>Flatiron</category>
         
@@ -257,7 +136,7 @@ All the above and then some were taken to a whole new level with this class. Let
         <category>Culture</category>
         
         
-        <category>teaching</category>
+        <category>Teaching</category>
         
       </item>
     
@@ -268,9 +147,9 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;!-- Classtime  --&gt;
 
-&lt;h2&gt;It&#39;s all about the Experience &lt;/h2&gt;
+&lt;h2&gt;It's all about the Experience &lt;/h2&gt;
 
-&lt;p&gt; In June I started teaching high schoolers the ins and out of web development in two week long, intensive courses. Now, they&#39;re by no means experts by the end, however, they left with a solid foundation and, more importantly, enthusiasm to continue learning! &lt;/p&gt;
+&lt;p&gt; In June I started teaching high schoolers the ins and out of web development in two week long, intensive courses. Now, they're by no means experts by the end, however, they left with a solid foundation and, more importantly, enthusiasm to continue learning! &lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_3/DSC_0044.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
@@ -300,7 +179,7 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;h2&gt; Serious Developers &lt;/h2&gt;
 
-&lt;p&gt; Seriously, these kids knocked out AMAZING projects and absorbed so much in the two weeks we had them. It&#39;s crazy to think that we still managed to fit in improv games and just be silly with each other.&lt;/p&gt;
+&lt;p&gt; Seriously, these kids knocked out AMAZING projects and absorbed so much in the two weeks we had them. It's crazy to think that we still managed to fit in improv games and just be silly with each other.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_3/DSC_00202.jpg&quot; alt=&quot;Serious Group Photo&quot; /&gt;
@@ -308,12 +187,12 @@ All the above and then some were taken to a whole new level with this class. Let
   &lt;img src=&quot;../images/flatiron/class_3/DSC_0021.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
 &lt;/figure&gt;
 
-&lt;p&gt; It was sad to let yet another class go, especially one so unique and diverse in thier talents. That said, I&#39;m incredibly proud of the work they did and how well they all joined forces to make incredible projects! &lt;/p&gt;
+&lt;p&gt; It was sad to let yet another class go, especially one so unique and diverse in thier talents. That said, I'm incredibly proud of the work they did and how well they all joined forces to make incredible projects! &lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 31 Jul 2015 00:25:00 -0500</pubDate>
-        <link>pilgrimmemoirs.github.io/third-class</link>
-        <guid isPermaLink="true">pilgrimmemoirs.github.io/third-class</guid>
+        <pubDate>Thu, 30 Jul 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/third-class</link>
+        <guid isPermaLink="true">http://localhost:4000/third-class</guid>
         
         <category>Flatiron</category>
         
@@ -322,7 +201,7 @@ All the above and then some were taken to a whole new level with this class. Let
         <category>Culture</category>
         
         
-        <category>teaching</category>
+        <category>Teaching</category>
         
       </item>
     
@@ -331,7 +210,7 @@ All the above and then some were taken to a whole new level with this class. Let
         <description>&lt;p&gt;&lt;em&gt; When I saw that I was teaching a web design course I was stoked! I thought for sure that it would be a breeze since design and front end development come easy to me, but teaching something that came more intuitively proved to be more challenging than I thought.  &lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2&gt;Doing More Than &#39;Making Things Pretty&#39; &lt;/h2&gt;
+&lt;h2&gt;Doing More Than 'Making Things Pretty' &lt;/h2&gt;
 
 &lt;p&gt; During these two weeks my students went from zero to learning html, css, jquery and design theories. The last four of those days spent implementing what they learned into a final project. Pure craziness! &lt;/p&gt;
 
@@ -345,31 +224,31 @@ All the above and then some were taken to a whole new level with this class. Let
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt; The Final Projects &lt;/h2&gt;
-&lt;p&gt; Squeezing front end coding and design theory into a couple of weeks wasn&#39;t easy, but these kids knocked it out of the park when it came time to make their final projects. It&#39;s the most gratifying feeling when kids pickup and apply tough concepts and code after minimal instruction. &lt;/p&gt;
+&lt;p&gt; Squeezing front end coding and design theory into a couple of weeks wasn't easy, but these kids knocked it out of the park when it came time to make their final projects. It's the most gratifying feeling when kids pickup and apply tough concepts and code after minimal instruction. &lt;/p&gt;
 
 &lt;figure&gt;
 &lt;a href=&quot;http://bitemesandwichmaker.github.io/&quot; target=&quot;_blank&quot;&gt;
   &lt;img src=&quot;../images/flatiron/class_2/IMG_2231.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; Easily one of the most clever and stunning designs done up by our Sammich Maker.  &lt;/figcaption&gt;
-
+  &lt;figcaption&gt; Easily one of the most clever and stunning designs done up by our Sammich Maker.&amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
 &lt;br /&gt;&lt;br /&gt;
 
 &lt;figure&gt;
 &lt;a href=&quot;http://flatirontabloid.github.io/&quot; target=&quot;_blank&quot;&gt;
   &lt;img src=&quot;../images/flatiron/class_2/IMG_2227.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; Digging up all the dirt on our class, Flatiron Tabloid summed up what made our class so great, the culture and general sillyness!  &lt;/figcaption&gt;
-
+  &lt;figcaption&gt; Digging up all the dirt on our class, Flatiron Tabloid summed up what made our class so great, the culture and general sillyness! &amp;lt;/a&amp;gt; &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
 &lt;br /&gt;&lt;br /&gt;
 
 &lt;figure&gt;
 &lt;a href=&quot;http://mrjameraqui.github.io/&quot; target=&quot;_blank&quot;&gt; 
   &lt;img src=&quot;../images/flatiron/class_2/IMG_2230.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; With site that&#39;s out of this world, this team came together to make a beautiful and creative app with a whole lotta pizzaz.    &lt;/figcaption&gt;
-
+  &lt;figcaption&gt; With site that's out of this world, this team came together to make a beautiful and creative app with a whole lotta pizzaz.  &amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
 &lt;br /&gt;&lt;br /&gt;
 
 &lt;h2&gt; Too many goodbyes &lt;/h2&gt;
-&lt;p&gt; Not only did I have to say goodbye to the majority of students in this class, but also my incredible co-teacher Jeff. I really couldn&#39;t have asked for a better bunch to be part of my first month of teaching. &lt;/p&gt;
+&lt;p&gt; Not only did I have to say goodbye to the majority of students in this class, but also my incredible co-teacher Jeff. I really couldn't have asked for a better bunch to be part of my first month of teaching. &lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_2/DSC_0053.jpg&quot; alt=&quot;co-teacher Jeff&quot; /&gt;
@@ -382,9 +261,9 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
 </description>
-        <pubDate>Sun, 19 Jul 2015 00:25:00 -0500</pubDate>
-        <link>pilgrimmemoirs.github.io/graduated-design-students</link>
-        <guid isPermaLink="true">pilgrimmemoirs.github.io/graduated-design-students</guid>
+        <pubDate>Sat, 18 Jul 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/graduated-design-students</link>
+        <guid isPermaLink="true">http://localhost:4000/graduated-design-students</guid>
         
         <category>Flatiron</category>
         
@@ -393,7 +272,7 @@ All the above and then some were taken to a whole new level with this class. Let
         <category>Culture</category>
         
         
-        <category>teaching</category>
+        <category>Teaching</category>
         
       </item>
     
@@ -405,7 +284,7 @@ All the above and then some were taken to a whole new level with this class. Let
 &lt;h2&gt; Learn. Love. Code. &lt;/h2&gt;
 
 &lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebs to see.&lt;/p&gt;
-&lt;p&gt; Having never formally taught teenagers, I was nervous on how quickly they&#39;d pick up the material or if they&#39;d even be interested in any of it. With the help of a fantastic co-teacher, we quickly built a class that was not only excited to come to class, but also code!   &lt;/p&gt;
+&lt;p&gt; Having never formally taught teenagers, I was nervous on how quickly they'd pick up the material or if they'd even be interested in any of it. With the help of a fantastic co-teacher, we quickly built a class that was not only excited to come to class, but also code!   &lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot; /&gt;
@@ -415,9 +294,9 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;h2&gt; Not your average classroom &lt;/h2&gt;
 
-&lt;p&gt; Sure, kids were spending full days inside a room learning things. You&#39;d think it&#39;d be a lot like school, but it wasn&#39;t. And we made sure of it.  &lt;/p&gt;
+&lt;p&gt; Sure, kids were spending full days inside a room learning things. You'd think it'd be a lot like school, but it wasn't. And we made sure of it.  &lt;/p&gt;
 
-&lt;p&gt; Classroom culture was key and easily one of the most imporant parts of our classes. We made sure to have plenty of breaks, do improv and have a classroom that wouldn&#39;t be afraid of being silly in front of each other. &lt;/p&gt;
+&lt;p&gt; Classroom culture was key and easily one of the most imporant parts of our classes. We made sure to have plenty of breaks, do improv and have a classroom that wouldn't be afraid of being silly in front of each other. &lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/flatiron/class_1/IMG_1659.jpg&quot; alt=&quot;student drawing code example on poster&quot; /&gt;
@@ -428,27 +307,27 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;h2&gt; Final Projects &lt;/h2&gt;
 
-&lt;p&gt; The first round of final projects set the bar high! Before starting I thought it was crazy making kids build an app in only a couple days. But they constantly suprised me and put these projects together like they&#39;d been coding for years. &lt;/p&gt;
+&lt;p&gt; The first round of final projects set the bar high! Before starting I thought it was crazy making kids build an app in only a couple days. But they constantly suprised me and put these projects together like they'd been coding for years. &lt;/p&gt;
 
 &lt;figure&gt;
   &lt;a href=&quot;http://eatyourfeelingsapp.herokuapp.com&quot; target=&quot;_blank&quot;&gt;
   &lt;img src=&quot;../images/flatiron/class_1/IMG_2186.JPG&quot; alt=&quot;The next generation of female coders&quot; /&gt;
-  &lt;figcaption&gt; The brilliant team behind the Eat Your Feelings final project app.  &lt;/figcaption&gt;
-
+  &lt;figcaption&gt; The brilliant team behind the Eat Your Feelings final project app. &amp;lt;/a&amp;gt; &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
 &lt;br /&gt;&lt;br /&gt;
 
 &lt;figure&gt;
   &lt;a href=&quot;http://greatest-project-evur.herokuapp.com/&quot; target=&quot;_blank&quot;&gt;
   &lt;img src=&quot;../images/flatiron/class_1/IMG_2244.JPG&quot; alt=&quot;The next generation of female coders&quot; /&gt;
-  &lt;figcaption&gt; The always entertaining team behind the Dr Excuse Generator  final project app. &lt;/figcaption&gt;
-
+  &lt;figcaption&gt; The always entertaining team behind the Dr Excuse Generator  final project app. &amp;lt;/a&amp;gt;&lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
 &lt;br /&gt;&lt;br /&gt;
 
 &lt;figure&gt;
   &lt;a href=&quot;http://punnerator.herokuapp.com/&quot; target=&quot;_blank&quot;&gt;
   &lt;img src=&quot;../images/flatiron/class_1/IMG_2184.JPG&quot; alt=&quot;The team behind punnerator&quot; /&gt;
-  &lt;figcaption&gt; The punny team that built  The Punnerator  as their final project had way too much fun! &lt;/figcaption&gt;
-
+  &lt;figcaption&gt; The punny team that built  The Punnerator  as their final project had way too much fun! &amp;lt;/a&amp;gt;&lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
 &lt;br /&gt;&lt;br /&gt;
 
 
@@ -457,20 +336,20 @@ All the above and then some were taken to a whole new level with this class. Let
 
 &lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
 </description>
-        <pubDate>Fri, 03 Jul 2015 00:25:00 -0500</pubDate>
-        <link>pilgrimmemoirs.github.io/first-cohort</link>
-        <guid isPermaLink="true">pilgrimmemoirs.github.io/first-cohort</guid>
+        <pubDate>Thu, 02 Jul 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/first-cohort</link>
+        <guid isPermaLink="true">http://localhost:4000/first-cohort</guid>
         
         <category>Flatiron</category>
         
         
-        <category>teaching</category>
+        <category>Teaching</category>
         
       </item>
     
       <item>
         <title>Welcome</title>
-        <description>&lt;p&gt;&lt;em&gt; The internet would not be where it is today if it wasn&#39;t for the powers of code and cats. It was only a matter of time before a blog was created to join their forces and explain the mysteries of each.&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt; The internet would not be where it is today if it wasn't for the powers of code and cats. It was only a matter of time before a blog was created to join their forces and explain the mysteries of each.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;figure&gt;
@@ -478,7 +357,7 @@ All the above and then some were taken to a whole new level with this class. Let
 &lt;/figure&gt;
 &lt;h2&gt; Cats and thier code &lt;/h2&gt;
 
-&lt;p&gt; Hi and welcome! I&#39;m Jamie, the human behind the blog. I&#39;m starting this site as a way to not only help others get into web development, but to also help clarify the all the new web stuff I learn. &lt;/p&gt;
+&lt;p&gt; Hi and welcome! I'm Jamie, the human behind the blog. I'm starting this site as a way to not only help others get into web development, but to also help clarify the all the new web stuff I learn. &lt;/p&gt;
 
 &lt;p&gt;I recently started teaching web development courses to high schoolers this summer and am finding myself learning a tremendous amount while I jot my notes and lesson plan for the next day. I figured I would take what I have been working on to the next level and churn them out into posts to share.&lt;/p&gt;
 
@@ -493,12 +372,12 @@ All the above and then some were taken to a whole new level with this class. Let
 &lt;p&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 27 Jun 2015 00:05:00 -0500</pubDate>
-        <link>pilgrimmemoirs.github.io/welcome</link>
-        <guid isPermaLink="true">pilgrimmemoirs.github.io/welcome</guid>
+        <pubDate>Fri, 26 Jun 2015 22:05:00 -0700</pubDate>
+        <link>http://localhost:4000/welcome</link>
+        <guid isPermaLink="true">http://localhost:4000/welcome</guid>
         
         
-        <category>culture</category>
+        <category>Culture</category>
         
       </item>
     

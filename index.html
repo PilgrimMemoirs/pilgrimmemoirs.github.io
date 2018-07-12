@@ -21,9 +21,11 @@ layout: default
     {% endfor %}
   </ul>
 
-  <h2>{% if sites.posts.published == false %} 
-    {{post.title}}
-  {% endif %} </h2>
+  <h2>
+    {% if sites.posts.published == false %}
+      {{post.title}}
+    {% endif %}
+  </h2>
 
   <h2><strong>Popular Topics</strong></h2>
   <ul id="tag-list">
