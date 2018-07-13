@@ -6,43 +6,9 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Jul 2018 17:13:18 -0700</pubDate>
-    <lastBuildDate>Thu, 12 Jul 2018 17:13:18 -0700</lastBuildDate>
+    <pubDate>Thu, 12 Jul 2018 17:15:59 -0700</pubDate>
+    <lastBuildDate>Thu, 12 Jul 2018 17:15:59 -0700</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
-    
-      <item>
-        <title></title>
-        <description>&lt;p&gt;&lt;em&gt; brief description of post &lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Title &lt;/h2&gt;
-
-&lt;p&gt; Paragraph  &lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
-  &lt;img src=&quot;../images/img.jpg&quot; alt=&quot;alt text&quot; /&gt;
-
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot; /&gt;
-  &lt;figcaption&gt; Caption  &lt;/figcaption&gt;
-=======
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0073.jpg&quot; alt=&quot;Flatiron Precollege Program Advanced Class&quot; /&gt;
-
-  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot; /&gt;
-  &lt;figcaption&gt; The advanced class revolved heavily around group projects.  &lt;/figcaption&gt;
-&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; origin
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 12 Jul 2018 17:13:18 -0700</pubDate>
-        <link>http://localhost:4000/2018-07-12-fourth-template</link>
-        <guid isPermaLink="true">http://localhost:4000/2018-07-12-fourth-template</guid>
-        
-        
-      </item>
     
       <item>
         <title>Fourth Flatiron Class: Advanced SE</title>
