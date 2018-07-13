@@ -1,0 +1,49 @@
+<header class="site-header" style="background-image: url({% if page.photo %}{{ page.photo }}{%else%}{{"../images/cats/welcome/codingcatbw.jpg"}}{%endif%})";>
+
+
+  <div class="wrapper">
+
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | truncatewords: 1 | remove:'...' }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+
+<div id="pgtitle"> <h1><strong><mark>{%if page.title%}{{page.title}} {%endif%}</mark></strong></h1> </div>
+
+
+
+<div class="social-icons">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="username">Github</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="username">Twitter</span>
+            </a>
+          </li>
+          {% endif %}
+          <li><a href="mailto:{{ site.email }}">Email</a></li>
+        </ul>
+      </div>
+</header>
+
+
+
+
+
+

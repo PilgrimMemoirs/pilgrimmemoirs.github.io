@@ -1,0 +1,24 @@
+  <div id="next-prev">
+  {% if page.previous %}
+    <div id="prev"> 
+    <a href="{{page.previous.url}}"> 
+      <h4>Previous Post: </h4>
+      <h3>{{page.previous.title}} </h3>
+      <h4> {{ page.previous.date | date: "%B %-d, %Y"}}</h4>
+      </a>
+    </div>
+  {%endif%}
+
+
+  {% if page.next %}
+    <div id="next">
+      <a href="{{page.next.url}}">
+        <h4>Next Post:</h4>
+        <h3> {{ page.next.title}} </h3>
+        <h4> {{ page.next.date | date: "%B %-d, %Y"}} </h4>
+      </a>
+    </div>
+  {% endif %}
+  <div class="clearfix"></div>
+  </div>
+
