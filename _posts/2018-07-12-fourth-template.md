@@ -7,6 +7,7 @@ tags: Tags
 author: Jamie Pilgrim
 comments: true
 photo: "../images/flatiron/class_4/DSC_0121.jpg"
+published: false
 ---
 
 
@@ -21,9 +22,9 @@ photo: "../images/flatiron/class_4/DSC_0121.jpg"
 <br>
 
 <figure>
-  <img src="../images/flatiron/class_4/DSC_0073.jpg" alt="Flatiron Precollege Program Advanced Class">
+  <img src="../images/img.jpg" alt="alt text">
 
   <img src="../images/flatiron/class_4/DSC_0088.jpg" alt="Group work">
-  <figcaption> The advanced class revolved heavily around group projects.  </figcaption>
+  <figcaption> Caption  </figcaption>
 </figure>
 <br><br>
