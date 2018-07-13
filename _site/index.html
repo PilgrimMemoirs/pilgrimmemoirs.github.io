@@ -1,100 +1,308 @@
-<!doctype html>
-<html lang="en-us">
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-<link rel="stylesheet" type="text/css" href="styles/normalize.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="javascript/scrollingnav.js"></script>
-<script src="javascript/windowheight.js"></script>
-<link rel="shortcut icon" type="image/png" href="img/coralfavicon.png"/>
-<title>Jamie Pilgrim | I'll Bring the Donuts </title>
-<!-- [if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script><![end if]-->
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
+  <title>Cats on Code</title>
+  <meta name="description" content="The cattiest web development blog on the interwebz.  
+"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="canonical" href="http://localhost:4000/">
+
+  <link rel="alternate" type="application/rss+xml" title="Cats on Code" href="http://localhost:4000/feed.xml" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+ 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
 </head>
 
-<body>  
-<nav>
-  <a href="#"><img id="logo" src="img/simplelogo.png" alt="Donut Logo" height="75" width="75"></a>
-  <ul>
-    <li><a href="#about"> About </a></li>
-    <li><a href="#projects"> Projects </a></li>
-    <li><a href="#"><img src="img/simplelogo.png" alt="Donut Logo" height="75" width="75"></a><li>
-    <li><a href="#resume"> Resume </a></li>
-    <li><a href="#contact"> Contact </a></li>
-  </ul>
-</nav>
-<section class="module parallax" id="parallax-1">
-  <div class="container"></div>
-</section>
 
-<a name ="about">
-<section class="module content">
-  <div class="container row">
+  <body>
 
-    <h2> Hi! <br>  I'm Jamie! </h2>
-    <h4 class="center"> Web Developer & Designer </h4>
-
-    <p> I make web apps that are both beautiful and functional, inside and out. With a strong background in design paired with an ever growing technical skillset, my creativity knows no bounds.  </p>
-    <p> Currently located in Chicago, after I relocated to attend Dev Bootcamp, I am always looking for new opportunities while I freelance.  </p>
+    <header class="site-header" style="background-image: url(../images/cats/welcome/codingcatbw.jpg)";>
 
 
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Cats on Code</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/posts/">Posts</a>
+          
+        
+          
+          <a class="page-link" href="/topics/">Topics</a>
+          
+        
+      </div>
+    </nav>
   </div>
-</section>
 
-<a name ="projects">
-<section class="module content">
-  <div class="container">
-    <h2> Projects & Work </h2>
-    <p class="center"> Coming Soon </p>
-<!--     <ul>
-      <li> Raft </li>
-      <li> Humble Hearts </li>
-      <li> 
-    </ul> -->
-  <a name ="resume">
-  </div>
-</section>
+<div id="pgtitle"> <h1><strong><mark></mark></strong></h1> </div>
 
 
-<section class="module parallax" id="parallax-2">
-  <div class="container">
 
-    <figure id="resume"><a href="img/JamiePilgrimResume2015.pdf" target="_blank"><img src="img/JamiePilgrimResume2015.jpg"></a></figure>
+<div class="social-icons">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/pilgrimmemoirs">
+              <span class="username">Github</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/pilgrimmemoirs">
+              <span class="username">Twitter</span>
+            </a>
+          </li>
+          
+          <li><a href="mailto:hello@jamiepilgrim.com">Email</a></li>
+        </ul>
+      </div>
+</header>
+
+
+
+
+
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="home">
+  <h1 id="title" class="page-heading"><span>Cats</span><br> on <br><span>Code</span></h1>
+
+  <h3> The cattiest code blog, sharing experiences and code knowledge around fullstack web design and development.</h3>
+
+  <h2><strong>Latest Posts</strong></h2>
+
+  <ul class="post-list" id="index-list">
     
-  </div>
-</section>
+      <li>
+        <h2>
+          <a class="post-link" href="/2018-07-12-fourth-template"></a>
+        </h2>
+        <h3> July 12, 2018 </h3>
+        <h4></h4>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/fourth-class">Fourth Flatiron Class: Advanced SE</a>
+        </h2>
+        <h3> August 16, 2015 </h3>
+        <h4><p><em> After eight weeks of teaching and getting to know some incredible kids, I have ended my summer teaching fellowship with Flatiron School with my final class, Advanced Software Engineering....</h4>
+      </li>
+    
+      <li>
+        <h2>
+          <a class="post-link" href="/third-class">Third Flatiron Class: Intro to SE</a>
+        </h2>
+        <h3> July 30, 2015 </h3>
+        <h4><p><em> My second round of the Intro to Software Engineering class with my new co-teacher was yet another successful chapter in this amazing experience.  </em></p>
+<p><br /></p>
 
-<a name ="contact">
-<section class="module content">
-  <div class="container">
-  <h2> Contact </h2>
+</h4>
+      </li>
+    
+  </ul>
 
-  <p class="center"> hello@jamiepilgrim.com </p>
+  <h2>
+    
+  </h2>
 
+  <h2><strong>Popular Topics</strong></h2>
+  <ul id="tag-list">
+  
+    
+    
 
-  </div>
-</section>
+    <li><h4>FLATIRON</h4></li>
+    <!-- <ul>
+    
+      
+      <li>
+        <a href="/fourth-class">Fourth Flatiron Class: Advanced SE</a>
+        <span class="date">August 16, 2015</span>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/third-class">Third Flatiron Class: Intro to SE</a>
+        <span class="date">July 30, 2015</span>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/graduated-design-students">Second Flatiron Class: Intro to Design</a>
+        <span class="date">July 18, 2015</span>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/first-cohort">First Flatiron Class: Intro To SE</a>
+        <span class="date">July 2, 2015</span>
+      </li>
+      
+    
+    </ul> -->
+  
+    
+    
+
+    <li><h4>TEACHING</h4></li>
+    <!-- <ul>
+    
+      
+      <li>
+        <a href="/fourth-class">Fourth Flatiron Class: Advanced SE</a>
+        <span class="date">August 16, 2015</span>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/third-class">Third Flatiron Class: Intro to SE</a>
+        <span class="date">July 30, 2015</span>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/graduated-design-students">Second Flatiron Class: Intro to Design</a>
+        <span class="date">July 18, 2015</span>
+      </li>
+      
+    
+    </ul> -->
+  
+    
+    
+
+    <li><h4>CULTURE</h4></li>
+    <!-- <ul>
+    
+      
+      <li>
+        <a href="/fourth-class">Fourth Flatiron Class: Advanced SE</a>
+        <span class="date">August 16, 2015</span>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/third-class">Third Flatiron Class: Intro to SE</a>
+        <span class="date">July 30, 2015</span>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/graduated-design-students">Second Flatiron Class: Intro to Design</a>
+        <span class="date">July 18, 2015</span>
+      </li>
+      
+    
+    </ul> -->
+  
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+</div>
+
+      </div>
+    </div>
 
     <footer>
-      <h4> &copy; 2015 Jamie Pilgrim </h4>
-      <ul>
-        <li><a href="http://www.twitter.com/pilgrimmemoirs" target="_blank">
-          <img src="img/twitter.png"></a>
-        </li>
-        <li><a href="http://www.github.com/pilgrimmemoirs" target="_blank">
-          <img src="img/github-2.png"></a>
-        </li>
-        <li><a href="https://dribbble.com/bringingdonuts" target="_blank">
-          <img src="img/dribbble.png"></a>
-        </li>
-        <li><a href="http://www.linkedin.com/in/jamiepilgrim" target="_blank">
-          <img src="img/linkedin.png"></a>
-        </li>
-        <li><a href="mailto:hello@jamiepilgrim.com" target="_blank">
-          <img src="img/email.png"></a>
-        </li>
-      </ul>
-    </footer> 
+  <h3 id="menu"><a> Menu </a></h3>
+  <ul>
+    <div class="mobile-nav">
+      <li><h4><a href="/"> Home </a></h4></li>
+        
+          
+          <li><h4><a class="page-link" href="/about/">About</a></h4></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li><h4><a class="page-link" href="/posts/">Posts</a></h4></li>
+          
+        
+          
+          <li><h4><a class="page-link" href="/topics/">Topics</a></h4></li>
+          
+        
+        
+          <li><h4>
+            <a href="https://github.com/pilgrimmemoirs">
+              <span class="username">Github</span>
+            </a></h4>
+          </li>
+          
 
-</body>
+          
+          <li>
+            <h4><a href="https://twitter.com/pilgrimmemoirs">
+              <span class="username">Twitter</span>
+            </a></h4>
+          </li>
+          
+          <li><h4><a href="mailto:hello@jamiepilgrim.com">Email</a></h4></li>
+        <li id="down"><h4><a> Down </a></h4></li>
+    </div>
+  </ul>
+
+<script type="text/javascript">
+  $('#menu').click(function() {
+    $('footer ul').css("display", "block");
+    console.log("hey");
+  });
+
+  $('#down').click(function(){
+    $('footer ul').css('display', 'none');
+    console.log("Whoah!")
+  })
+</script>
+</footer>
+   
+  </body>
+
 </html>

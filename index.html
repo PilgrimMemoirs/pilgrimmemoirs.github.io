@@ -1,100 +1,51 @@
-<!doctype html>
-<html lang="en-us">
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-<link rel="stylesheet" type="text/css" href="styles/normalize.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="javascript/scrollingnav.js"></script>
-<script src="javascript/windowheight.js"></script>
-<link rel="shortcut icon" type="image/png" href="img/coralfavicon.png"/>
-<title>Jamie Pilgrim | I'll Bring the Donuts </title>
-<!-- [if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script><![end if]-->
-</head>
+---
+layout: default
+---
 
-<body>  
-<nav>
-  <a href="#"><img id="logo" src="img/simplelogo.png" alt="Donut Logo" height="75" width="75"></a>
-  <ul>
-    <li><a href="#about"> About </a></li>
-    <li><a href="#projects"> Projects </a></li>
-    <li><a href="#"><img src="img/simplelogo.png" alt="Donut Logo" height="75" width="75"></a><li>
-    <li><a href="#resume"> Resume </a></li>
-    <li><a href="#contact"> Contact </a></li>
+<div class="home">
+  <h1 id="title" class="page-heading"><span>Cats</span><br> on <br><span>Code</span></h1>
+
+  <h3> The cattiest code blog, sharing experiences and code knowledge around fullstack web design and development.</h3>
+
+  <h2><strong>Latest Posts</strong></h2>
+
+  <ul class="post-list" id="index-list">
+    {% for post in site.posts  limit:3 %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url}}">{{ post.title }}</a>
+        </h2>
+        <h3> {{ post.date | date: "%B %-d, %Y"  }} </h3>
+        <h4>{{ post.excerpt | truncatewords: 30}}</h4>
+      </li>
+    {% endfor %}
   </ul>
-</nav>
-<section class="module parallax" id="parallax-1">
-  <div class="container"></div>
-</section>
 
-<a name ="about">
-<section class="module content">
-  <div class="container row">
+  <h2>
+    {% if sites.posts.published == false %}
+      {{post.title}}
+    {% endif %}
+  </h2>
 
-    <h2> Hi! <br>  I'm Jamie! </h2>
-    <h4 class="center"> Web Developer & Designer </h4>
+  <h2><strong>Popular Topics</strong></h2>
+  <ul id="tag-list">
+  {% for tag in site.tags %}
+    {% assign t = tag | first %}
+    {% assign posts = tag | last %}
 
-    <p> I make web apps that are both beautiful and functional, inside and out. With a strong background in design paired with an ever growing technical skillset, my creativity knows no bounds.  </p>
-    <p> Currently located in Chicago, after I relocated to attend Dev Bootcamp, I am always looking for new opportunities while I freelance.  </p>
-
-
-  </div>
-</section>
-
-<a name ="projects">
-<section class="module content">
-  <div class="container">
-    <h2> Projects & Work </h2>
-    <p class="center"> Coming Soon </p>
-<!--     <ul>
-      <li> Raft </li>
-      <li> Humble Hearts </li>
-      <li> 
+    <li><h4>{{ t | upcase }}</h4></li>
+    <!-- <ul>
+    {% for post in posts %}
+      {% if post.tags contains t %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+      </li>
+      {% endif %}
+    {% endfor %}
     </ul> -->
-  <a name ="resume">
-  </div>
-</section>
+  {% endfor %}
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-
-<section class="module parallax" id="parallax-2">
-  <div class="container">
-
-    <figure id="resume"><a href="img/JamiePilgrimResume2015.pdf" target="_blank"><img src="img/JamiePilgrimResume2015.jpg"></a></figure>
-    
-  </div>
-</section>
-
-<a name ="contact">
-<section class="module content">
-  <div class="container">
-  <h2> Contact </h2>
-
-  <p class="center"> hello@jamiepilgrim.com </p>
-
-
-  </div>
-</section>
-
-    <footer>
-      <h4> &copy; 2015 Jamie Pilgrim </h4>
-      <ul>
-        <li><a href="http://www.twitter.com/pilgrimmemoirs" target="_blank">
-          <img src="img/twitter.png"></a>
-        </li>
-        <li><a href="http://www.github.com/pilgrimmemoirs" target="_blank">
-          <img src="img/github-2.png"></a>
-        </li>
-        <li><a href="https://dribbble.com/bringingdonuts" target="_blank">
-          <img src="img/dribbble.png"></a>
-        </li>
-        <li><a href="http://www.linkedin.com/in/jamiepilgrim" target="_blank">
-          <img src="img/linkedin.png"></a>
-        </li>
-        <li><a href="mailto:hello@jamiepilgrim.com" target="_blank">
-          <img src="img/email.png"></a>
-        </li>
-      </ul>
-    </footer> 
-
-</body>
-</html>
+</div>

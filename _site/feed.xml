@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cats on Code</title>
+    <description>The cattiest web development blog on the interwebz.  
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 12 Jul 2018 17:13:18 -0700</pubDate>
+    <lastBuildDate>Thu, 12 Jul 2018 17:13:18 -0700</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;&lt;em&gt; brief description of post &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Title &lt;/h2&gt;
+
+&lt;p&gt; Paragraph  &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+  &lt;img src=&quot;../images/img.jpg&quot; alt=&quot;alt text&quot; /&gt;
+
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot; /&gt;
+  &lt;figcaption&gt; Caption  &lt;/figcaption&gt;
+=======
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0073.jpg&quot; alt=&quot;Flatiron Precollege Program Advanced Class&quot; /&gt;
+
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot; /&gt;
+  &lt;figcaption&gt; The advanced class revolved heavily around group projects.  &lt;/figcaption&gt;
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; origin
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Jul 2018 17:13:18 -0700</pubDate>
+        <link>http://localhost:4000/2018-07-12-fourth-template</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-07-12-fourth-template</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fourth Flatiron Class: Advanced SE</title>
+        <description>&lt;p&gt;&lt;em&gt; After eight weeks of teaching and getting to know some incredible kids, I have ended my summer teaching fellowship with Flatiron School with my final class, Advanced Software Engineering. &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Getting Advanced &lt;/h2&gt;
+
+&lt;p&gt; These seasoned Flatiron students came back for more, kicking up what they learned in SE 1 by putting databases and user sessions into their Sinatra apps. This class had a healthy mix of students from three different intro classes, two even coming from a class at the Flatiron HQ in New York.  &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0073.jpg&quot; alt=&quot;Flatiron Precollege Program Advanced Class&quot; /&gt;
+
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot; /&gt;
+  &lt;figcaption&gt; The advanced class revolved heavily around group projects.  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Upping the Game &lt;/h2&gt;
+
+&lt;p&gt;The Ninja. The Table Tennis. The Stickers. The Code. &lt;br /&gt;
+All the above and then some were taken to a whole new level with this class. Lets just say, it got vicious. Not gonna lie, databases make you live dangerously. &lt;/p&gt;
+
+&lt;p&gt;  Sometimes, it got so dangerous, breaks to watch old reruns of Supermarket Sweep became necessary. Candied hams and  mother and daughters special for the win.  &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0082.jpg&quot; alt=&quot;Demo of student's business site&quot; /&gt;
+&lt;img src=&quot;../images/flatiron/class_4/DSC_0107.jpg&quot; alt=&quot;Final Ping Pong Tournament&quot; /&gt;
+  &lt;figcaption&gt; One 17 year old student was showing off the website of their business &amp;amp; Daily lunch time ping pong matches.  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Hanging with the Big Devs &lt;/h2&gt;
+
+&lt;p&gt; On our final day I was fortunate enough to arrange a class field trip down to Braintree's Chicago HQ.  One of the many perks of holding class in the Merchandise Mart is being surrounded by all sorts of legit tech companies, another one may be having Doughnut Vault across the street. &lt;/p&gt;
+
+&lt;p&gt;During our tour of the Braintree’s HQ, we were teased with sights of all the free food, hanging out in their treehouse, devs working in giant bean bags and, best yet, their game room. &lt;/p&gt;
+
+&lt;p&gt;In the end, our tour guide (who’s normal day job is working as a tech recruiter) came out and surprised us all with swag on swag. We’re talking stickers, pens, notebooks and t-shirts. Ryan hooked us up!  &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0136.jpg&quot; alt=&quot;Braintree Tour inside the treehouse&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0148.jpg&quot; alt=&quot;Braintree tour Q and A with a tech recruiter&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0143.jpg&quot; alt=&quot;Group photo inside the Braintree offices in Chicago&quot; /&gt;
+  &lt;figcaption&gt; A last day treat of getting to tour the Braintree head office. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; The Final Finals &lt;/h2&gt;
+
+&lt;p&gt;As usual, the final days were spent in utter chaos, planning, learning new technologies and BUILDING AN ENTIRE APP FROM SCRATCH IN THREE DAYS! Insanity!   &lt;/p&gt;
+&lt;p&gt;But these kids not only pulled through, they took on major challenges and learned SO much. I couldn’t be more proud of the challenges they undertook and worked with. I don’t know if they realize how much they know  &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0158.jpg&quot; alt=&quot;Final Project showing code&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0165.jpg&quot; alt=&quot;Final Project demo of app&quot; /&gt;
+  &lt;figcaption&gt; The final final presentations of the summer.  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Learned. Loved. Coded. &lt;/h2&gt;
+
+&lt;p&gt; This summer, I feel like I learned just as much as these kids did. I had never been great with explaining my code or how ‘things’ worked, but this summer reaaaally stretched me to do so.  It has been an invaluable experience with instilling syntax, concepts and various technologies with myself. &lt;/p&gt;
+
+&lt;p&gt; While I was absolutely stretched outside of my comfort zone, I loved every minute of it. I can’t remember a time I worked this hard or this many hours and had no complaints. It was never easy, but knowing I was making an impact on 30+ kids lives was exceptionally rewarding.   &lt;/p&gt;
+
+&lt;p&gt; And guess what!? I even got some time to code! Crazy!  I know Sinatra like the back of my hand and a few wacky looking codepens saved in my account, but I’ll admit, I had way too much fun making projects to demo. #Meowspace4Lyfe &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0122.jpg&quot; alt=&quot;Serious Group Photo&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0125.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0126.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt; It is surreal sitting here on my couch at home, on a Monday, when I would normally be welcoming a new class. Instead, I am sending my resume and working on code challenges. &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;I'm not 100% sure what my next steps are, but I am making plans to keep teaching alongside developing.  &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Aug 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/fourth-class</link>
+        <guid isPermaLink="true">http://localhost:4000/fourth-class</guid>
+        
+        <category>Flatiron</category>
+        
+        <category>Teaching</category>
+        
+        <category>Culture</category>
+        
+        
+        <category>Teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Third Flatiron Class: Intro to SE</title>
+        <description>&lt;p&gt;&lt;em&gt; My second round of the Intro to Software Engineering class with my new co-teacher was yet another successful chapter in this amazing experience.  &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!-- Classtime  --&gt;
+
+&lt;h2&gt;It's all about the Experience &lt;/h2&gt;
+
+&lt;p&gt; In June I started teaching high schoolers the ins and out of web development in two week long, intensive courses. Now, they're by no means experts by the end, however, they left with a solid foundation and, more importantly, enthusiasm to continue learning! &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0044.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0038.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
+  &lt;figcaption&gt; Forming groups and whiteboarding final project ideas  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; The Code is Incidental &lt;/h2&gt;
+
+&lt;p&gt;In our classes, as molded by many other coding bootcamps, the culture is just as essential as the code itself. The goal is not only to get kids engaged in coding, but to also form strong relationships with thier peers. Doing so  helps so so soooooo much more for building a strong classroom culture that opens up discussion, questions and self discovering. &lt;/p&gt;
+
+&lt;p&gt; The less dependant the students become on me and the more the rely on thier peers, the less work to do. Win win. &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Final Projects &lt;/h2&gt;
+
+&lt;p&gt; In the end, we had four AMAZING final projects that were bulit in only a couple days, including ideation to the final  touches. Each group had their own twist on what they chose to focus on. Having a lot of natural designers, many latched on to displaying their content beautifly while other had very intericite logic  on thier backend. &lt;/p&gt;
+
+&lt;!-- Science Fair &amp; Graduation --&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0030.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0041.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
+  &lt;figcaption&gt; Final projects are setup for demonstration to visiting family and guests. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Serious Developers &lt;/h2&gt;
+
+&lt;p&gt; Seriously, these kids knocked out AMAZING projects and absorbed so much in the two weeks we had them. It's crazy to think that we still managed to fit in improv games and just be silly with each other.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_00202.jpg&quot; alt=&quot;Serious Group Photo&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0023.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0021.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt; It was sad to let yet another class go, especially one so unique and diverse in thier talents. That said, I'm incredibly proud of the work they did and how well they all joined forces to make incredible projects! &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/third-class</link>
+        <guid isPermaLink="true">http://localhost:4000/third-class</guid>
+        
+        <category>Flatiron</category>
+        
+        <category>Teaching</category>
+        
+        <category>Culture</category>
+        
+        
+        <category>Teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Second Flatiron Class: Intro to Design</title>
+        <description>&lt;p&gt;&lt;em&gt; When I saw that I was teaching a web design course I was stoked! I thought for sure that it would be a breeze since design and front end development come easy to me, but teaching something that came more intuitively proved to be more challenging than I thought.  &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Doing More Than 'Making Things Pretty' &lt;/h2&gt;
+
+&lt;p&gt; During these two weeks my students went from zero to learning html, css, jquery and design theories. The last four of those days spent implementing what they learned into a final project. Pure craziness! &lt;/p&gt;
+
+&lt;p&gt; I was lucky enough with this class that a good chunck had already taken the previous course and were familiar with the  &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/DSC_0004.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/IMG_2154.JPG&quot; alt=&quot;Q and A with Karlie Kloss&quot; /&gt;
+  &lt;figcaption&gt; One day coding was interrupted by supermodel and Taylor Swift bestie, Karlie Kloss talking about her coding and bootcamp experience. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; The Final Projects &lt;/h2&gt;
+&lt;p&gt; Squeezing front end coding and design theory into a couple of weeks wasn't easy, but these kids knocked it out of the park when it came time to make their final projects. It's the most gratifying feeling when kids pickup and apply tough concepts and code after minimal instruction. &lt;/p&gt;
+
+&lt;figure&gt;
+&lt;a href=&quot;http://bitemesandwichmaker.github.io/&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/IMG_2231.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
+  &lt;figcaption&gt; Easily one of the most clever and stunning designs done up by our Sammich Maker.&amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;figure&gt;
+&lt;a href=&quot;http://flatirontabloid.github.io/&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/IMG_2227.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
+  &lt;figcaption&gt; Digging up all the dirt on our class, Flatiron Tabloid summed up what made our class so great, the culture and general sillyness! &amp;lt;/a&amp;gt; &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;figure&gt;
+&lt;a href=&quot;http://mrjameraqui.github.io/&quot; target=&quot;_blank&quot;&gt; 
+  &lt;img src=&quot;../images/flatiron/class_2/IMG_2230.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
+  &lt;figcaption&gt; With site that's out of this world, this team came together to make a beautiful and creative app with a whole lotta pizzaz.  &amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;h2&gt; Too many goodbyes &lt;/h2&gt;
+&lt;p&gt; Not only did I have to say goodbye to the majority of students in this class, but also my incredible co-teacher Jeff. I really couldn't have asked for a better bunch to be part of my first month of teaching. &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/DSC_0053.jpg&quot; alt=&quot;co-teacher Jeff&quot; /&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/Model_Devs.jpg&quot; alt=&quot;web design students group photo&quot; /&gt;
+  &lt;figcaption&gt; One last group shot before having to depart with these fantastic group of kids and my co-teach Jeff. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br /&gt;&lt;br /&gt;
+
+
+&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Sat, 18 Jul 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/graduated-design-students</link>
+        <guid isPermaLink="true">http://localhost:4000/graduated-design-students</guid>
+        
+        <category>Flatiron</category>
+        
+        <category>Teaching</category>
+        
+        <category>Culture</category>
+        
+        
+        <category>Teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>First Flatiron Class: Intro To SE</title>
+        <description>&lt;p&gt;&lt;em&gt;I taught my very first class this past June in front of 13 teenagers who, much like myself, had no idea what they were getting themselves into.  &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Learn. Love. Code. &lt;/h2&gt;
+
+&lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebs to see.&lt;/p&gt;
+&lt;p&gt; Having never formally taught teenagers, I was nervous on how quickly they'd pick up the material or if they'd even be interested in any of it. With the help of a fantastic co-teacher, we quickly built a class that was not only excited to come to class, but also code!   &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot; /&gt;
+  &lt;figcaption&gt; Students showing off their code in front of friends and family.  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Not your average classroom &lt;/h2&gt;
+
+&lt;p&gt; Sure, kids were spending full days inside a room learning things. You'd think it'd be a lot like school, but it wasn't. And we made sure of it.  &lt;/p&gt;
+
+&lt;p&gt; Classroom culture was key and easily one of the most imporant parts of our classes. We made sure to have plenty of breaks, do improv and have a classroom that wouldn't be afraid of being silly in front of each other. &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_1659.jpg&quot; alt=&quot;student drawing code example on poster&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_1779.jpg&quot; alt=&quot;Codepen used to introduce html and css&quot; /&gt;
+  &lt;figcaption&gt; Making code fun with poster making and silly sites  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Final Projects &lt;/h2&gt;
+
+&lt;p&gt; The first round of final projects set the bar high! Before starting I thought it was crazy making kids build an app in only a couple days. But they constantly suprised me and put these projects together like they'd been coding for years. &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://eatyourfeelingsapp.herokuapp.com&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2186.JPG&quot; alt=&quot;The next generation of female coders&quot; /&gt;
+  &lt;figcaption&gt; The brilliant team behind the Eat Your Feelings final project app. &amp;lt;/a&amp;gt; &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://greatest-project-evur.herokuapp.com/&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2244.JPG&quot; alt=&quot;The next generation of female coders&quot; /&gt;
+  &lt;figcaption&gt; The always entertaining team behind the Dr Excuse Generator  final project app. &amp;lt;/a&amp;gt;&lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;http://punnerator.herokuapp.com/&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_1/IMG_2184.JPG&quot; alt=&quot;The team behind punnerator&quot; /&gt;
+  &lt;figcaption&gt; The punny team that built  The Punnerator  as their final project had way too much fun! &amp;lt;/a&amp;gt;&lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+
+
+
+
+&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Thu, 02 Jul 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/first-cohort</link>
+        <guid isPermaLink="true">http://localhost:4000/first-cohort</guid>
+        
+        <category>Flatiron</category>
+        
+        
+        <category>Teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome</title>
+        <description>&lt;p&gt;&lt;em&gt; The internet would not be where it is today if it wasn't for the powers of code and cats. It was only a matter of time before a blog was created to join their forces and explain the mysteries of each.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/gifs/hellothere.gif&quot; /&gt;
+&lt;/figure&gt;
+&lt;h2&gt; Cats and thier code &lt;/h2&gt;
+
+&lt;p&gt; Hi and welcome! I'm Jamie, the human behind the blog. I'm starting this site as a way to not only help others get into web development, but to also help clarify the all the new web stuff I learn. &lt;/p&gt;
+
+&lt;p&gt;I recently started teaching web development courses to high schoolers this summer and am finding myself learning a tremendous amount while I jot my notes and lesson plan for the next day. I figured I would take what I have been working on to the next level and churn them out into posts to share.&lt;/p&gt;
+
+&lt;p&gt;This blog will for sure evolve over time, but I aim to cover at least basic to intermediate web development topics, coder culture and my experiences going through a bootcamp and now teaching. &lt;/p&gt;
+
+&lt;p&gt; I also really like cats. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;!-- &lt;blockquote&gt;“If you want to learn something, read about it. If you want to understand something, write about it. If you want to master something, teach it.”
+– Yogi Bhajan&lt;/blockquote&gt; --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 26 Jun 2015 22:05:00 -0700</pubDate>
+        <link>http://localhost:4000/welcome</link>
+        <guid isPermaLink="true">http://localhost:4000/welcome</guid>
+        
+        
+        <category>Culture</category>
+        
+      </item>
+    
+  </channel>
+</rss>
