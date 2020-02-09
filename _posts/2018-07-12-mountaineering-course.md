@@ -188,4 +188,4 @@ Summiting the local mountains like Rainier, Baker, St Helens, Hood, etc all seem
 
 <p> So here we are. At the end of the post. I did it, gonna do it some more! Peace! </p>
 
-<em> psst, my "proofreading" process is rereading this like a thousand times _after_ I publish and realize all my mistakes incrementally for the years that follow. Be cool </em>
+<em> psst, my "proofreading" process is rereading this  _after_ I publish and correct typos and grammar incrementally for the years that follow. So be cool. </em>

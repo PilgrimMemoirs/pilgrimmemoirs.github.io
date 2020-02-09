@@ -2,7 +2,7 @@
 published: false
 layout: post
 title:  "Web Performance"
-date:   2018-08-110 09:00:00
+date:   2018-08-11 09:00:00
 categories: Web Performance
 tags: Web Development Performance Lighthouse
 author: Jamie Pilgrim
@@ -11,7 +11,7 @@ photo: "../images/flatiron/class_4/DSC_0121.jpg"
 ---
 
 
-<p><em> Something about gaining a basic understanding on web performance best practices and measuring them with Lighthouse.</em></p>
+<p><em> Something about gaining a basic understanding on web performance best practices and measuring them with Lighthouse and Chrome Dev Tools.</em></p>
 
 <br>
 
@@ -22,6 +22,14 @@ photo: "../images/flatiron/class_4/DSC_0121.jpg"
 <p> Outline the rest of the post (look at a project, refactor from bad practices to good, observe improvements through Lighthouse along the way.)  </p>
 
 <p> Outline the rest of the post (look at a project, refactor from bad practices to good, observe improvements through Lighthouse along the way.)  </p>
+
+<p> Describe project, setup and observations of it's initial state.   </p>
+
+<p> Outline what could be improved, based on the result of observing through dev tools and lighthouse. This will include the introduction of key performance vocabulary. </p>
+
+<p> Step one to improve performance. </p>
+
+
 
 <!-- <br>
 

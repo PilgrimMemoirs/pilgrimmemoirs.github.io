@@ -53,6 +53,7 @@ a {
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
+    padding-left: 1rem;
     margin-bottom: 0;
     float: left;
 
@@ -279,11 +280,11 @@ a {
         padding: 0 2%;
     }
     * {
-       color: #514f4f; 
+       color: #514f4f;
     }
 
     figcaption { text-align: center; font-style: italic;}
-    
+
     em {
         font-size: .85em;
         line-height: 2em;
@@ -323,7 +324,7 @@ a {
 
     > li {
         margin-bottom: 0;
-        
+
         a{
             color: #494949;
             font-weight: 400;
@@ -500,7 +501,7 @@ a {
 
 
 
- @media (max-width: 680px) { 
+ @media (max-width: 680px) {
     #index-list li{
         width: 100%;
         margin: 2em auto;
@@ -556,7 +557,7 @@ a {
             margin: 0;
         }
 
-    
+
     #down, #menu {
         width: 100%;
         font-size: 1.5em;
