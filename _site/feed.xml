@@ -6,14 +6,14 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Feb 2020 21:27:38 -0800</pubDate>
-    <lastBuildDate>Tue, 25 Feb 2020 21:27:38 -0800</lastBuildDate>
+    <pubDate>Tue, 25 Feb 2020 22:32:34 -0800</pubDate>
+    <lastBuildDate>Tue, 25 Feb 2020 22:32:34 -0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
         <title>Why aren’t my commits showing in my Github contribution grid?</title>
         <description>&lt;p&gt;&lt;em&gt;
-There have been a few cases where I had been working on something, committed it, pushed it to master, and yet the ‘Contributions’ section on my profile wasn’t reflecting those commits. Even stranger, commits I did at work would show, but when I worked on personal project at home they would not show.
+There have been a few cases where I had been working on something, committed it, pushed it to master, and yet the ‘Contributions’ section on my Github profile wasn’t reflecting those commits. Even stranger, commits I made at work would show, but when I worked on personal projects at home, they would not show.
 &lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -25,21 +25,31 @@ There have been a few cases where I had been working on something, committed it,
 &lt;h2&gt; The Solution: &lt;/h2&gt;
 
 &lt;p&gt;
-There’s a whole list of potential reasons, &lt;a href=&quot;https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile&quot;&gt;detailed here&lt;/a&gt;, on what the issue could have been. The issue I was running into was that the email I had set on my local machine for git was different than the email I use for my Github account.
+There’s a whole list of potential reasons, &lt;a href=&quot;https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile&quot;&gt;detailed here&lt;/a&gt;, on what the issue could have been. The issue I was running into was that the email I had set on my local machine for git was different than the email I use for my Github account. Hence why commits I was making on my work computer (where I had configured with the correct email) were showing on the grid, but the commits I made on my personal computer at home (where I had an email different than the one I use for my Github configured locally) were not showing up.
 &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;
-Use the following command, in your command line, to change the email on your local machine. Make sure it's the same as the email you use for you Github account.
+To change the email configured with your local git, enter the following command in your command line:
 &lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;git config --global user.email youremail@email.com&lt;/code&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git config --global user.email youremail@email.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;
+Make sure to use the same as the email you use for you Github account in place of 'youremail@email.com'.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s it!&lt;/p&gt;
 
 &lt;p&gt;
-Now your commits, that have made their way to the master branch, should be reflected on your contributions chart!  If not, you have another issue that’s probably documented in link I gave above, &lt;a href=&quot;https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile&quot;&gt;here it is again&lt;/a&gt;.
+Now your commits, that have made their way to the master branch, should be reflected on your contributions chart!  If not, you have another issue that’s likely documented in link I gave above, &lt;a href=&quot;https://help.github.com/en/github/setting-up-and-managing-your-github-profile/why-are-my-contributions-not-showing-up-on-my-profile&quot;&gt;here it is again&lt;/a&gt;.
 &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Git committing!&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Feb 2020 17:00:00 -0800</pubDate>
         <link>http://localhost:4000/github-contributions</link>
@@ -231,9 +241,7 @@ Now your commits, that have made their way to the master branch, should be refle
 
 &lt;p&gt; I was so lucky to have another woman on the trip who *totally* got the frustrations I had with this trip. Spoiler alert, we're totally staying in touch and planning all sorts of adventures. &lt;/p&gt;
 
-&lt;p&gt; So here we are. At the end of the post. I did it, gonna do it some more! Peace! &lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt; psst, my “proofreading” process is rereading this  &lt;em&gt;after&lt;/em&gt; I publish and correct typos and grammar incrementally for the years that follow. So be cool. &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt; This was a wild ride of an experience, and I can't wait to conquer more mountians! &lt;/p&gt;
 </description>
         <pubDate>Wed, 11 Jul 2018 22:25:00 -0700</pubDate>
         <link>http://localhost:4000/mountaineering-course</link>
