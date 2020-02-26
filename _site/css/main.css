@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900|Slabo+27px);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900|Slabo+27px&display=swap);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900|Slabo+27px);
 /**
  * Reset some basic elements
@@ -14,10 +14,9 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: 'Slabo';
+  font-family: 'Source Sans Pro';
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 300;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
@@ -185,6 +184,7 @@ a {
   font-size: 26px;
   line-height: 56px;
   letter-spacing: -1px;
+  padding-left: 1rem;
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
@@ -350,11 +350,12 @@ a {
   .post-content figcaption {
     text-align: center;
     font-style: italic; }
+  .post-content p:first-of-type {
+    padding: 0 3.5rem; }
   .post-content em {
-    font-size: .85em;
+    font-size: .9rem;
     line-height: 2em;
-    text-align: justify;
-    color: gray; }
+    text-align: justify; }
   .post-content h2 {
     font-size: 2em; }
     @media screen and (max-width: 800px) {
