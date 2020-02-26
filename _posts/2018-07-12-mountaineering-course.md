@@ -186,6 +186,4 @@ Summiting the local mountains like Rainier, Baker, St Helens, Hood, etc all seem
 
 <p> I was so lucky to have another woman on the trip who *totally* got the frustrations I had with this trip. Spoiler alert, we're totally staying in touch and planning all sorts of adventures. </p>
 
-<p> So here we are. At the end of the post. I did it, gonna do it some more! Peace! </p>
-
-<em> psst, my "proofreading" process is rereading this  _after_ I publish and correct typos and grammar incrementally for the years that follow. So be cool. </em>
+<p> This was a wild ride of an experience, and I can't wait to conquer more mountians! </p>
