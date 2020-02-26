@@ -285,11 +285,12 @@ a {
 
     figcaption { text-align: center; font-style: italic;}
 
+    p:first-of-type { padding: 0 3.5rem; }
+
     em {
-        font-size: .85em;
+        font-size: .9rem;
         line-height: 2em;
         text-align: justify;
-        color: gray;
     }
 
     h2 {
