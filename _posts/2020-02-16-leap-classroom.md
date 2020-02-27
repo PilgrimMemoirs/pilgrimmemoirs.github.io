@@ -1,5 +1,4 @@
 ---
-published: false
 layout: post
 title:  "Microsoft LEAP: The Classroom"
 date:   2020-02-16 06:00:00
@@ -11,7 +10,7 @@ photo: "../images/leap/sprint_planning_bw.jpg"
 ---
 
 
-<p><em>Three months after applying for the program, the first day finally came. The program started nearly five years to the date of when I finished the my last classroom experience, when I went to DevBootcamp. In the last 5 years I had a legitimate career, so it took some adjusting being back in a classroom as a student.</em></p>
+<p><em>One month ago I was back home in Wisconsin, visiting family, when I got the call congratulating me on being accepted into Microsoft LEAP’s TPM track. As I’m writing this, it’s the weekend in between completing the 3 week classroom-based prep portion of the program and starting my first day on my sponsoring team.</em></p>
 
 <br>
 
@@ -22,9 +21,17 @@ photo: "../images/leap/sprint_planning_bw.jpg"
 
 <br><br>
 
-<h2> Day One </h2>
+<h2> The First Days </h2>
 
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+<p>The first couple of days were introductions and getting setup. That’s basically it.</p>
+
+<p>
+That entailed getting our badges, laptops, a swag bag chock full of goodies, and trying to find room in the cafeteria for all of us to sit. We were very aspirational with that last one.
+</p>
+
+<p>
+In general, these days didn’t have much content-wise, but it was very reflective of a typical first day starting with any program or job of this sort. Everyone comes in full of energy, only to spend it mostly on waiting to get permission to get started doing anything.
+</p>
 
 <figure>
   <img src="../images/leap/swag.jpg" alt="All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship">
