@@ -6,9 +6,42 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Feb 2020 22:36:42 -0800</pubDate>
-    <lastBuildDate>Wed, 26 Feb 2020 22:36:42 -0800</lastBuildDate>
+    <pubDate>Sat, 29 Feb 2020 23:03:57 -0800</pubDate>
+    <lastBuildDate>Sat, 29 Feb 2020 23:03:57 -0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Microsoft LEAP: With the Team</title>
+        <description>&lt;p&gt;&lt;em&gt; brief description of post &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Title &lt;/h2&gt;
+
+&lt;p&gt; Paragraph  &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/img.jpg&quot; alt=&quot;alt text&quot; /&gt;
+
+  &lt;img src=&quot;../images/flatiron/class_4/DSC_0088.jpg&quot; alt=&quot;Group work&quot; /&gt;
+  &lt;figcaption&gt; Caption  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 29 Feb 2020 17:00:00 -0800</pubDate>
+        <link>http://localhost:4000/leap-with-team</link>
+        <guid isPermaLink="true">http://localhost:4000/leap-with-team</guid>
+        
+        <category>apprenticeship</category>
+        
+        
+        <category>Microsoft</category>
+        
+        <category>LEAP</category>
+        
+      </item>
     
       <item>
         <title>Why aren’t my commits showing in my Github contribution grid?</title>
@@ -71,8 +104,8 @@ Now your commits, that have made their way to the master branch, should be refle
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;../images/leap/group_project_planning.jpg&quot; alt=&quot;Sitting at a desk while in the classroom portion of the LEAP program&quot; /&gt;
-  &lt;figcaption&gt; Caption  &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/leap/group_project_planning.jpg&quot; alt=&quot;Working on a group project, building a flow diagram for the console blackjack game we were building.&quot; /&gt;
+  &lt;figcaption&gt; My team making a flow diagram for the console blackjack game we were building.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -86,60 +119,79 @@ That entailed getting our badges, laptops, a swag bag chock full of goodies, and
 &lt;/p&gt;
 
 &lt;p&gt;
-In general, these days didn’t have much content-wise, but it was very reflective of a typical first day starting with any program or job of this sort. Everyone comes in full of energy, only to spend it mostly on waiting to get permission to get started doing anything.
+In general, these days didn’t have much content-wise, but it was very reflective of a typical first day starting with any program or job of this sort. Everyone comes in full of energy, only to spend it mostly on waiting to get permission before actually being able to do anything.
 &lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&quot;../images/leap/swag.jpg&quot; alt=&quot;All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship&quot; /&gt;
-  &lt;figcaption&gt; On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.  &lt;/figcaption&gt;
+  &lt;figcaption&gt;On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h2&gt; Week 1: Mock Sprint &lt;/h2&gt;
 
-&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  &lt;/p&gt;
+&lt;p&gt;
+By Wednesday of the first week, we started our ‘educational’ portion of sitting for hours watching linkedin learning videos. Content-wise, they were good. But having significant amounts of classroom time spent sitting and watching videos? It really could have been better used.
+&lt;/p&gt;
 
-&lt;h2&gt; Meeting our Teams &lt;/h2&gt;
-
-&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  &lt;/p&gt;
+&lt;p&gt;
+Amongst the hours spent watching videos, were several hours designated towards running through a mock sprint with our assigned teams. This gave us the opportunity to get familiar with Azure Devops and the general process of planning sprint work, defining tasks, and then prioritizing them. Of the work time, this was definitely the most useful.
+&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;../images/leap/project_uml_design.jpg&quot; alt=&quot;All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship&quot; /&gt;
-  &lt;figcaption&gt; On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.  &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/leap/project_uml_design.jpg&quot; alt=&quot;The team building a uml diagram while planning the implementation of the blackjack project.&quot; /&gt;
+  &lt;figcaption&gt;The team building a UML diagram for the blackjack console project.&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;figure&gt;
-  &lt;img src=&quot;../images/leap/lunch.jpg&quot; alt=&quot;All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship&quot; /&gt;
-  &lt;figcaption&gt; On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.  &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/leap/lunch.jpg&quot; alt=&quot;The first day lunch, bought at a Microsoft cafeteria.&quot; /&gt;
+  &lt;figcaption&gt;The first-day meal, bought at one of the Microsoft cafeterias. While the food isn't free, but is heavily discounted. I generally spend $5-9/meal. &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h2&gt; Week 2: Console Wheel of Fortune Project &lt;/h2&gt;
 
-&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  &lt;/p&gt;
+&lt;p&gt;
+Building on top of the mock sprint, we refined our agile workflow by building a Wheel of Fortune console app. This, hands-down, was the most beneficial week. A reasonable amount of people in the cohort haven’t had experience with being so involved in the agile process.
+&lt;/p&gt;
+
+&lt;p&gt;
+This week was a nice, condensed way of experiencing a sprint from start to finish. The goal was to define what features would be feasible to have a working MVP (minimum viable product) by the end of the week.
+&lt;/p&gt;
+
+&lt;p&gt;
+There was also a mix of even more video courses we took. Again, not a great use of time. But the topics of the courses were worth doing, including the soft skills ones.
+&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;../images/leap/power_bi_demo.jpg&quot; alt=&quot;All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship&quot; /&gt;
-  &lt;figcaption&gt; On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.  &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/leap/power_bi_demo.jpg&quot; alt=&quot;The TPMs getting training with Power BI, a program for building reports and dashboards to visually display data.&quot; /&gt;
+  &lt;figcaption&gt;The TPMs getting training with Power BI, a program for building reports and dashboards to visually display data.&lt;/figcaption&gt;
 &lt;/figure&gt;
-
-&lt;h2&gt; First Payday &lt;/h2&gt;
-
-&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  &lt;/p&gt;
-
 &lt;figure&gt;
-  &lt;img src=&quot;../images/leap/project_crunch_time.jpg&quot; alt=&quot;All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship&quot; /&gt;
-  &lt;figcaption&gt; On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.  &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/leap/project_crunch_time.jpg&quot; alt=&quot;The team working together to quickly code up the final project.&quot; /&gt;
+  &lt;figcaption&gt;The team only had (maybe) a couple of designated hours to actually code the final project. Time got time, and the stressed kicked in during those final days.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h2&gt; Week 3: Final Project &lt;/h2&gt;
 
-&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  &lt;/p&gt;
+&lt;p&gt;
+This week was a mess. It was pretty poorly planned where we ended up only having several hours to complete an entire project, with more requirements than the week before. And there were some activities that really could have been left out.
+&lt;/p&gt;
+
+&lt;p&gt;
+Every other person I’ve talked to from my cohort had pretty strong feelings about how this week could have been different. We will just leave it at that. The week ended with presenting our projects to the class.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fortunately there were some phenomenal sessions we had with FTE’s (full time employees, how Microsoft refers to their hired/non-contracting employees). They gave a tremendous amount of insight into what we could actually expect when we joined our teams.
+&lt;/p&gt;
 
 &lt;h2&gt; That's a wrap &lt;/h2&gt;
 
-&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  &lt;/p&gt;
+&lt;p&gt;
+While I, along with my peers, had different expectations for what we thought this classroom portion was going to be like, it was beneficial just to get acquainted with being on campus and bonding with each other. Already we are benefiting from having each others support, and that’s something you never get when you get hired into a company alone.
+&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&quot;../images/leap/leap_cohort_16.jpg&quot; alt=&quot;All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship&quot; /&gt;
-  &lt;figcaption&gt; On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.  &lt;/figcaption&gt;
+  &lt;img src=&quot;../images/leap/leap_cohort_16.jpg&quot; alt=&quot;The full cohort posing in front of a Microsoft sign in front of Building 92&quot; /&gt;
+  &lt;figcaption&gt;The gang's all here. We are the largest cohort to date, with 47 LEAPers.&lt;/figcaption&gt;
 &lt;/figure&gt;
 </description>
         <pubDate>Sat, 15 Feb 2020 22:00:00 -0800</pubDate>
