@@ -1,26 +1,13 @@
----
-public: false
-layout: post
-title:  "Microsoft LEAP: The Classroom"
-date:   2020-02-16 06:00:00
-categories: LEAP
-tags: Microsoft Learning Apprenticeship
-author: Jamie Pilgrim
-comments: true
-photo: "../images/leap/sprint_planning_bw.jpg"
----
+I"S<p><em>One month ago I was back home in Wisconsin, visiting family, when I got the call congratulating me on being accepted into Microsoft LEAP’s TPM track. As I’m writing this, it’s the weekend in between completing the 3 week classroom-based prep portion of the program and starting my first day on my sponsoring team.</em></p>
 
-
-<p><em>One month ago I was back home in Wisconsin, visiting family, when I got the call congratulating me on being accepted into Microsoft LEAP’s TPM track. As I’m writing this, it’s the weekend in between completing the 3 week classroom-based prep portion of the program and starting my first day on my sponsoring team.</em></p>
-
-<br>
+<p><br /></p>
 
 <figure>
-  <img src="../images/leap/group_project_planning.jpg" alt="Working on a group project, building a flow diagram for the console blackjack game we were building.">
+  <img src="../images/leap/group_project_planning.jpg" alt="Working on a group project, building a flow diagram for the console blackjack game we were building." />
   <figcaption> My team making a flow diagram for the console blackjack game we were building.</figcaption>
 </figure>
 
-<br><br>
+<p><br /><br /></p>
 
 <h2> The First Days </h2>
 
@@ -35,7 +22,7 @@ In general, these days didn’t have much content-wise, but it was very reflecti
 </p>
 
 <figure>
-  <img src="../images/leap/swag.jpg" alt="All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship">
+  <img src="../images/leap/swag.jpg" alt="All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship" />
   <figcaption>On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.</figcaption>
 </figure>
 
@@ -49,16 +36,14 @@ By Wednesday of the first week, we started our ‘educational’ portion of sitt
 Amongst the hours spent watching videos, were several hours designated towards running through a mock sprint with our assigned teams. This gave us the opportunity to get familiar with Azure Devops and the general process of planning sprint work, defining tasks, and then prioritizing them. Of the work time, this was definitely the most useful.
 </p>
 
-
 <figure>
-  <img src="../images/leap/project_uml_design.jpg" alt="The team building a uml diagram while planning the implementation of the blackjack project.">
+  <img src="../images/leap/project_uml_design.jpg" alt="The team building a uml diagram while planning the implementation of the blackjack project." />
   <figcaption>The team building a UML diagram for the blackjack console project.</figcaption>
 </figure>
 <figure>
-  <img src="../images/leap/lunch.jpg" alt="The first day lunch, bought at a Microsoft cafeteria.">
+  <img src="../images/leap/lunch.jpg" alt="The first day lunch, bought at a Microsoft cafeteria." />
   <figcaption>The first-day meal, bought at one of the Microsoft cafeterias. While the food isn't free, but is heavily discounted. I generally spend $5-9/meal. </figcaption>
 </figure>
-
 
 <h2> Week 2: Console Wheel of Fortune Project </h2>
 
@@ -75,11 +60,11 @@ There was also a mix of even more video courses we took. Again, not a great use 
 </p>
 
 <figure>
-  <img src="../images/leap/power_bi_demo.jpg" alt="The TPMs getting training with Power BI, a program for building reports and dashboards to visually display data.">
+  <img src="../images/leap/power_bi_demo.jpg" alt="The TPMs getting training with Power BI, a program for building reports and dashboards to visually display data." />
   <figcaption>The TPMs getting training with Power BI, a program for building reports and dashboards to visually display data.</figcaption>
 </figure>
 <figure>
-  <img src="../images/leap/project_crunch_time.jpg" alt="The team working together to quickly code up the final project.">
+  <img src="../images/leap/project_crunch_time.jpg" alt="The team working together to quickly code up the final project." />
   <figcaption>The team only had (maybe) a couple of designated hours to actually code the final project. Time got time, and the stressed kicked in during those final days.</figcaption>
 </figure>
 
@@ -103,8 +88,8 @@ Fortunately there were some phenomenal sessions we had with FTE’s (full time e
 While I, along with my peers, had different expectations for what we thought this classroom portion was going to be like, it was beneficial just to get acquainted with being on campus and bonding with each other. Already we are benefiting from having each others support, and that’s something you never get when you get hired into a company alone.
 </p>
 
-
 <figure>
-  <img src="../images/leap/leap_cohort_16.jpg" alt="The full cohort posing in front of a Microsoft sign in front of Building 92">
+  <img src="../images/leap/leap_cohort_16.jpg" alt="The full cohort posing in front of a Microsoft sign in front of Building 92" />
   <figcaption>The gang's all here. We are the largest cohort to date, with 47 LEAPers.</figcaption>
 </figure>
+:ET
