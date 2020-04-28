@@ -1,4 +1,5 @@
 ---
+public: false
 layout: post
 title:  "Microsoft LEAP: The Classroom"
 date:   2020-02-16 06:00:00
