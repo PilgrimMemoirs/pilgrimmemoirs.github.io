@@ -1,0 +1,18 @@
+I":<p><em> brief description of post </em></p>
+
+<p><br /></p>
+
+<h2> Title </h2>
+
+<p> Paragraph  </p>
+
+<p><br /></p>
+
+<figure>
+  <img src="../images/img.jpg" alt="alt text" />
+
+  <img src="../images/flatiron/class_4/DSC_0088.jpg" alt="Group work" />
+  <figcaption> Caption  </figcaption>
+</figure>
+<p><br /><br /></p>
+:ET

@@ -6,9 +6,46 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Feb 2020 23:03:57 -0800</pubDate>
-    <lastBuildDate>Sat, 29 Feb 2020 23:03:57 -0800</lastBuildDate>
-    <generator>Jekyll v3.8.3</generator>
+    <pubDate>Mon, 27 Apr 2020 21:49:55 -0700</pubDate>
+    <lastBuildDate>Mon, 27 Apr 2020 21:49:55 -0700</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>TIL: April 27</title>
+        <description>&lt;p&gt;&lt;em&gt; With stay-at-home orders having no end in sight, I decided to use this time to focus on all the things I've been putting off because of lacking time. In order to hold myself accountable, I'm using daily blogs to track what I learned that day, no matter how small or basic it might be.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/selfies/IMG_2152.jpg&quot; alt=&quot;Me, sitting in front of the computer&quot; /&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; TIL: April 27 &lt;/h2&gt;
+
+&lt;h3&gt;Codecademy: Computer Science Path&lt;/h3&gt;
+&lt;p&gt; Thanks to a very generous offer, I was granted access to a Codecademy Pro subscription for free. I only had 15 minutes to get started with selecting a course/path to take on the site and get started. The Computer Science Career Path uses python, so the first portion of this course was going over python syntax. Very straightforward, probably could have skipped since it only covered the very basics, which are very similar to ruby &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Apr 2020 18:00:00 -0700</pubDate>
+        <link>http://localhost:4000/til</link>
+        <guid isPermaLink="true">http://localhost:4000/til</guid>
+        
+        <category>python</category>
+        
+        <category>CS</category>
+        
+        <category>course</category>
+        
+        <category>learning</category>
+        
+        <category>quratine</category>
+        
+        
+        <category>TIL</category>
+        
+      </item>
     
       <item>
         <title>Microsoft LEAP: With the Team</title>
