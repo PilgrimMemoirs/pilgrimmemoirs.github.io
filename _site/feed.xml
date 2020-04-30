@@ -6,9 +6,46 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Apr 2020 21:37:14 -0700</pubDate>
-    <lastBuildDate>Tue, 28 Apr 2020 21:37:14 -0700</lastBuildDate>
+    <pubDate>Wed, 29 Apr 2020 19:37:26 -0700</pubDate>
+    <lastBuildDate>Wed, 29 Apr 2020 19:37:26 -0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>TIL: April 29</title>
+        <description>&lt;p&gt;&lt;em&gt; With stay-at-home orders having no end in sight, I decided to use this time to focus on all the things I've been putting off because of lacking time. In order to hold myself accountable, I'm using daily blogs to track what I learned that day, no matter how small or basic it might be.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/selfies/IMG_2152.jpg&quot; alt=&quot;Me, sitting in front of the computer&quot; /&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Codecademy: Computer Science Path&lt;/h2&gt;
+&lt;p&gt;This path is front-loaded with getting familiar with both programming basics and python syntax. It's fairly slow moving, going over very basic programming fundamentals is quite boring. The only reason I'm not skipping over these sections is because there is some Python specific material that is going to be helpful for the latter modules.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Youtube: Mock Interviews&lt;/h2&gt;
+&lt;p&gt;Watched a couple of mock technical interviews. Focusing strictly on phone/online based ones since that'll all that will be happening for the foreseeable future! I'm liking the variety of videos that interviewing.io has on their Youtube page. They mainly have engineers from a lot of the big name companies solving problems with whatever language they prefer, so there's also a solid selection of the most common languages.  &lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Apr 2020 18:00:00 -0700</pubDate>
+        <link>http://localhost:4000/til-04292020</link>
+        <guid isPermaLink="true">http://localhost:4000/til-04292020</guid>
+        
+        <category>python</category>
+        
+        <category>CS</category>
+        
+        <category>course</category>
+        
+        <category>learning</category>
+        
+        <category>quarantine</category>
+        
+        
+        <category>TIL</category>
+        
+      </item>
     
       <item>
         <title>TIL: April 28</title>
@@ -26,7 +63,7 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;Udemy: Interview Bootcamp&lt;/h2&gt;
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Compared the iterative and recursive approaches to the fibonacci sequence problem.&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Apr 2020 18:00:00 -0700</pubDate>
         <link>http://localhost:4000/til-04282020</link>
@@ -748,40 +785,6 @@ All the above and then some were taken to a whole new level with this class. Let
         
         
         <category>Teaching</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome</title>
-        <description>&lt;p&gt;&lt;em&gt; The internet would not be where it is today if it wasn't for the powers of code and cats. It was only a matter of time before a blog was created to join their forces and explain the mysteries of each.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;../images/gifs/hellothere.gif&quot; /&gt;
-&lt;/figure&gt;
-&lt;h2&gt; Cats and thier code &lt;/h2&gt;
-
-&lt;p&gt; Hi and welcome! I'm Jamie, the human behind the blog. I'm starting this site as a way to not only help others get into web development, but to also help clarify the all the new web stuff I learn. &lt;/p&gt;
-
-&lt;p&gt;I recently started teaching web development courses to high schoolers this summer and am finding myself learning a tremendous amount while I jot my notes and lesson plan for the next day. I figured I would take what I have been working on to the next level and churn them out into posts to share.&lt;/p&gt;
-
-&lt;p&gt;This blog will for sure evolve over time, but I aim to cover at least basic to intermediate web development topics, coder culture and my experiences going through a bootcamp and now teaching. &lt;/p&gt;
-
-&lt;p&gt; I also really like cats. &lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
-&lt;!-- &lt;blockquote&gt;“If you want to learn something, read about it. If you want to understand something, write about it. If you want to master something, teach it.”
-– Yogi Bhajan&lt;/blockquote&gt; --&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 26 Jun 2015 22:05:00 -0700</pubDate>
-        <link>http://localhost:4000/welcome</link>
-        <guid isPermaLink="true">http://localhost:4000/welcome</guid>
-        
-        
-        <category>Culture</category>
         
       </item>
     
