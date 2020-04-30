@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Apr 2020 20:41:17 -0700</pubDate>
-    <lastBuildDate>Wed, 29 Apr 2020 20:41:17 -0700</lastBuildDate>
+    <pubDate>Thu, 30 Apr 2020 16:20:50 -0700</pubDate>
+    <lastBuildDate>Thu, 30 Apr 2020 16:20:50 -0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -279,6 +279,53 @@ While I, along with my peers, had different expectations for what we thought thi
         
         
         <category>LEAP</category>
+        
+      </item>
+    
+      <item>
+        <title>Essential React: Components</title>
+        <description>&lt;p&gt;&lt;em&gt;This is the first post in a series about essential React.js to know when getting started. Components will be function-based, using React Hooks, to cover how to handle props and state, component lifecyle and where to use ES6 features. Follow along with this GitHub repository, where each phase of the tutorial has it's own branch. &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!-- &lt;figure&gt;
+  &lt;img src=&quot;../images/selfies/IMG_2152.jpg&quot; alt=&quot;Me, sitting in front of the computer&quot;&gt;
+&lt;/figure&gt;
+&lt;br&gt;&lt;br&gt; --&gt;
+
+&lt;h2&gt; The Project &lt;/h2&gt;
+&lt;p&gt;This tutorial series will be building a React app for people to find trails within certain parks. Users will be able to view details on the parks and trails, as well as being able to review them.&lt;/p&gt;
+
+&lt;h2&gt;The Project's Components&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Functional Components&lt;/h3&gt;
+&lt;p&gt;If you're familiar with JavaScript, then functional components should feel fairly natural. &lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Park&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({}){&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3&gt;A Note on Class Components&lt;/h3&gt;
+&lt;p&gt;While this project is only going to use functional components, it's important to be able to recognize class-based components and know the difference between them and functional components. It's especially important if you are working in a codebase that was developed before React Hooks launched in 2019, which is probably most.&lt;/p&gt;
+
+&lt;p&gt; If you're starting fresh with a new app, using functional components is generally recommended. The only reason not to tends to revolved around familiarity with class-based and having a preference for them. Since React Hooks are new, there's going to be less material and examples that use them, but they are not going anywhere so I wouldn't avoid using them for that reason! And, a component can always be refactored into a class component if necessary.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Feb 2020 04:00:00 -0800</pubDate>
+        <link>http://localhost:4000/react-components</link>
+        <guid isPermaLink="true">http://localhost:4000/react-components</guid>
+        
+        <category>javascript</category>
+        
+        <category>web</category>
+        
+        <category>frontend</category>
+        
+        
+        <category>react</category>
         
       </item>
     
@@ -711,77 +758,6 @@ All the above and then some were taken to a whole new level with this class. Let
         <category>Teaching</category>
         
         <category>Culture</category>
-        
-        
-        <category>Teaching</category>
-        
-      </item>
-    
-      <item>
-        <title>First Flatiron Class: Intro To SE</title>
-        <description>&lt;p&gt;&lt;em&gt;I taught my very first class this past June in front of 13 teenagers who, much like myself, had no idea what they were getting themselves into.  &lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Learn. Love. Code. &lt;/h2&gt;
-
-&lt;p&gt; In the matter of two weeks I was meant to turn these kids from knowing nil about programing into making a live, deployed sinatra app for all the interwebs to see.&lt;/p&gt;
-&lt;p&gt; Having never formally taught teenagers, I was nervous on how quickly they'd pick up the material or if they'd even be interested in any of it. With the help of a fantastic co-teacher, we quickly built a class that was not only excited to come to class, but also code!   &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_1/IMG_2223.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot; /&gt;
-  &lt;figcaption&gt; Students showing off their code in front of friends and family.  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Not your average classroom &lt;/h2&gt;
-
-&lt;p&gt; Sure, kids were spending full days inside a room learning things. You'd think it'd be a lot like school, but it wasn't. And we made sure of it.  &lt;/p&gt;
-
-&lt;p&gt; Classroom culture was key and easily one of the most imporant parts of our classes. We made sure to have plenty of breaks, do improv and have a classroom that wouldn't be afraid of being silly in front of each other. &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_1/IMG_1659.jpg&quot; alt=&quot;student drawing code example on poster&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_1/IMG_1779.jpg&quot; alt=&quot;Codepen used to introduce html and css&quot; /&gt;
-  &lt;figcaption&gt; Making code fun with poster making and silly sites  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Final Projects &lt;/h2&gt;
-
-&lt;p&gt; The first round of final projects set the bar high! Before starting I thought it was crazy making kids build an app in only a couple days. But they constantly suprised me and put these projects together like they'd been coding for years. &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://eatyourfeelingsapp.herokuapp.com&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;../images/flatiron/class_1/IMG_2186.JPG&quot; alt=&quot;The next generation of female coders&quot; /&gt;
-  &lt;figcaption&gt; The brilliant team behind the Eat Your Feelings final project app. &amp;lt;/a&amp;gt; &lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://greatest-project-evur.herokuapp.com/&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;../images/flatiron/class_1/IMG_2244.JPG&quot; alt=&quot;The next generation of female coders&quot; /&gt;
-  &lt;figcaption&gt; The always entertaining team behind the Dr Excuse Generator  final project app. &amp;lt;/a&amp;gt;&lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;figure&gt;
-  &lt;a href=&quot;http://punnerator.herokuapp.com/&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;../images/flatiron/class_1/IMG_2184.JPG&quot; alt=&quot;The team behind punnerator&quot; /&gt;
-  &lt;figcaption&gt; The punny team that built  The Punnerator  as their final project had way too much fun! &amp;lt;/a&amp;gt;&lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-
-
-
-
-&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
-</description>
-        <pubDate>Thu, 02 Jul 2015 22:25:00 -0700</pubDate>
-        <link>http://localhost:4000/first-cohort</link>
-        <guid isPermaLink="true">http://localhost:4000/first-cohort</guid>
-        
-        <category>Flatiron</category>
         
         
         <category>Teaching</category>
