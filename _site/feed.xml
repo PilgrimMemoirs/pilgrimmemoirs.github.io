@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Apr 2020 20:37:46 -0700</pubDate>
-    <lastBuildDate>Thu, 30 Apr 2020 20:37:46 -0700</lastBuildDate>
+    <pubDate>Fri, 01 May 2020 07:27:21 -0700</pubDate>
+    <lastBuildDate>Fri, 01 May 2020 07:27:21 -0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -21,12 +21,14 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;Udemy: The Coding Interview boot camp: Algorithms + Data Structures&lt;/h2&gt;
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Went back to the recursive solution for the fibonacci problem, cried at it's time complexity and then introduced memoization.&lt;/p&gt;
+&lt;p&gt;The next section had me implement a queue in JavaScript, utilizing an array. Then, solved a problem weaving two queues together.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2&gt;Leetcode: Practice &amp;amp; Explore&lt;/h2&gt;
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;I checked out their explore/learn part of the site, starting with Queues. I like having both video and reading resources, and I like that this one has a nice structure for written material, with animations. I think it's going to pair well with the udemy course I'm watching.&lt;/p&gt;
+&lt;p&gt;Did and quick'n'dirty (read: easy) problem with fining the length of the last word in a string. Knocked it out. On to the next! (read: medium &amp;amp; hard problems)&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Apr 2020 18:00:00 -0700</pubDate>
         <link>http://localhost:4000/til-04302020</link>
