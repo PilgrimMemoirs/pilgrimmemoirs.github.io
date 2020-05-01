@@ -2,7 +2,7 @@
 layout: post
 title:  "Why aren’t my commits showing in my Github contribution grid?"
 date:   2020-02-24 01:00:00
-categories: tips help
+categories: tips
 tags: Github
 author: Jamie Pilgrim
 comments: true
