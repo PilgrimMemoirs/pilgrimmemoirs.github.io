@@ -6,9 +6,92 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 May 2020 07:27:21 -0700</pubDate>
-    <lastBuildDate>Fri, 01 May 2020 07:27:21 -0700</lastBuildDate>
+    <pubDate>Fri, 01 May 2020 14:34:41 -0700</pubDate>
+    <lastBuildDate>Fri, 01 May 2020 14:34:41 -0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>May 1 TIL: Queue from Two Stacks &amp;&amp; SQL</title>
+        <description>&lt;p&gt;&lt;em&gt; With stay-at-home orders having no end in sight, I decided to use this time to focus on all the things I've been putting off because of lacking time. In order to hold myself accountable, I'm using daily blogs to track what I learned that day, no matter how small or basic it might be.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/selfies/IMG_2152.jpg&quot; alt=&quot;Me, sitting in front of the computer&quot; /&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Udemy: The Coding Interview boot camp: &lt;br /&gt; Algorithms + Data Structures&lt;/h2&gt;
+&lt;p&gt;Solidified &lt;b&gt;stacks and queues&lt;/b&gt; knowledge by solving the &lt;b&gt;'queue from stacks'&lt;/b&gt; problem. The problem has you building a queue class that has all the functionality of a queue, but is built on two stacks (instead of using a single array, like you typically would in JavaScript). It's wacky. It's the most impractical thing ever. But it's yet another problem to keep you on your toes, and (allegedly) it demonstrates that you know how both queues and stacks work. It's definitely fun to do just for the heck of it, but I'd legit be so confused if the first time I ever heard of this problem was in an interview.&lt;/p&gt;
+
+&lt;p&gt; So, here it is! The code snippet below is assuming a stack class has already been created in another file and is being imported for use in this file. Instances of this Queue class will be able to call &lt;code&gt;.add(&quot;record&quot;)&lt;/code&gt; to add a new record to the rear, &lt;code&gt;.peek()&lt;/code&gt; to see what element is at the front, and &lt;code&gt;.pop()&lt;/code&gt; to return the element from the front. Note that 'front' and 'rear' are referring to the queue, not the two stacks this queue class is being built with.&lt;/p&gt;
+
+&lt;p&gt;This is where it really gets confusing. Queues are first in, first out. Stacks are first in, last out. So, in order to have the methods that were mentioned above work, there is going to have to be a lot of moving around of the elements. See if you can wrap your brain around this doozy:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;second&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;record&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;record&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;record&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;record&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;record&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;record&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt; See what I mean, it's wacky! And yes, you read it right, to remove or peek at an element, it has to move all elements in the first stack before it can access the element that is in front of the queue. Then, it has to move everything back to the first, so that it is ready for whatever next method is called on it. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Codecademy: SQL&lt;/h2&gt;
+&lt;p&gt;BRB. Learning now!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 May 2020 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/til-05012020</link>
+        <guid isPermaLink="true">http://localhost:4000/til-05012020</guid>
+        
+        <category>CS</category>
+        
+        <category>course</category>
+        
+        <category>learning</category>
+        
+        <category>quarantine</category>
+        
+        
+        <category>TIL</category>
+        
+      </item>
     
       <item>
         <title>TIL: April 30</title>
@@ -653,71 +736,6 @@ All the above and then some were taken to a whole new level with this class. Let
         <pubDate>Sun, 16 Aug 2015 22:25:00 -0700</pubDate>
         <link>http://localhost:4000/fourth-class</link>
         <guid isPermaLink="true">http://localhost:4000/fourth-class</guid>
-        
-        <category>Flatiron</category>
-        
-        <category>Teaching</category>
-        
-        <category>Culture</category>
-        
-        
-        <category>Teaching</category>
-        
-      </item>
-    
-      <item>
-        <title>Third Flatiron Class: Intro to SE</title>
-        <description>&lt;p&gt;&lt;em&gt; My second round of the Intro to Software Engineering class with my new co-teacher was yet another successful chapter in this amazing experience.  &lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;!-- Classtime  --&gt;
-
-&lt;h2&gt;It's all about the Experience &lt;/h2&gt;
-
-&lt;p&gt; In June I started teaching high schoolers the ins and out of web development in two week long, intensive courses. Now, they're by no means experts by the end, however, they left with a solid foundation and, more importantly, enthusiasm to continue learning! &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0044.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0038.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
-  &lt;figcaption&gt; Forming groups and whiteboarding final project ideas  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; The Code is Incidental &lt;/h2&gt;
-
-&lt;p&gt;In our classes, as molded by many other coding bootcamps, the culture is just as essential as the code itself. The goal is not only to get kids engaged in coding, but to also form strong relationships with thier peers. Doing so  helps so so soooooo much more for building a strong classroom culture that opens up discussion, questions and self discovering. &lt;/p&gt;
-
-&lt;p&gt; The less dependant the students become on me and the more the rely on thier peers, the less work to do. Win win. &lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Final Projects &lt;/h2&gt;
-
-&lt;p&gt; In the end, we had four AMAZING final projects that were bulit in only a couple days, including ideation to the final  touches. Each group had their own twist on what they chose to focus on. Having a lot of natural designers, many latched on to displaying their content beautifly while other had very intericite logic  on thier backend. &lt;/p&gt;
-
-&lt;!-- Science Fair &amp; Graduation --&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0030.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0041.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
-  &lt;figcaption&gt; Final projects are setup for demonstration to visiting family and guests. &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Serious Developers &lt;/h2&gt;
-
-&lt;p&gt; Seriously, these kids knocked out AMAZING projects and absorbed so much in the two weeks we had them. It's crazy to think that we still managed to fit in improv games and just be silly with each other.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_00202.jpg&quot; alt=&quot;Serious Group Photo&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0023.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0021.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt; It was sad to let yet another class go, especially one so unique and diverse in thier talents. That said, I'm incredibly proud of the work they did and how well they all joined forces to make incredible projects! &lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 30 Jul 2015 22:25:00 -0700</pubDate>
-        <link>http://localhost:4000/third-class</link>
-        <guid isPermaLink="true">http://localhost:4000/third-class</guid>
         
         <category>Flatiron</category>
         

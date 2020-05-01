@@ -1,0 +1,64 @@
+I"*<p><em> With stay-at-home orders having no end in sight, I decided to use this time to focus on all the things I've been putting off because of lacking time. In order to hold myself accountable, I'm using daily blogs to track what I learned that day, no matter how small or basic it might be.</em></p>
+
+<p><br /></p>
+<figure>
+  <img src="../images/selfies/IMG_2152.jpg" alt="Me, sitting in front of the computer" />
+</figure>
+<p><br /><br /></p>
+
+<h2>Udemy: The Coding Interview boot camp: <br /> Algorithms + Data Structures</h2>
+<p>Solidified <b>stacks and queues</b> knowledge by solving the <b>'queue from stacks'</b> problem. The problem has you building a queue class that has all the functionality of a queue, but is built on two stacks (instead of using a single array, like you typically would in JavaScript). It's wacky. It's the most impractical thing ever. But it's yet another problem to keep you on your toes, and (allegedly) it demonstrates that you know how both queues and stacks work. It's definitely fun to do just for the heck of it, but I'd legit be so confused if the first time I ever heard of this problem was in an interview.</p>
+
+<p> So, here it is! The code snippet below is assuming a stack class has already been created in another file and is being imported for use in this file. Instances of this Queue class will be able to call <code>.add("record")</code> to add a new record to the rear, <code>.peek()</code> to see what element is at the front, and <code>.pop()</code> to return the element from the front. Note that 'front' and 'rear' are referring to the queue, not the two stacks this queue class is being built with.</p>
+
+<p>This is where it really gets confusing. Queues are first in, first out. Stacks are first in, last out. So, in order to have the methods that were mentioned above work, there is going to have to be a lot of moving around of the elements. See if you can wrap your brain around this doozy:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">stack</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(.</span><span class="o">/</span><span class="nx">stack</span><span class="p">);</span>
+
+<span class="kd">class</span> <span class="nx">Queue</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">first</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Stack</span><span class="p">();</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">second</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Stack</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="nx">add</span><span class="p">(</span><span class="nx">record</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">record</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">remove</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">while</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">peek</span><span class="p">())</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">second</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">pop</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kd">const</span> <span class="nx">record</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">second</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">second</span><span class="p">.</span><span class="nx">peek</span><span class="p">())</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">pop</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">record</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">peek</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">while</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">peek</span><span class="p">())</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">second</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">pop</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="kd">const</span> <span class="nx">record</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">second</span><span class="p">.</span><span class="nx">peek</span><span class="p">();</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">second</span><span class="p">.</span><span class="nx">peek</span><span class="p">())</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">second</span><span class="p">.</span><span class="nx">pop</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">record</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+<p> See what I mean, it's wacky! And yes, you read it right, to remove or peek at an element, it has to move all elements in the first stack before it can access the element that is in front of the queue. Then, it has to move everything back to the first, so that it is ready for whatever next method is called on it. </p>
+
+<p><br /></p>
+
+<h2>Codecademy: SQL</h2>
+<p>BRB. Learning now!</p>
+:ET
