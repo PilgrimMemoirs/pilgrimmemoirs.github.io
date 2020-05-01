@@ -6,9 +6,44 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Apr 2020 16:20:50 -0700</pubDate>
-    <lastBuildDate>Thu, 30 Apr 2020 16:20:50 -0700</lastBuildDate>
+    <pubDate>Thu, 30 Apr 2020 20:37:46 -0700</pubDate>
+    <lastBuildDate>Thu, 30 Apr 2020 20:37:46 -0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>TIL: April 30</title>
+        <description>&lt;p&gt;&lt;em&gt; With stay-at-home orders having no end in sight, I decided to use this time to focus on all the things I've been putting off because of lacking time. In order to hold myself accountable, I'm using daily blogs to track what I learned that day, no matter how small or basic it might be.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/selfies/IMG_2152.jpg&quot; alt=&quot;Me, sitting in front of the computer&quot; /&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Udemy: The Coding Interview boot camp: Algorithms + Data Structures&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Leetcode: Practice &amp;amp; Explore&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Apr 2020 18:00:00 -0700</pubDate>
+        <link>http://localhost:4000/til-04302020</link>
+        <guid isPermaLink="true">http://localhost:4000/til-04302020</guid>
+        
+        <category>CS</category>
+        
+        <category>course</category>
+        
+        <category>learning</category>
+        
+        <category>quarantine</category>
+        
+        
+        <category>TIL</category>
+        
+      </item>
     
       <item>
         <title>TIL: April 29</title>
@@ -681,77 +716,6 @@ All the above and then some were taken to a whole new level with this class. Let
         <pubDate>Thu, 30 Jul 2015 22:25:00 -0700</pubDate>
         <link>http://localhost:4000/third-class</link>
         <guid isPermaLink="true">http://localhost:4000/third-class</guid>
-        
-        <category>Flatiron</category>
-        
-        <category>Teaching</category>
-        
-        <category>Culture</category>
-        
-        
-        <category>Teaching</category>
-        
-      </item>
-    
-      <item>
-        <title>Second Flatiron Class: Intro to Design</title>
-        <description>&lt;p&gt;&lt;em&gt; When I saw that I was teaching a web design course I was stoked! I thought for sure that it would be a breeze since design and front end development come easy to me, but teaching something that came more intuitively proved to be more challenging than I thought.  &lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt;Doing More Than 'Making Things Pretty' &lt;/h2&gt;
-
-&lt;p&gt; During these two weeks my students went from zero to learning html, css, jquery and design theories. The last four of those days spent implementing what they learned into a final project. Pure craziness! &lt;/p&gt;
-
-&lt;p&gt; I was lucky enough with this class that a good chunck had already taken the previous course and were familiar with the  &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/DSC_0004.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/IMG_2154.JPG&quot; alt=&quot;Q and A with Karlie Kloss&quot; /&gt;
-  &lt;figcaption&gt; One day coding was interrupted by supermodel and Taylor Swift bestie, Karlie Kloss talking about her coding and bootcamp experience. &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; The Final Projects &lt;/h2&gt;
-&lt;p&gt; Squeezing front end coding and design theory into a couple of weeks wasn't easy, but these kids knocked it out of the park when it came time to make their final projects. It's the most gratifying feeling when kids pickup and apply tough concepts and code after minimal instruction. &lt;/p&gt;
-
-&lt;figure&gt;
-&lt;a href=&quot;http://bitemesandwichmaker.github.io/&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/IMG_2231.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; Easily one of the most clever and stunning designs done up by our Sammich Maker.&amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;figure&gt;
-&lt;a href=&quot;http://flatirontabloid.github.io/&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/IMG_2227.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; Digging up all the dirt on our class, Flatiron Tabloid summed up what made our class so great, the culture and general sillyness! &amp;lt;/a&amp;gt; &lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;figure&gt;
-&lt;a href=&quot;http://mrjameraqui.github.io/&quot; target=&quot;_blank&quot;&gt; 
-  &lt;img src=&quot;../images/flatiron/class_2/IMG_2230.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; With site that's out of this world, this team came together to make a beautiful and creative app with a whole lotta pizzaz.  &amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;h2&gt; Too many goodbyes &lt;/h2&gt;
-&lt;p&gt; Not only did I have to say goodbye to the majority of students in this class, but also my incredible co-teacher Jeff. I really couldn't have asked for a better bunch to be part of my first month of teaching. &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/DSC_0053.jpg&quot; alt=&quot;co-teacher Jeff&quot; /&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/Model_Devs.jpg&quot; alt=&quot;web design students group photo&quot; /&gt;
-  &lt;figcaption&gt; One last group shot before having to depart with these fantastic group of kids and my co-teach Jeff. &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br /&gt;&lt;br /&gt;
-
-
-&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
-</description>
-        <pubDate>Sat, 18 Jul 2015 22:25:00 -0700</pubDate>
-        <link>http://localhost:4000/graduated-design-students</link>
-        <guid isPermaLink="true">http://localhost:4000/graduated-design-students</guid>
         
         <category>Flatiron</category>
         
