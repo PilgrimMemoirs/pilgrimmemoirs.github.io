@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Essential React: Components"
-date:   2020-02-01 12:00:00
+date:   2020-05-10 12:00:00
 categories: react
 tags: javascript web frontend
 author: Jamie Pilgrim

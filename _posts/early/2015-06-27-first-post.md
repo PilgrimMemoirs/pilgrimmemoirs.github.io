@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title:  "Welcome"
 date:   2015-06-27 05:05:00
@@ -32,4 +33,3 @@ photo: "../images/cats/welcome/3.JPG"
 – Yogi Bhajan</blockquote> -->
 
 <p></p>
-
