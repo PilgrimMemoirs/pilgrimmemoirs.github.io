@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 May 2020 15:02:40 -0700</pubDate>
-    <lastBuildDate>Fri, 01 May 2020 15:02:40 -0700</lastBuildDate>
+    <pubDate>Fri, 01 May 2020 15:04:02 -0700</pubDate>
+    <lastBuildDate>Fri, 01 May 2020 15:04:02 -0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -287,118 +287,6 @@ Now your commits, that have made their way to the master branch, should be refle
         <category>tips</category>
         
         <category>help</category>
-        
-      </item>
-    
-      <item>
-        <title>Microsoft LEAP: The Classroom</title>
-        <description>&lt;p&gt;&lt;em&gt;One month ago I was back home in Wisconsin, visiting family, when I got the call congratulating me on being accepted into Microsoft LEAP’s TPM track. As I’m writing this, it’s the weekend in between completing the 3 week classroom-based prep portion of the program and starting my first day on my sponsoring team.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/leap/group_project_planning.jpg&quot; alt=&quot;Working on a group project, building a flow diagram for the console blackjack game we were building.&quot; /&gt;
-  &lt;figcaption&gt; My team making a flow diagram for the console blackjack game we were building.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; The First Days &lt;/h2&gt;
-
-&lt;p&gt;The first couple of days were introductions and getting setup. That’s basically it.&lt;/p&gt;
-
-&lt;p&gt;
-That entailed getting our badges, laptops, a swag bag chock full of goodies, and trying to find room in the cafeteria for all of us to sit. We were very aspirational with that last one.
-&lt;/p&gt;
-
-&lt;p&gt;
-In general, these days didn’t have much content-wise, but it was very reflective of a typical first day starting with any program or job of this sort. Everyone comes in full of energy, only to spend it mostly on waiting to get permission before actually being able to do anything.
-&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/leap/swag.jpg&quot; alt=&quot;All students got a LEAP embroidered backpack to keep. And a Surface laptop to use during the apprenticeship&quot; /&gt;
-  &lt;figcaption&gt;On day two we were fitted out with some swag (a backpack, mousepad with wireless charger, a battery pack and a retractable badge clip). We also got a Surface laptop to use during the apprenticeship.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h2&gt; Week 1: Mock Sprint &lt;/h2&gt;
-
-&lt;p&gt;
-By Wednesday of the first week, we started our ‘educational’ portion of sitting for hours watching linkedin learning videos. Content-wise, they were good. But having significant amounts of classroom time spent sitting and watching videos? It really could have been better used.
-&lt;/p&gt;
-
-&lt;p&gt;
-Amongst the hours spent watching videos, were several hours designated towards running through a mock sprint with our assigned teams. This gave us the opportunity to get familiar with Azure Devops and the general process of planning sprint work, defining tasks, and then prioritizing them. Of the work time, this was definitely the most useful.
-&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/leap/project_uml_design.jpg&quot; alt=&quot;The team building a uml diagram while planning the implementation of the blackjack project.&quot; /&gt;
-  &lt;figcaption&gt;The team building a UML diagram for the blackjack console project.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;../images/leap/lunch.jpg&quot; alt=&quot;The first day lunch, bought at a Microsoft cafeteria.&quot; /&gt;
-  &lt;figcaption&gt;The first-day meal, bought at one of the Microsoft cafeterias. While the food isn't free, but is heavily discounted. I generally spend $5-9/meal. &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h2&gt; Week 2: Console Wheel of Fortune Project &lt;/h2&gt;
-
-&lt;p&gt;
-Building on top of the mock sprint, we refined our agile workflow by building a Wheel of Fortune console app. This, hands-down, was the most beneficial week. A reasonable amount of people in the cohort haven’t had experience with being so involved in the agile process.
-&lt;/p&gt;
-
-&lt;p&gt;
-This week was a nice, condensed way of experiencing a sprint from start to finish. The goal was to define what features would be feasible to have a working MVP (minimum viable product) by the end of the week.
-&lt;/p&gt;
-
-&lt;p&gt;
-There was also a mix of even more video courses we took. Again, not a great use of time. But the topics of the courses were worth doing, including the soft skills ones.
-&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/leap/power_bi_demo.jpg&quot; alt=&quot;The TPMs getting training with Power BI, a program for building reports and dashboards to visually display data.&quot; /&gt;
-  &lt;figcaption&gt;The TPMs getting training with Power BI, a program for building reports and dashboards to visually display data.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;../images/leap/project_crunch_time.jpg&quot; alt=&quot;The team working together to quickly code up the final project.&quot; /&gt;
-  &lt;figcaption&gt;The team only had (maybe) a couple of designated hours to actually code the final project. Time got time, and the stressed kicked in during those final days.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h2&gt; Week 3: Final Project &lt;/h2&gt;
-
-&lt;p&gt;
-This week was a mess. It was pretty poorly planned where we ended up only having several hours to complete an entire project, with more requirements than the week before. And there were some activities that really could have been left out.
-&lt;/p&gt;
-
-&lt;p&gt;
-Every other person I’ve talked to from my cohort had pretty strong feelings about how this week could have been different. We will just leave it at that. The week ended with presenting our projects to the class.
-&lt;/p&gt;
-
-&lt;p&gt;
-Fortunately there were some phenomenal sessions we had with FTE’s (full time employees, how Microsoft refers to their hired/non-contracting employees). They gave a tremendous amount of insight into what we could actually expect when we joined our teams.
-&lt;/p&gt;
-
-&lt;h2&gt; That's a wrap &lt;/h2&gt;
-
-&lt;p&gt;
-While I, along with my peers, had different expectations for what we thought this classroom portion was going to be like, it was beneficial just to get acquainted with being on campus and bonding with each other. Already we are benefiting from having each others support, and that’s something you never get when you get hired into a company alone.
-&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/leap/leap_cohort_16.jpg&quot; alt=&quot;The full cohort posing in front of a Microsoft sign in front of Building 92&quot; /&gt;
-  &lt;figcaption&gt;The gang's all here. We are the largest cohort to date, with 47 LEAPers.&lt;/figcaption&gt;
-&lt;/figure&gt;
-</description>
-        <pubDate>Sat, 15 Feb 2020 22:00:00 -0800</pubDate>
-        <link>http://localhost:4000/leap-classroom</link>
-        <guid isPermaLink="true">http://localhost:4000/leap-classroom</guid>
-        
-        <category>Microsoft</category>
-        
-        <category>Learning</category>
-        
-        <category>Apprenticeship</category>
-        
-        
-        <category>LEAP</category>
         
       </item>
     
@@ -754,6 +642,77 @@ All the above and then some were taken to a whole new level with this class. Let
         <pubDate>Thu, 30 Jul 2015 22:25:00 -0700</pubDate>
         <link>http://localhost:4000/third-class</link>
         <guid isPermaLink="true">http://localhost:4000/third-class</guid>
+        
+        <category>Flatiron</category>
+        
+        <category>Teaching</category>
+        
+        <category>Culture</category>
+        
+        
+        <category>Teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Second Flatiron Class: Intro to Design</title>
+        <description>&lt;p&gt;&lt;em&gt; When I saw that I was teaching a web design course I was stoked! I thought for sure that it would be a breeze since design and front end development come easy to me, but teaching something that came more intuitively proved to be more challenging than I thought.  &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Doing More Than 'Making Things Pretty' &lt;/h2&gt;
+
+&lt;p&gt; During these two weeks my students went from zero to learning html, css, jquery and design theories. The last four of those days spent implementing what they learned into a final project. Pure craziness! &lt;/p&gt;
+
+&lt;p&gt; I was lucky enough with this class that a good chunck had already taken the previous course and were familiar with the  &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/DSC_0004.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/IMG_2154.JPG&quot; alt=&quot;Q and A with Karlie Kloss&quot; /&gt;
+  &lt;figcaption&gt; One day coding was interrupted by supermodel and Taylor Swift bestie, Karlie Kloss talking about her coding and bootcamp experience. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; The Final Projects &lt;/h2&gt;
+&lt;p&gt; Squeezing front end coding and design theory into a couple of weeks wasn't easy, but these kids knocked it out of the park when it came time to make their final projects. It's the most gratifying feeling when kids pickup and apply tough concepts and code after minimal instruction. &lt;/p&gt;
+
+&lt;figure&gt;
+&lt;a href=&quot;http://bitemesandwichmaker.github.io/&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/IMG_2231.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
+  &lt;figcaption&gt; Easily one of the most clever and stunning designs done up by our Sammich Maker.&amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;figure&gt;
+&lt;a href=&quot;http://flatirontabloid.github.io/&quot; target=&quot;_blank&quot;&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/IMG_2227.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
+  &lt;figcaption&gt; Digging up all the dirt on our class, Flatiron Tabloid summed up what made our class so great, the culture and general sillyness! &amp;lt;/a&amp;gt; &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;figure&gt;
+&lt;a href=&quot;http://mrjameraqui.github.io/&quot; target=&quot;_blank&quot;&gt; 
+  &lt;img src=&quot;../images/flatiron/class_2/IMG_2230.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
+  &lt;figcaption&gt; With site that's out of this world, this team came together to make a beautiful and creative app with a whole lotta pizzaz.  &amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
+&amp;lt;/figure&amp;gt;
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;h2&gt; Too many goodbyes &lt;/h2&gt;
+&lt;p&gt; Not only did I have to say goodbye to the majority of students in this class, but also my incredible co-teacher Jeff. I really couldn't have asked for a better bunch to be part of my first month of teaching. &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/DSC_0053.jpg&quot; alt=&quot;co-teacher Jeff&quot; /&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_2/Model_Devs.jpg&quot; alt=&quot;web design students group photo&quot; /&gt;
+  &lt;figcaption&gt; One last group shot before having to depart with these fantastic group of kids and my co-teach Jeff. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;br /&gt;&lt;br /&gt;
+
+
+&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Sat, 18 Jul 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/graduated-design-students</link>
+        <guid isPermaLink="true">http://localhost:4000/graduated-design-students</guid>
         
         <category>Flatiron</category>
         
