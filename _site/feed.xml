@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 May 2020 15:05:31 -0700</pubDate>
-    <lastBuildDate>Fri, 01 May 2020 15:05:31 -0700</lastBuildDate>
+    <pubDate>Sun, 03 May 2020 09:19:20 -0700</pubDate>
+    <lastBuildDate>Sun, 03 May 2020 09:19:20 -0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -90,6 +90,105 @@
         
         
         <category>TIL</category>
+        
+      </item>
+    
+      <item>
+        <title>React Essentials Part 1: Components</title>
+        <description>&lt;p&gt;&lt;em&gt;
+This is the first post in a series touching on essential parts of React.js that should be known when getting started. We will cover components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
+&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!-- &lt;figure&gt;
+  &lt;img src=&quot;../images/react/component.png&quot; alt=&quot;screenshot of a react component&quot;&gt;
+&lt;/figure&gt;
+&lt;br&gt;&lt;br&gt; --&gt;
+
+&lt;h2&gt; The Project &lt;/h2&gt;
+&lt;p&gt;
+We will be building the front-end for an app that lets users view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.
+&lt;/p&gt;
+
+&lt;h2&gt; Setup &lt;/h2&gt;
+&lt;p&gt;
+Use this &lt;a alt=&quot;Tutorial's github repository&quot; target=&quot;_blank&quot; href=&quot;https://github.com/PilgrimMemoirs/essential-react-tutorial&quot;&gt;GitHub repository&lt;/a&gt; to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
+&lt;p&gt;
+
+&lt;p&gt;
+Now that you have the repository cloned onto your computer, navigate inside of the essential-react-tutorial directory and, in your terminal, and run this command:
+&lt;/p&gt;
+
+&lt;code&gt;$ yarn create create-react-app .&lt;/code&gt;
+&lt;p&gt;&lt;em&gt;
+Note: I use Yarn as my package manager, if you use another (like npm) replace yarn with that package manager's command. Also, the '$' indicates this is a terminal command, so don't copy that character when you see it at the start of code snippet.
+&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;
+This command creates everything you need to quickly start using React, without it we'd have to cover a lot of material to configure everything and setup build tools. It's perfect for getting started, so you can jump straight into coding. You can visit the &lt;a alt=&quot;create-react-app documentation&quot; target=&quot;_blank&quot; href=&quot;https://create-react-app.dev/&quot;&gt;docs for create-react-app&lt;/a&gt; to learn more about it.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you enter &lt;code&gt;$ ls&lt;/code&gt; in terminal, you should see this:
+&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/react/ls.png&quot; alt=&quot;screenshot of terminal after entering ls&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Everything is setup! We can now run &lt;code&gt;$ yarn start&lt;/code&gt; to start the server and start building our app!&lt;/p&gt;
+
+&lt;p&gt;
+In your browser, go to &lt;a alt=&quot;localhost 3000&quot; target=&quot;_blank&quot; href=&quot;http://localhost:3000&quot;&gt;localhost:3000&lt;/a&gt;. Keep the server running, your browser window will automatically refresh when you save changes in your code!
+&lt;/p&gt;
+
+
+&lt;h2&gt;Components&lt;/h2&gt;
+&lt;p&gt;
+The very first concept to understanding react, is knowing about components. What makes any library/framework worth using is following the conventions to have DRY, maintainable code that boost your productivity. With React, parts of the UI (user interface) will be split into components to isolate how we will handle the data, structure and functionality around that part.
+&lt;/p&gt;
+&lt;p&gt; For example, the app we are going to be building will focus on content around parks, trails and reviews. At minimum, each one of those will have it's own component. They will have their own set of data, functionality and design. As we continue to develop, and as those components start getting more complex, it is very likely some parts inside those components will need to be split into new components. For example, with reviews we are going to want to display reviews and be able to submit a review with a form. Those are going to be two separate components.  
+&lt;/p&gt;
+
+&lt;!-- Have a wireframe with labels for each planned component --&gt;
+&lt;!-- &lt;figure&gt;
+  &lt;img src=&quot;../images/react/ls.png&quot; alt=&quot;screenshot of terminal after entering ls&quot;&gt;
+&lt;/figure&gt; --&gt;
+
+&lt;p&gt;
+Open the project in your code editor (ex: Atom, Sublime or whatever you typically work in). We are going to focus
+&lt;/p&gt;
+
+
+&lt;code&gt;$ mkdir src/components&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;$ touch src/components/Park.js&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;$ touch src/components/Trail.js&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;$ touch src/components/Review.js&lt;/code&gt;
+
+&lt;!-- &lt;figure&gt;
+  &lt;img src=&quot;../images/react/component.png&quot; alt=&quot;screenshot of a react component&quot;&gt;
+&lt;/figure&gt;
+&lt;br&gt;&lt;br&gt; --&gt;
+
+&lt;h3&gt;A Note on Functional vs Class Components&lt;/h3&gt;
+&lt;p&gt;
+This project is going to strictly use functional components, but prior to something called React Hooks was released in 2019
+&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 May 2020 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/react-components</link>
+        <guid isPermaLink="true">http://localhost:4000/react-components</guid>
+        
+        <category>javascript</category>
+        
+        <category>web</category>
+        
+        <category>frontend</category>
+        
+        
+        <category>react</category>
         
       </item>
     
@@ -640,77 +739,6 @@ All the above and then some were taken to a whole new level with this class. Let
         <pubDate>Thu, 30 Jul 2015 22:25:00 -0700</pubDate>
         <link>http://localhost:4000/third-class</link>
         <guid isPermaLink="true">http://localhost:4000/third-class</guid>
-        
-        <category>Flatiron</category>
-        
-        <category>Teaching</category>
-        
-        <category>Culture</category>
-        
-        
-        <category>Teaching</category>
-        
-      </item>
-    
-      <item>
-        <title>Second Flatiron Class: Intro to Design</title>
-        <description>&lt;p&gt;&lt;em&gt; When I saw that I was teaching a web design course I was stoked! I thought for sure that it would be a breeze since design and front end development come easy to me, but teaching something that came more intuitively proved to be more challenging than I thought.  &lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt;Doing More Than 'Making Things Pretty' &lt;/h2&gt;
-
-&lt;p&gt; During these two weeks my students went from zero to learning html, css, jquery and design theories. The last four of those days spent implementing what they learned into a final project. Pure craziness! &lt;/p&gt;
-
-&lt;p&gt; I was lucky enough with this class that a good chunck had already taken the previous course and were familiar with the  &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/DSC_0004.jpg&quot; alt=&quot;students graduating from flatiron precollege program inchicago&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/IMG_2154.JPG&quot; alt=&quot;Q and A with Karlie Kloss&quot; /&gt;
-  &lt;figcaption&gt; One day coding was interrupted by supermodel and Taylor Swift bestie, Karlie Kloss talking about her coding and bootcamp experience. &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; The Final Projects &lt;/h2&gt;
-&lt;p&gt; Squeezing front end coding and design theory into a couple of weeks wasn't easy, but these kids knocked it out of the park when it came time to make their final projects. It's the most gratifying feeling when kids pickup and apply tough concepts and code after minimal instruction. &lt;/p&gt;
-
-&lt;figure&gt;
-&lt;a href=&quot;http://bitemesandwichmaker.github.io/&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/IMG_2231.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; Easily one of the most clever and stunning designs done up by our Sammich Maker.&amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;figure&gt;
-&lt;a href=&quot;http://flatirontabloid.github.io/&quot; target=&quot;_blank&quot;&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/IMG_2227.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; Digging up all the dirt on our class, Flatiron Tabloid summed up what made our class so great, the culture and general sillyness! &amp;lt;/a&amp;gt; &lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;figure&gt;
-&lt;a href=&quot;http://mrjameraqui.github.io/&quot; target=&quot;_blank&quot;&gt; 
-  &lt;img src=&quot;../images/flatiron/class_2/IMG_2230.JPG&quot; alt=&quot;students graduating from flatiron precollege program in chicago&quot; /&gt;
-  &lt;figcaption&gt; With site that's out of this world, this team came together to make a beautiful and creative app with a whole lotta pizzaz.  &amp;lt;/a&amp;gt;  &lt;/figcaption&gt;
-&amp;lt;/figure&amp;gt;
-&lt;br /&gt;&lt;br /&gt;
-
-&lt;h2&gt; Too many goodbyes &lt;/h2&gt;
-&lt;p&gt; Not only did I have to say goodbye to the majority of students in this class, but also my incredible co-teacher Jeff. I really couldn't have asked for a better bunch to be part of my first month of teaching. &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/DSC_0053.jpg&quot; alt=&quot;co-teacher Jeff&quot; /&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_2/Model_Devs.jpg&quot; alt=&quot;web design students group photo&quot; /&gt;
-  &lt;figcaption&gt; One last group shot before having to depart with these fantastic group of kids and my co-teach Jeff. &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;br /&gt;&lt;br /&gt;
-
-
-&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/figure&gt;
-</description>
-        <pubDate>Sat, 18 Jul 2015 22:25:00 -0700</pubDate>
-        <link>http://localhost:4000/graduated-design-students</link>
-        <guid isPermaLink="true">http://localhost:4000/graduated-design-students</guid>
         
         <category>Flatiron</category>
         

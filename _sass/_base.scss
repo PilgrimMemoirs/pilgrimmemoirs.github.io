@@ -9,6 +9,9 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+.center {
+  text-align: center;
+}
 
 
 /**
@@ -103,7 +106,9 @@ a {
     }
 }
 
-
+p a {
+  text-decoration: underline;
+}
 
 /**
  * Blockquotes
@@ -134,7 +139,9 @@ code {
 }
 
 code {
+    color: #f33282 !important;
     padding: 1px 5px;
+    margin: 0 auto;
 }
 
 pre {

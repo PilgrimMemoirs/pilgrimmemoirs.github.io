@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
+  <title>React Essentials Part 1: Components</title>
+  <meta name="description" content="This is the first post in a series touching on essential parts of React.js that should be known when getting started. We will cover components, handling data..."/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="canonical" href="http://localhost:4000/react-components">
+
+  <link rel="alternate" type="application/rss+xml" title="Cats on Code" href="http://localhost:4000/feed.xml" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+ 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+</head>
+
+
+  <body>
+
+    <header class="site-header" style="background-image: url(../images/cats/welcome/codingcatbw.jpg)";>
+
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Cats on Code</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/posts/">Posts</a>
+          
+        
+          
+          <a class="page-link" href="/topics/">Topics</a>
+          
+        
+      </div>
+    </nav>
+  </div>
+
+<div id="pgtitle"> <h1><strong><mark>React Essentials Part 1: Components </mark></strong></h1> </div>
+
+
+
+<div class="social-icons">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/pilgrimmemoirs">
+              <span class="username">Github</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/pilgrimmemoirs">
+              <span class="username">Twitter</span>
+            </a>
+          </li>
+          
+          <li><a href="mailto:hello@jamiepilgrim.com">Email</a></li>
+        </ul>
+      </div>
+</header>
+
+
+
+
+
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">React Essentials Part 1: Components</h1>
+    <p class="post-meta">May 1, 2020 • Jamie Pilgrim</p>
+  </header>
+
+  <article class="post-content">
+    <p><em>
+This is the first post in a series touching on essential parts of React.js that should be known when getting started. We will cover components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
+</em></p>
+
+<p><br /></p>
+
+<!-- <figure>
+  <img src="../images/react/component.png" alt="screenshot of a react component">
+</figure>
+<br><br> -->
+
+<h2> The Project </h2>
+<p>
+We will be building the front-end for an app that lets users view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.
+</p>
+
+<h2> Setup </h2>
+<p>
+Use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">GitHub repository</a> to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
+<p>
+
+<p>
+Now that you have the repository cloned onto your computer, navigate inside of the essential-react-tutorial directory and, in your terminal, and run this command:
+</p>
+
+<code>$ yarn create create-react-app .</code>
+<p><em>
+Note: I use Yarn as my package manager, if you use another (like npm) replace yarn with that package manager's command. Also, the '$' indicates this is a terminal command, so don't copy that character when you see it at the start of code snippet.
+</em></p>
+
+<p>
+This command creates everything you need to quickly start using React, without it we'd have to cover a lot of material to configure everything and setup build tools. It's perfect for getting started, so you can jump straight into coding. You can visit the <a alt="create-react-app documentation" target="_blank" href="https://create-react-app.dev/">docs for create-react-app</a> to learn more about it.
+</p>
+
+<p>
+If you enter <code>$ ls</code> in terminal, you should see this:
+</p>
+
+<figure>
+  <img src="../images/react/ls.png" alt="screenshot of terminal after entering ls" />
+</figure>
+
+<p>Everything is setup! We can now run <code>$ yarn start</code> to start the server and start building our app!</p>
+
+<p>
+In your browser, go to <a alt="localhost 3000" target="_blank" href="http://localhost:3000">localhost:3000</a>. Keep the server running, your browser window will automatically refresh when you save changes in your code!
+</p>
+
+
+<h2>Components</h2>
+<p>
+The very first concept to understanding react, is knowing about components. What makes any library/framework worth using is following the conventions to have DRY, maintainable code that boost your productivity. With React, parts of the UI (user interface) will be split into components to isolate how we will handle the data, structure and functionality around that part.
+</p>
+<p> For example, the app we are going to be building will focus on content around parks, trails and reviews. At minimum, each one of those will have it's own component. They will have their own set of data, functionality and design. As we continue to develop, and as those components start getting more complex, it is very likely some parts inside those components will need to be split into new components. For example, with reviews we are going to want to display reviews and be able to submit a review with a form. Those are going to be two separate components.  
+</p>
+
+<!-- Have a wireframe with labels for each planned component -->
+<!-- <figure>
+  <img src="../images/react/ls.png" alt="screenshot of terminal after entering ls">
+</figure> -->
+
+<p>
+Open the project in your code editor (ex: Atom, Sublime or whatever you typically work in). We are going to focus
+</p>
+
+
+<code>$ mkdir src/components</code><br />
+<code>$ touch src/components/Park.js</code><br />
+<code>$ touch src/components/Trail.js</code><br />
+<code>$ touch src/components/Review.js</code>
+
+<!-- <figure>
+  <img src="../images/react/component.png" alt="screenshot of a react component">
+</figure>
+<br><br> -->
+
+<h3>A Note on Functional vs Class Components</h3>
+<p>
+This project is going to strictly use functional components, but prior to something called React Hooks was released in 2019
+</p>
+</p></p>
+
+  </article>
+
+  <div class="bottom">
+      <div id="next-prev">
+  
+    <div id="prev"> 
+    <a href="/til-04302020"> 
+      <h4>Previous Post: </h4>
+      <h3>TIL: April 30 </h3>
+      <h4> April 29, 2020</h4>
+      </a>
+    </div>
+  
+
+
+  
+    <div id="next">
+      <a href="/til-05012020">
+        <h4>Next Post:</h4>
+        <h3> May 1 TIL: Queue from Two Stacks && SQL </h3>
+        <h4> May 1, 2020 </h4>
+      </a>
+    </div>
+  
+  <div class="clearfix"></div>
+  </div>
+
+
+    <div class="share-page">
+
+    <h4> Love it? Share it! </h4>
+
+    <a id="twitter" href="https://twitter.com/intent/tweet?text=React Essentials Part 1: Components&via=pilgrimmemoirs&url=http://catsoncode.com/react-components&hashtags=catsoncode" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+
+    <a id="facebook" href="https://facebook.com/sharer.php?u=http://localhost:4000/react-components" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+
+    <a id="google" href="https://plus.google.com/share?url=http://localhost:4000/react-components" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div>
+
+
+  </div>
+    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'catsoncode';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  
+
+</div>
+
+
+<script>
+  $('div.page-content').scroll(function() {
+      if ($('div.page-content').scrollTop() < 100) {
+          $('#pgtitle').hide();
+      } else {
+          $('#pgtitle').show();
+      }
+  });
+</script>
+      </div>
+    </div>
+
+    <footer>
+  <h3 id="menu"><a> Menu </a></h3>
+  <ul>
+    <div class="mobile-nav">
+      <li><h4><a href="/"> Home </a></h4></li>
+        
+          
+          <li><h4><a class="page-link" href="/about/">About</a></h4></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li><h4><a class="page-link" href="/posts/">Posts</a></h4></li>
+          
+        
+          
+          <li><h4><a class="page-link" href="/topics/">Topics</a></h4></li>
+          
+        
+        
+          <li><h4>
+            <a href="https://github.com/pilgrimmemoirs">
+              <span class="username">Github</span>
+            </a></h4>
+          </li>
+          
+
+          
+          <li>
+            <h4><a href="https://twitter.com/pilgrimmemoirs">
+              <span class="username">Twitter</span>
+            </a></h4>
+          </li>
+          
+          <li><h4><a href="mailto:hello@jamiepilgrim.com">Email</a></h4></li>
+        <li id="down"><h4><a> Down </a></h4></li>
+    </div>
+  </ul>
+
+<script type="text/javascript">
+  $('#menu').click(function() {
+    $('footer ul').css("display", "block");
+    console.log("hey");
+  });
+
+  $('#down').click(function(){
+    $('footer ul').css('display', 'none');
+    console.log("Whoah!")
+  })
+</script>
+</footer>
+   
+  </body>
+
+</html>

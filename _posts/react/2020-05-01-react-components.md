@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Essential React: Components"
-date:   2020-05-10 12:00:00
+title:  "React Essentials Part 1: Components"
+date:   2020-05-01 12:00:00
 categories: react
 tags: javascript web frontend
 author: Jamie Pilgrim
@@ -9,36 +9,84 @@ comments: true
 photo: "../images/cats/welcome/codingcatbw.jpg"
 ---
 
-
-<p><em>This is the first post in a series about essential React.js to know when getting started. Components will be function-based, using React Hooks, to cover how to handle props and state, component lifecyle and where to use ES6 features. Follow along with this GitHub repository, where each phase of the tutorial has it's own branch. </em></p>
+<p><em>
+This is the first post in a series touching on essential parts of React.js that should be known when getting started. We will cover components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
+</em></p>
 
 <br>
 
 <!-- <figure>
-  <img src="../images/selfies/IMG_2152.jpg" alt="Me, sitting in front of the computer">
+  <img src="../images/react/component.png" alt="screenshot of a react component">
 </figure>
 <br><br> -->
 
 
 <h2> The Project </h2>
-<p>This tutorial series will be building a React app for people to find trails within certain parks. Users will be able to view details on the parks and trails, as well as being able to review them.</p>
+<p>
+We will be building the front-end for an app that lets users view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.
+</p>
 
-<h2>The Project's Components</h2>
-<p></p>
+<h2> Setup </h2>
+<p>
+Use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">GitHub repository</a> to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
+<p>
+
+<p>
+Now that you have the repository cloned onto your computer, navigate inside of the essential-react-tutorial directory and, in your terminal, and run this command:
+</p>
+
+<code>$ yarn create create-react-app .</code>
+<p><em>
+Note: I use Yarn as my package manager, if you use another (like npm) replace yarn with that package manager's command. Also, the '$' indicates this is a terminal command, so don't copy that character when you see it at the start of code snippet.
+</em></p>
+
+<p>
+This command creates everything you need to quickly start using React, without it we'd have to cover a lot of material to configure everything and setup build tools. It's perfect for getting started, so you can jump straight into coding. You can visit the <a alt="create-react-app documentation" target="_blank" href="https://create-react-app.dev/">docs for create-react-app</a> to learn more about it.
+</p>
+
+<p>
+If you enter <code>$ ls</code> in terminal, you should see this:
+</p>
+
+<figure>
+  <img src="../images/react/ls.png" alt="screenshot of terminal after entering ls">
+</figure>
+
+<p>Everything is setup! We can now run <code>$ yarn start</code> to start the server and start building our app!</p>
+
+<p>
+In your browser, go to <a alt="localhost 3000" target="_blank" href="http://localhost:3000">localhost:3000</a>. Keep the server running, your browser window will automatically refresh when you save changes in your code!
+</p>
 
 
-<h3>Functional Components</h3>
-<p>If you're familiar with JavaScript, then functional components should feel fairly natural. </p>
+<h2>Components</h2>
+<p>
+The very first concept to understanding react, is knowing about components. What makes any library/framework worth using is following the conventions to have DRY, maintainable code that boost your productivity. With React, parts of the UI (user interface) will be split into components to isolate how we will handle the data, structure and functionality around that part.
+</p>
+<p> For example, the app we are going to be building will focus on content around parks, trails and reviews. At minimum, each one of those will have it's own component. They will have their own set of data, functionality and design. As we continue to develop, and as those components start getting more complex, it is very likely some parts inside those components will need to be split into new components. For example, with reviews we are going to want to display reviews and be able to submit a review with a form. Those are going to be two separate components.  
+</p>
 
-```javascript
-const Park({}){
-  return (
+<!-- Have a wireframe with labels for each planned component -->
+<!-- <figure>
+  <img src="../images/react/ls.png" alt="screenshot of terminal after entering ls">
+</figure> -->
 
-    )
-}
-```
+<p>
+Open the project in your code editor (ex: Atom, Sublime or whatever you typically work in). We are going to focus
+</p>
 
-<h3>A Note on Class Components</h3>
-<p>While this project is only going to use functional components, it's important to be able to recognize class-based components and know the difference between them and functional components. It's especially important if you are working in a codebase that was developed before React Hooks launched in 2019, which is probably most.</p>
 
-<p> If you're starting fresh with a new app, using functional components is generally recommended. The only reason not to tends to revolved around familiarity with class-based and having a preference for them. Since React Hooks are new, there's going to be less material and examples that use them, but they are not going anywhere so I wouldn't avoid using them for that reason! And, a component can always be refactored into a class component if necessary.</p>
+<code>$ mkdir src/components</code><br>
+<code>$ touch src/components/Park.js</code><br>
+<code>$ touch src/components/Trail.js</code><br>
+<code>$ touch src/components/Review.js</code>
+
+<!-- <figure>
+  <img src="../images/react/component.png" alt="screenshot of a react component">
+</figure>
+<br><br> -->
+
+<h3>A Note on Functional vs Class Components</h3>
+<p>
+This project is going to strictly use functional components, but prior to something called React Hooks was released in 2019
+</p>

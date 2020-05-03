@@ -1,0 +1,28 @@
+I"®<p><em>This is the first post in a series I'm doing touching on essential parts of React.js you should know when getting started. Components will be function-based, using React Hooks, to cover how to handle props and state, component lifecycle and where to use ES6 features. Follow along with this [GitHub repository](https://github.com/PilgrimMemoirs/essential-react-tutorial), where each phase of the tutorial has it's own branch. </em></p>
+
+<p><br /></p>
+
+<figure>
+  <img src="../images/react/component.png" alt="screenshot of a react component" />
+</figure>
+<p><br /><br /></p>
+
+<h2> The Project </h2>
+<p>We will be building the front-end for an app that lets users to view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.</p>
+
+<h2>Components</h2>
+<p></p>
+
+<h3>Components</h3>
+<p>If you're familiar with JavaScript, then functional components should feel fairly natural. </p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Park</span><span class="p">({}){</span>
+  <span class="k">return</span> <span class="p">(</span>
+
+    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3>A Note on Functional vs Class Components</h3>
+<p>This project is going to strictly use functional components, but prior to something called React Hooks was released in 2019</p>
+:ET
