@@ -6,9 +6,191 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 May 2020 09:19:20 -0700</pubDate>
-    <lastBuildDate>Sun, 03 May 2020 09:19:20 -0700</lastBuildDate>
+    <pubDate>Sun, 03 May 2020 17:02:41 -0700</pubDate>
+    <lastBuildDate>Sun, 03 May 2020 17:02:41 -0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>React Essentials Part 1: Components</title>
+        <description>&lt;p&gt;&lt;em&gt;
+This is the first post in a series touching on essential parts of React.js that should be known when getting started. We will cover components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
+&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!-- &lt;figure&gt;
+  &lt;img src=&quot;../images/react/component.png&quot; alt=&quot;screenshot of a react component&quot;&gt;
+&lt;/figure&gt;
+&lt;br&gt;&lt;br&gt; --&gt;
+
+&lt;h2&gt; The Project &lt;/h2&gt;
+&lt;p&gt;
+We will be building the front-end for an app that lets users view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt; Setup &lt;/h2&gt;
+&lt;p&gt;
+Use this &lt;a alt=&quot;Tutorial's github repository&quot; target=&quot;_blank&quot; href=&quot;https://github.com/PilgrimMemoirs/essential-react-tutorial&quot;&gt;GitHub repository&lt;/a&gt; to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
+&lt;p&gt;
+
+&lt;p&gt;
+Now that you have the repository cloned onto your computer, navigate inside of the essential-react-tutorial directory and, in your terminal, and run this command:
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ npx create create-react-app .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;
+This command creates everything you need to quickly start using React, without it we'd have to cover a lot more material to setup. Using the Create React App project is ideal for learning React, so we can jump straight into coding. You can visit the &lt;a alt=&quot;create-react-app documentation&quot; target=&quot;_blank&quot; href=&quot;https://create-react-app.dev/&quot;&gt;docs for create-react-app&lt;/a&gt; to learn more about it.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you enter &lt;code&gt;$ ls&lt;/code&gt; in terminal, you should see this:
+&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/react/ls.png&quot; alt=&quot;screenshot of terminal after entering ls&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Everything is setup! We can now run &lt;code&gt;$ yarn start&lt;/code&gt; to start the server and start building our app!&lt;/p&gt;
+
+&lt;p&gt;
+In your browser, go to &lt;a alt=&quot;localhost 3000&quot; target=&quot;_blank&quot; href=&quot;http://localhost:3000&quot;&gt;localhost:3000&lt;/a&gt;. Keep the server running, your browser window will automatically refresh when you save changes in your code!
+&lt;/p&gt;
+
+
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;h2&gt;Components&lt;/h2&gt;
+&lt;p&gt;
+The very first concept to understanding react, is knowing about components. What makes any library/framework worth using is following the conventions to have DRY, maintainable code that boost your productivity. With React, parts of the UI (user interface) will be split into components to isolate how we will handle the data, structure and functionality around that part.
+&lt;/p&gt;
+&lt;p&gt; For example, the app we are going to be building will focus on content around parks, trails and reviews. At minimum, each one of those will have it's own component. They will have their own set of data, functionality and design. As we continue to develop, and as those components start getting more complex, it is very likely some parts inside those components will need to be split into new components. For example, with reviews we are going to want to display reviews and be able to submit a review with a form. Those are going to be two separate components.  
+&lt;/p&gt;
+
+&lt;!-- TODO: Have a wireframe with labels for each planned component --&gt;
+&lt;!-- &lt;figure&gt;
+  &lt;img src=&quot;../images/react/ls.png&quot; alt=&quot;screenshot of terminal after entering ls&quot;&gt;
+&lt;/figure&gt; --&gt;
+
+&lt;p&gt;
+Everything we need is in the /src directory. In app.js, we already have our first component. Notice that it is setup as a function, where it returns everything we want this component to render. The component is defined in this file, but only having the code in this file is not what is making it show up in the browser.
+&lt;/p&gt;
+
+&lt;p&gt;
+Instead, in index.js, notice line 4 &amp;amp; and 9 &lt;em&gt;(can reference in photo below)&lt;/em&gt;. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice &lt;em&gt;how&lt;/em&gt; it is being rendered. Using HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntx is &lt;b&gt;JSX&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/react/app-index.png&quot; alt=&quot;screenshot of terminal after entering ls&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;
+&lt;b&gt;JSX&lt;/b&gt; allows us to use HTML syntax, instead of complicated JS, to render elements from JavaScript files. All the code, in app.js, between lines 6-23 is also JSX! While we are looking at app.js, change the text on line 19 to something else (I change it to Hello!). If your server is still running, you should see the text change automatically when you visit &lt;a alt=&quot;localhost 3000&quot; target=&quot;_blank&quot; href=&quot;http://localhost:3000&quot;&gt;localhost:3000&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;h2&gt; Create New Components &lt;/h2&gt;
+
+&lt;p&gt;
+It's time to get to business and start building out app! We will start by creating a new component for park, trail and review.
+&lt;/p&gt;
+
+&lt;p&gt;
+To keep our files more organized, start with making a /components directory inside of /src: &lt;code&gt;$ mkdir src/components&lt;/code&gt;.  Lets go ahead and create a file for each of our components, within our new components directory:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;code&gt;$ touch src/components/Park.js&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;$ touch src/components/Trail.js&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;$ touch src/components/Review.js&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Open the new Park.js file you created. Based on what you saw with the App component, what is the minimum code needed to be able to import this component to another file to render? &lt;a alt=&quot;&quot; target=&quot;_blank&quot; href=&quot;https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-01components-js&quot;&gt;Click here for the solution&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+We made the component, but now we have to explicitly call the function to tell it where to render. Let's go back to App.js, import Park.js at the top, and then use JSX to render the Park component. I suggest removing the code on lines 8-21, in App.js. &lt;a alt=&quot;&quot; target=&quot;_blank&quot; href=&quot;https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-02components-js&quot;&gt;Click here for the solution&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt; Right now, your localhost:3000 should be showing 'I'm a park!', or whatever you returned from the Park component. Your code should look like this:
+&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/react/app-park.png&quot; alt=&quot;screenshot of a app.js and park.js react component&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Note that when defining and calling a component, the component name has to be capitalized&lt;/p&gt;
+
+&lt;p&gt;
+Use this same pattern to build the Trail and Review classes. They should look something like this:
+&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/react/new-components.png&quot; alt=&quot;screenshot of a app.js and park.js react component&quot; /&gt;
+&lt;/figure&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;h2&gt;Load Components within Each Other&lt;/h2&gt;
+&lt;p&gt;
+If we want to be able to see trails that belong to a park, it makes sense to load trails within parks. How would you do that? Try it out! &lt;a alt=&quot;&quot; target=&quot;_blank&quot; href=&quot;https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-02components-js&quot;&gt;Refer to this solution&lt;/a&gt; if you get stuck.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now do the same, but with Park and Trail each having a Review component render with it. You might run into this &lt;b&gt;parsing error&lt;/b&gt;: &lt;code&gt;Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment &amp;lt;&amp;gt;...&amp;lt;/&amp;gt;?&lt;/code&gt;. When returning from a component, all elements must be wrapped in a single element (typically a div or section).
+&lt;/p&gt;
+
+&lt;p&gt;
+If it doesn't make sense to have a wrapping element, use &lt;b&gt;React.Fragment&lt;/b&gt; to wrap around the elements instead, when returning. Fragments won't be used in this tutorial, but they're good to know about. Look at &lt;a alt=&quot;React docs for fragment&quot; target=&quot;_blank&quot; href=&quot;https://reactjs.org/docs/fragments.html&quot;&gt;this page of the docs&lt;/a&gt; to know when it's appropriate to use.
+&lt;/p&gt;
+
+&lt;p&gt;
+In my solution, I used divs to wrap around multiple elements that are being returned. Notice how I added a class to the elements. Since 'class' is a reserved word in JavaScript, &lt;b&gt;'className'&lt;/b&gt; must be used instead. Remember, although it these look like HTML tags, everything in this file is still JavaScript and the everything that looks like HTML is actually JSX.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is a good spot to pause and make sure everything mentioned so far makes sense. Refer to &lt;a alt=&quot;final code solution&quot; target=&quot;_blank&quot; href=&quot;https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-06components-js&quot;&gt;this solution&lt;/a&gt; and the image below for where your code should be at this point.
+&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/react/final-components.png&quot; alt=&quot;screenshot of final solution for components section of tutorial&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;h3&gt;A Note on Functional vs Class Components&lt;/h3&gt;
+&lt;p&gt;
+This project is going to strictly use functional components. Before React Hooks were released in 2019, using ES6 classes were typically preferred for more complex components. Many code examples and code bases built before then will likely use class components. It's good to be aware of when searching for help online and when working in other code bases. This topic can lead you down an entire rabbit hole but, for now, just know that when a component starts with 'function' it's a functional component, and when it starts with 'class', it's a class component. Easy peasy!
+&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/react/functional-class.png&quot; alt=&quot;screenshot of a app.js and park.js react component&quot; /&gt;
+    &lt;figcaption&gt; The same component, with the top as a function and the bottom as a class.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;h3&gt;Next up...&lt;/h3&gt;
+&lt;p&gt;The next section of this tutorial will cover handling data between components&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 May 2020 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/react-components</link>
+        <guid isPermaLink="true">http://localhost:4000/react-components</guid>
+        
+        <category>javascript</category>
+        
+        <category>web</category>
+        
+        <category>frontend</category>
+        
+        
+        <category>react</category>
+        
+      </item>
     
       <item>
         <title>May 1 TIL: Queue from Two Stacks &amp;&amp; SQL</title>
@@ -90,105 +272,6 @@
         
         
         <category>TIL</category>
-        
-      </item>
-    
-      <item>
-        <title>React Essentials Part 1: Components</title>
-        <description>&lt;p&gt;&lt;em&gt;
-This is the first post in a series touching on essential parts of React.js that should be known when getting started. We will cover components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
-&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;!-- &lt;figure&gt;
-  &lt;img src=&quot;../images/react/component.png&quot; alt=&quot;screenshot of a react component&quot;&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt; --&gt;
-
-&lt;h2&gt; The Project &lt;/h2&gt;
-&lt;p&gt;
-We will be building the front-end for an app that lets users view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.
-&lt;/p&gt;
-
-&lt;h2&gt; Setup &lt;/h2&gt;
-&lt;p&gt;
-Use this &lt;a alt=&quot;Tutorial's github repository&quot; target=&quot;_blank&quot; href=&quot;https://github.com/PilgrimMemoirs/essential-react-tutorial&quot;&gt;GitHub repository&lt;/a&gt; to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
-&lt;p&gt;
-
-&lt;p&gt;
-Now that you have the repository cloned onto your computer, navigate inside of the essential-react-tutorial directory and, in your terminal, and run this command:
-&lt;/p&gt;
-
-&lt;code&gt;$ yarn create create-react-app .&lt;/code&gt;
-&lt;p&gt;&lt;em&gt;
-Note: I use Yarn as my package manager, if you use another (like npm) replace yarn with that package manager's command. Also, the '$' indicates this is a terminal command, so don't copy that character when you see it at the start of code snippet.
-&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;
-This command creates everything you need to quickly start using React, without it we'd have to cover a lot of material to configure everything and setup build tools. It's perfect for getting started, so you can jump straight into coding. You can visit the &lt;a alt=&quot;create-react-app documentation&quot; target=&quot;_blank&quot; href=&quot;https://create-react-app.dev/&quot;&gt;docs for create-react-app&lt;/a&gt; to learn more about it.
-&lt;/p&gt;
-
-&lt;p&gt;
-If you enter &lt;code&gt;$ ls&lt;/code&gt; in terminal, you should see this:
-&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/react/ls.png&quot; alt=&quot;screenshot of terminal after entering ls&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Everything is setup! We can now run &lt;code&gt;$ yarn start&lt;/code&gt; to start the server and start building our app!&lt;/p&gt;
-
-&lt;p&gt;
-In your browser, go to &lt;a alt=&quot;localhost 3000&quot; target=&quot;_blank&quot; href=&quot;http://localhost:3000&quot;&gt;localhost:3000&lt;/a&gt;. Keep the server running, your browser window will automatically refresh when you save changes in your code!
-&lt;/p&gt;
-
-
-&lt;h2&gt;Components&lt;/h2&gt;
-&lt;p&gt;
-The very first concept to understanding react, is knowing about components. What makes any library/framework worth using is following the conventions to have DRY, maintainable code that boost your productivity. With React, parts of the UI (user interface) will be split into components to isolate how we will handle the data, structure and functionality around that part.
-&lt;/p&gt;
-&lt;p&gt; For example, the app we are going to be building will focus on content around parks, trails and reviews. At minimum, each one of those will have it's own component. They will have their own set of data, functionality and design. As we continue to develop, and as those components start getting more complex, it is very likely some parts inside those components will need to be split into new components. For example, with reviews we are going to want to display reviews and be able to submit a review with a form. Those are going to be two separate components.  
-&lt;/p&gt;
-
-&lt;!-- Have a wireframe with labels for each planned component --&gt;
-&lt;!-- &lt;figure&gt;
-  &lt;img src=&quot;../images/react/ls.png&quot; alt=&quot;screenshot of terminal after entering ls&quot;&gt;
-&lt;/figure&gt; --&gt;
-
-&lt;p&gt;
-Open the project in your code editor (ex: Atom, Sublime or whatever you typically work in). We are going to focus
-&lt;/p&gt;
-
-
-&lt;code&gt;$ mkdir src/components&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;$ touch src/components/Park.js&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;$ touch src/components/Trail.js&lt;/code&gt;&lt;br /&gt;
-&lt;code&gt;$ touch src/components/Review.js&lt;/code&gt;
-
-&lt;!-- &lt;figure&gt;
-  &lt;img src=&quot;../images/react/component.png&quot; alt=&quot;screenshot of a react component&quot;&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt; --&gt;
-
-&lt;h3&gt;A Note on Functional vs Class Components&lt;/h3&gt;
-&lt;p&gt;
-This project is going to strictly use functional components, but prior to something called React Hooks was released in 2019
-&lt;/p&gt;
-&lt;/p&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 May 2020 05:00:00 -0700</pubDate>
-        <link>http://localhost:4000/react-components</link>
-        <guid isPermaLink="true">http://localhost:4000/react-components</guid>
-        
-        <category>javascript</category>
-        
-        <category>web</category>
-        
-        <category>frontend</category>
-        
-        
-        <category>react</category>
         
       </item>
     

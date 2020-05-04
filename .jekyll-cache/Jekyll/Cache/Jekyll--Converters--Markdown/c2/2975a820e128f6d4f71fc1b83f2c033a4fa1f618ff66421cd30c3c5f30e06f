@@ -1,33 +1,21 @@
----
-layout: post
-title:  "React Essentials Part 1: Components"
-date:   2020-05-03 12:00:00
-categories: react
-tags: javascript web frontend
-author: Jamie Pilgrim
-comments: true
-photo: "../images/cats/welcome/codingcatbw.jpg"
----
-
-<p><em>
+I"Â<p><em>
 This is the first post in a series touching on essential parts of React.js that should be known when getting started. We will cover components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
 </em></p>
 
-<br>
+<p><br /></p>
 
 <!-- <figure>
   <img src="../images/react/component.png" alt="screenshot of a react component">
 </figure>
 <br><br> -->
 
-
 <h2> The Project </h2>
 <p>
 We will be building the front-end for an app that lets users view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.
 </p>
 
-<br>
-<br>
+<p><br />
+<br /></p>
 <h2> Setup </h2>
 <p>
 Use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">GitHub repository</a> to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
@@ -48,7 +36,7 @@ If you enter <code>$ ls</code> in terminal, you should see this:
 </p>
 
 <figure>
-  <img src="../images/react/ls.png" alt="screenshot of terminal after entering ls">
+  <img src="../images/react/ls.png" alt="screenshot of terminal after entering ls" />
 </figure>
 
 <p>Everything is setup! We can now run <code>$ yarn start</code> to start the server and start building our app!</p>
@@ -58,8 +46,8 @@ In your browser, go to <a alt="localhost 3000" target="_blank" href="http://loca
 </p>
 
 
-<br>
-<br>
+<br />
+<br />
 <h2>Components</h2>
 <p>
 The very first concept to understanding react, is knowing about components. What makes any library/framework worth using is following the conventions to have DRY, maintainable code that boost your productivity. With React, parts of the UI (user interface) will be split into components to isolate how we will handle the data, structure and functionality around that part.
@@ -77,19 +65,19 @@ Everything we need is in the /src directory. In app.js, we already have our firs
 </p>
 
 <p>
-Instead, in index.js, notice line 4 & and 9 <em>(can reference in photo below)</em>. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice <em>how</em> it is being rendered. Using HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntx is <b>JSX</b>.
+Instead, in index.js, notice line 4 &amp; and 9 <em>(can reference in photo below)</em>. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice <em>how</em> it is being rendered. Using HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntx is <b>JSX</b>.
 </p>
 
 <figure>
-  <img src="../images/react/app-index.png" alt="screenshot of terminal after entering ls">
+  <img src="../images/react/app-index.png" alt="screenshot of terminal after entering ls" />
 </figure>
 
 <p>
 <b>JSX</b> allows us to use HTML syntax, instead of complicated JS, to render elements from JavaScript files. All the code, in app.js, between lines 6-23 is also JSX! While we are looking at app.js, change the text on line 19 to something else (I change it to Hello!). If your server is still running, you should see the text change automatically when you visit <a alt="localhost 3000" target="_blank" href="http://localhost:3000">localhost:3000</a>.
 </p>
 
-<br>
-<br>
+<br />
+<br />
 <h2> Create New Components </h2>
 
 <p>
@@ -101,8 +89,8 @@ To keep our files more organized, start with making a /components directory insi
 </p>
 
 <p>
-<code>$ touch src/components/Park.js</code><br>
-<code>$ touch src/components/Trail.js</code><br>
+<code>$ touch src/components/Park.js</code><br />
+<code>$ touch src/components/Trail.js</code><br />
 <code>$ touch src/components/Review.js</code>
 </p>
 
@@ -117,48 +105,30 @@ We made the component, but now we have to explicitly call the function to tell i
 <p> Right now, your localhost:3000 should be showing 'I'm a park!', or whatever you returned from the Park component. Your code should look like this:
 </p>
 <figure>
-  <img src="../images/react/app-park.png" alt="screenshot of a app.js and park.js react component">
+  <img src="../images/react/app-park.png" alt="screenshot of a app.js and park.js react component" />
 </figure>
-
-<p>Note that when defining and calling a component, the component name has to be capitalized</p>
 
 <p>
 Use this same pattern to build the Trail and Review classes. They should look something like this:
 </p>
 
 <figure>
-  <img src="../images/react/new-components.png" alt="screenshot of a app.js and park.js react component">
+  <img src="../images/react/new-components.png" alt="screenshot of a app.js and park.js react component" />
 </figure>
-<br>
-<br>
 
-<h2>Load Components within Each Other</h2>
 <p>
 If we want to be able to see trails that belong to a park, it makes sense to load trails within parks. How would you do that? Try it out! <a alt="" target="_blank" href="https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-02components-js">Refer to this solution</a> if you get stuck.
 </p>
 
 <p>
-Now do the same, but with Park and Trail each having a Review component render with it. You might run into this <b>parsing error</b>: <code>Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>?</code>. When returning from a component, all elements must be wrapped in a single element (typically a div or section).
-</p>
-
-<p>
-If it doesn't make sense to have a wrapping element, use <b>React.Fragment</b> to wrap around the elements instead, when returning. Fragments won't be used in this tutorial, but they're good to know about. Look at <a alt="React docs for fragment" target="_blank" href="https://reactjs.org/docs/fragments.html">this page of the docs</a> to know when it's appropriate to use.
-</p>
-
-<p>
-In my solution, I used divs to wrap around multiple elements that are being returned. Notice how I added a class to the elements. Since 'class' is a reserved word in JavaScript, <b>'className'</b> must be used instead. Remember, although it these look like HTML tags, everything in this file is still JavaScript and the everything that looks like HTML is actually JSX.
-</p>
-
-<p>
-This is a good spot to pause and make sure everything mentioned so far makes sense. Refer to <a alt="final code solution" target="_blank" href="https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-06components-js">this solution</a> and the image below for where your code should be at this point.
+Now do the same, but with Park and Trail each having a Review component render with it.
 </p>
 
 <figure>
-  <img src="../images/react/final-components.png" alt="screenshot of final solution for components section of tutorial">
+  <img src="../images/react/final-components.png" alt="screenshot of final solution for components section of tutorial" />
 </figure>
-
-<br>
-<br>
+<br />
+<br />
 
 <h3>A Note on Functional vs Class Components</h3>
 <p>
@@ -166,10 +136,8 @@ This project is going to strictly use functional components. Before React Hooks 
 </p>
 
 <figure>
-  <img src="../images/react/functional-class.png" alt="screenshot of a app.js and park.js react component">
+  <img src="../images/react/functional-class.png" alt="screenshot of a app.js and park.js react component" />
     <figcaption> The same component, with the top as a function and the bottom as a class.</figcaption>
 </figure>
-
-
-<h3>Next up...</h3>
-<p>The next section of this tutorial will cover handling data between components</p>
+</p></p>
+:ET
