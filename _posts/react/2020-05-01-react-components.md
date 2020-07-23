@@ -27,7 +27,6 @@ We will be building the front-end for an app that lets users view information ab
 </p>
 
 <br>
-<br>
 <h2> Setup </h2>
 <p>
 Use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">GitHub repository</a> to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
@@ -62,7 +61,7 @@ In your browser, go to <a alt="localhost 3000" target="_blank" href="http://loca
 <br>
 <h2>Components</h2>
 <p>
-The very first concept to understanding react, is knowing about components. What makes any library/framework worth using is following the conventions to have DRY, maintainable code that boost your productivity. With React, parts of the UI (user interface) will be split into components to isolate how we will handle the data, structure and functionality around that part.
+The very first concept to understand react is getting familiar with components. What makes any library/framework worth using is following it's conventions to have DRY, maintainable code that will boost your productivity while developing your app. With React, parts of the UI (user interface) will be split into their own components to isolate how it handles data and functionality.
 </p>
 <p> For example, the app we are going to be building will focus on content around parks, trails and reviews. At minimum, each one of those will have it's own component. They will have their own set of data, functionality and design. As we continue to develop, and as those components start getting more complex, it is very likely some parts inside those components will need to be split into new components. For example, with reviews we are going to want to display reviews and be able to submit a review with a form. Those are going to be two separate components.  
 </p>
@@ -73,11 +72,11 @@ The very first concept to understanding react, is knowing about components. What
 </figure> -->
 
 <p>
-Everything we need is in the /src directory. In app.js, we already have our first component. Notice that it is setup as a function, where it returns everything we want this component to render. The component is defined in this file, but only having the code in this file is not what is making it show up in the browser.
+Everything we need is in the /src directory. In app.js, we already have our first component. Notice that it is setup as a function, where it returns everything we want this component to render. The component is defined in this file, but having the code in this file is not what is making it show up in the browser. This is only defining the component.
 </p>
 
 <p>
-Instead, in index.js, notice line 4 & and 9 <em>(can reference in photo below)</em>. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice <em>how</em> it is being rendered. Using HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntx is <b>JSX</b>.
+In index.js, notice line 4 & and 9 <em>(can reference in photo below)</em>. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice <em>how</em> it is being rendered. Using an HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntax is known as <b>JSX</b>.
 </p>
 
 <figure>
@@ -85,7 +84,7 @@ Instead, in index.js, notice line 4 & and 9 <em>(can reference in photo below)</
 </figure>
 
 <p>
-<b>JSX</b> allows us to use HTML syntax, instead of complicated JS, to render elements from JavaScript files. All the code, in app.js, between lines 6-23 is also JSX! While we are looking at app.js, change the text on line 19 to something else (I change it to Hello!). If your server is still running, you should see the text change automatically when you visit <a alt="localhost 3000" target="_blank" href="http://localhost:3000">localhost:3000</a>.
+<b>JSX</b> allows us to use HTML-like syntax, instead of complicated JS, to render elements from JavaScript. All the code, in app.js, between lines 6-23 is also JSX! While we are looking at app.js, change the text on line 19 to something else (I change it to 'Hello!'). If your server is still running, you should see the text change automatically when you visit <a alt="localhost 3000" target="_blank" href="http://localhost:3000">localhost:3000</a>.
 </p>
 
 <br>
@@ -93,11 +92,11 @@ Instead, in index.js, notice line 4 & and 9 <em>(can reference in photo below)</
 <h2> Create New Components </h2>
 
 <p>
-It's time to get to business and start building out app! We will start by creating a new component for park, trail and review.
+It's time to get to business and start building out app! We will start by creating new components for park, trail and review.
 </p>
 
 <p>
-To keep our files more organized, start with making a /components directory inside of /src: <code>$ mkdir src/components</code>.  Lets go ahead and create a file for each of our components, within our new components directory:
+To keep our files more organized, start with making a /components directory inside of /src: <code>$ mkdir src/components</code>.  Go ahead and create a file for each of the components, within the new components directory:
 </p>
 
 <p>
@@ -114,7 +113,7 @@ Open the new Park.js file you created. Based on what you saw with the App compon
 We made the component, but now we have to explicitly call the function to tell it where to render. Let's go back to App.js, import Park.js at the top, and then use JSX to render the Park component. I suggest removing the code on lines 8-21, in App.js. <a alt="" target="_blank" href="https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-02components-js">Click here for the solution</a>.
 </p>
 
-<p> Right now, your localhost:3000 should be showing 'I'm a park!', or whatever you returned from the Park component. Your code should look like this:
+<p> Right now, your localhost:3000 should be showing 'I'm a park!', or whatever you returned from the Park component. Your code should look something like this:
 </p>
 <figure>
   <img src="../images/react/app-park.png" alt="screenshot of a app.js and park.js react component">
@@ -138,11 +137,11 @@ If we want to be able to see trails that belong to a park, it makes sense to loa
 </p>
 
 <p>
-Now do the same, but with Park and Trail each having a Review component render with it. You might run into this <b>parsing error</b>: <code>Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>?</code>. When returning from a component, all elements must be wrapped in a single element (typically a div or section).
+Now do the same, but with Park and Trail each having a Review component render with it. You might run into this <b>parsing error</b>: <code>Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>?</code>. When returning from a component, all elements must be wrapped in a single element (a div or section is commonly used).
 </p>
 
 <p>
-If it doesn't make sense to have a wrapping element, use <b>React.Fragment</b> to wrap around the elements instead, when returning. Fragments won't be used in this tutorial, but they're good to know about. Look at <a alt="React docs for fragment" target="_blank" href="https://reactjs.org/docs/fragments.html">this page of the docs</a> to know when it's appropriate to use.
+If it doesn't make sense to have a wrapping element, use <b>React.Fragment</b> to wrap around the elements instead, when returning. Fragments won't be used in this tutorial, but they're good to know about. Look at <a alt="React docs for fragment" target="_blank" href="https://reactjs.org/docs/fragments.html">this page of the React docs</a> to know when it's appropriate to use.
 </p>
 
 <p>
@@ -162,7 +161,7 @@ This is a good spot to pause and make sure everything mentioned so far makes sen
 
 <h3>A Note on Functional vs Class Components</h3>
 <p>
-This project is going to strictly use functional components. Before React Hooks were released in 2019, using ES6 classes were typically preferred for more complex components. Many code examples and code bases built before then will likely use class components. It's good to be aware of when searching for help online and when working in other code bases. This topic can lead you down an entire rabbit hole but, for now, just know that when a component starts with 'function' it's a functional component, and when it starts with 'class', it's a class component. Easy peasy!
+This project is going to strictly use functional components. Before React Hooks were released in 2019, using ES6 classes were typically preferred for more complex components. Many code examples and code bases built before then will likely use class components. It's good to be aware of when searching for help online and when working in other code bases. This topic can lead you down an entire rabbit hole but, for now, just know that when a component starts with 'function' it's a functional component, and when it starts with 'class', it's a class component.
 </p>
 
 <figure>
