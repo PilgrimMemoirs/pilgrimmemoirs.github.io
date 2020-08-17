@@ -1,26 +1,15 @@
----
-layout: post
-title:  "React Essentials Part 1: Components"
-date:   2020-05-03 12:00:00
-categories: react
-tags: javascript web frontend
-author: Jamie Pilgrim
-comments: true
-photo: "../images/cats/welcome/codingcatbw.jpg"
----
-
-<p><em>
+I"9%<p><em>
 This is the first post in a series touching on essential parts of React.js to know when getting started. The series will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
 </em></p>
-<br>
+<p><br /></p>
 
 <h2>The Project</h2>
 <p>
 We will be building the front-end for an app that lets users view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.
 </p>
 
-<br>
-<br>
+<p><br />
+<br /></p>
 <h2>Setup</h2>
 <p>
 Use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">GitHub repository</a> to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
@@ -31,8 +20,8 @@ Now that you have the repository cloned onto your computer, navigate inside of t
 </p>
 
 <p>
-<code>$ npx create create-react-app .</code><
-/p>
+<code>$ npx create create-react-app .</code>&lt;
+/p&gt;
 
 <p>
 This command creates everything you need to quickly start using React, without it we'd have to cover a lot more material to setup. Using the Create React App project is ideal for learning React, so we can jump straight into coding. You can visit the <a alt="create-react-app documentation" target="_blank" href="https://create-react-app.dev/">docs for create-react-app</a> to learn more about it.
@@ -43,7 +32,7 @@ If you enter <code>$ ls</code> in terminal, you should see this:
 </p>
 
 <figure>
-  <img src="../images/react/ls.png" alt="screenshot of terminal after entering ls">
+  <img src="../images/react/ls.png" alt="screenshot of terminal after entering ls" />
 </figure>
 
 <p>Everything is setup! We can now run <code>$ yarn start</code> to start the server and start building our app!</p>
@@ -53,8 +42,8 @@ In your browser, go to <a alt="localhost 3000" target="_blank" href="http://loca
 </p>
 
 
-<br>
-<br>
+<br />
+<br />
 <h2>Components</h2>
 
 <p>
@@ -69,19 +58,19 @@ Everything we need is in the /src directory. In app.js, we already have our firs
 </p>
 
 <p>
-In index.js, notice line 4 & and 9 <em>(can reference in photo below)</em>. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice <em>how</em> it is being rendered. Using an HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntax is known as <b>JSX</b>.
+In index.js, notice line 4 &amp; and 9 <em>(can reference in photo below)</em>. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice <em>how</em> it is being rendered. Using an HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntax is known as <b>JSX</b>.
 </p>
 
 <figure>
-  <img src="../images/react/app-index.png" alt="screenshot of terminal after entering ls">
+  <img src="../images/react/app-index.png" alt="screenshot of terminal after entering ls" />
 </figure>
 
 <p>
 <b>JSX</b> allows us to use HTML-like syntax, instead of complicated JS, to render elements from JavaScript. All the code, in app.js, between lines 6-23 is also JSX! While we are looking at app.js, change the text on line 19 to something else (I change it to 'Hello!'). If your server is still running, you should see the text change automatically when you visit <a alt="localhost 3000" target="_blank" href="http://localhost:3000">localhost:3000</a>.
 </p>
 
-<br>
-<br>
+<br />
+<br />
 <h2> Create new components </h2>
 
 <p>
@@ -93,8 +82,8 @@ To keep our files more organized, start with making a /components directory insi
 </p>
 
 <p>
-<code>$ touch src/components/Park.js</code><br>
-<code>$ touch src/components/Trail.js</code><br>
+<code>$ touch src/components/Park.js</code><br />
+<code>$ touch src/components/Trail.js</code><br />
 <code>$ touch src/components/Review.js</code>
 </p>
 
@@ -110,7 +99,7 @@ We made the component, but now we have to explicitly call the function to tell i
 </p>
 
 <figure>
-  <img src="../images/react/app-park.png" alt="screenshot of a app.js and park.js react component">
+  <img src="../images/react/app-park.png" alt="screenshot of a app.js and park.js react component" />
 </figure>
 
 <p>
@@ -122,18 +111,18 @@ Use this same pattern to build the Trail and Review classes. They should look so
 </p>
 
 <figure>
-  <img src="../images/react/new-components.png" alt="screenshot of a app.js and park.js react component">
+  <img src="../images/react/new-components.png" alt="screenshot of a app.js and park.js react component" />
 </figure>
 
-<br>
-<br>
+<br />
+<br />
 <h2>Load components within each other</h2>
 <p>
 If we want to be able to see trails that belong to a park, it makes sense to load trails within parks. How would you do that? Try it out! <a alt="" target="_blank" href="https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-02components-js">Refer to this solution</a> if you get stuck.
 </p>
 
 <p>
-Now do the same, but with Park and Trail each having a Review component render with it. You might run into this <b>parsing error</b>: <code>Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>?</code>. When returning from a component, all elements must be wrapped in a single element (a div or section is commonly used).
+Now do the same, but with Park and Trail each having a Review component render with it. You might run into this <b>parsing error</b>: <code>Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?</code>. When returning from a component, all elements must be wrapped in a single element (a div or section is commonly used).
 </p>
 
 <p>
@@ -149,21 +138,23 @@ This is a good spot to pause and make sure everything mentioned so far makes sen
 </p>
 
 <figure>
-  <img src="../images/react/final-components.png" alt="screenshot of final solution for components section of tutorial">
+  <img src="../images/react/final-components.png" alt="screenshot of final solution for components section of tutorial" />
 </figure>
 
-<br>
-<br>
+<br />
+<br />
 <h2>A note on functional vs class components</h2>
 <p>
 This project is going to strictly use functional components. Before React Hooks were released in 2019, using ES6 classes were typically preferred for more complex components. Many code examples and code bases built before then will likely use class components. It's good to be aware of when searching for help online and when working in other code bases. This topic can lead you down an entire rabbit hole but, for now, just know that when a component starts with 'function' it's a functional component, and when it starts with 'class', it's a class component.
 </p>
 
 <figure>
-  <img src="../images/react/functional-class.png" alt="screenshot of a app.js and park.js react component">
+  <img src="../images/react/functional-class.png" alt="screenshot of a app.js and park.js react component" />
     <figcaption> The same component, with the top as a function and the bottom as a class.</figcaption>
 </figure>
 
 
 <h3>Next up...</h3>
 <p>The next section of this tutorial will cover handling data between components</p>
+</p></p></p>
+:ET

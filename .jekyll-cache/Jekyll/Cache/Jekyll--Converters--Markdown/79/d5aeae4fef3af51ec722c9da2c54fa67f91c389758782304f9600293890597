@@ -1,0 +1,52 @@
+I"�<p><em>
+This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended. Start with the <a href="/react-components" alt="first part of series, getting started with components">first part</a> of the series. If you get stuck, use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">repository</a>, the branch titled 'data' will have the final solution for this part of the series.
+<br /><br />
+In the last post you should have set up the project along with 3 components (Park, Trail, and Review). This post is going to focus on delegating data to the appropriate component, and then having that component handle displaying the data.
+</em></p>
+
+<p><br /></p>
+
+<h2> Setting up a component to handle data</h2>
+
+<p>
+ In App.js, on line 9, add a name attribute to the Park component, with the name of the park you want that component to render, like so: <code>&lt;Park name="Yellowstone"/&gt;’</code>. This how to pass data we want that specific component to handle.
+</p>
+
+<p>
+To display the name of this park we go into Park.js. On line 5, put ‘{name}’ in as the parameter of the component, to look like this<code>function Park({name}) {</code>. The argument must have the same name as the attribute when rendering the component (like we did in App.js).
+</p>
+
+<p>
+Now we can update the JSX to look like <code>&lt;h1&gt;I'm { name } park!&lt;/h1&gt;</code>. In JSX, when you want to use JavaScript it needs to be wrapped by curly braces. After you save, the page should refresh to show "I'm Yellowstone park!"!
+</p>
+
+<p>
+What should we do if we also wanted to display Central Park and Stanley Park? Try it out and, afterwards, you can compare your code with this <a href="" alt="sample solution for setting up a component to render data">sample solution</a>!
+</p>
+
+<h2>Passing Data between Components</h2>
+
+<p>
+When setting up components, it’s good to be mindful of the relationship between the components and which ones will render other components. That’s because, when it comes to handling data, it is best to pass information from the top-most components down to the components they render.
+</p>
+
+<p>
+With this app, Trails belong to Parks. So we can pass data from a Park component to any of that Park’s trails. In App.js, add a trail attribute to Yellowstone Park component, like so: <code>trail="Mammoth Hot Springs"</code>. In Park.js, update the arguments to include 'trail', like so: <code>{name, trail}</code>.
+</p>
+
+<p>
+This doesn’t change anything yet, that’s because the name of this trail needs to get passed down to Trail component, where we want it render. In Park.js, add a name attribute to Trail and pass the name of the trail variable to it, like so: <code>&lt;Trail name={ trail }/&gt;</code>
+</p>
+
+<p>
+So, this name of this trail has gone by two different names as it has been passed. First it was set to trail, as it was passed to Park. Then, it was passed on to the Trail component as ‘name’.
+</p>
+
+<p>
+Finally, to get the name to render, go to Trail.js and modify the h2 element to display the name, like so: <code>&lt;h2&gt;I'm { name } trail!&lt;/h2&gt;</code>
+</p>
+
+<p>
+Data was just passed all the way from App.js, to Park.js, to Trail.js!
+</p>
+:ET

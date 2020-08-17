@@ -6,31 +6,100 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 May 2020 17:02:41 -0700</pubDate>
-    <lastBuildDate>Sun, 03 May 2020 17:02:41 -0700</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <pubDate>Sun, 16 Aug 2020 17:37:21 -0700</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2020 17:37:21 -0700</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
     
       <item>
-        <title>React Essentials Part 1: Components</title>
+        <title>React Essentials Part 2: Data</title>
         <description>&lt;p&gt;&lt;em&gt;
-This is the first post in a series touching on essential parts of React.js that should be known when getting started. We will cover components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
+This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended. Start with the &lt;a href=&quot;/react-components&quot; alt=&quot;first part of series, getting started with components&quot;&gt;first part&lt;/a&gt; of the series. If you get stuck, use this &lt;a alt=&quot;Tutorial's github repository&quot; target=&quot;_blank&quot; href=&quot;https://github.com/PilgrimMemoirs/essential-react-tutorial&quot;&gt;repository&lt;/a&gt;, the branch titled 'data' will have the final solution for this part of the series.
+&lt;br /&gt;&lt;br /&gt;
+In the last post you should have set up the project along with 3 components (Park, Trail, and Review). This post is going to focus on delegating data to the appropriate component, and then having that component handle displaying the data.
 &lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;!-- &lt;figure&gt;
-  &lt;img src=&quot;../images/react/component.png&quot; alt=&quot;screenshot of a react component&quot;&gt;
-&lt;/figure&gt;
-&lt;br&gt;&lt;br&gt; --&gt;
+&lt;h2&gt; Setting up a component to handle data&lt;/h2&gt;
 
-&lt;h2&gt; The Project &lt;/h2&gt;
+&lt;p&gt;
+ In App.js, on line 9, add a name attribute to the Park component, with the name of the park you want that component to render, like so: &lt;code&gt;&amp;lt;Park name=&quot;Yellowstone&quot;/&amp;gt;’&lt;/code&gt;. This how to pass data we want that specific component to handle.
+&lt;/p&gt;
+
+&lt;p&gt;
+To display the name of this park we go into Park.js. On line 5, put ‘{name}’ in as the parameter of the component, to look like this&lt;code&gt;function Park({name}) {&lt;/code&gt;. The argument must have the same name as the attribute when rendering the component (like we did in App.js).
+&lt;/p&gt;
+
+&lt;p&gt;
+Now we can update the JSX to look like &lt;code&gt;&amp;lt;h1&amp;gt;I'm { name } park!&amp;lt;/h1&amp;gt;&lt;/code&gt;. In JSX, when you want to use JavaScript it needs to be wrapped by curly braces. After you save, the page should refresh to show &quot;I'm Yellowstone park!&quot;!
+&lt;/p&gt;
+
+&lt;p&gt;
+What should we do if we also wanted to display Central Park and Stanley Park? Try it out and, afterwards, you can compare your code with this &lt;a href=&quot;&quot; alt=&quot;sample solution for setting up a component to render data&quot;&gt;sample solution&lt;/a&gt;!
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;Passing data between components&lt;/h2&gt;
+
+&lt;p&gt;
+When setting up components, it’s good to be mindful of the relationship between the components and which ones will render other components. That’s because, when it comes to handling data, it is best to pass information from the top-most components down to the components they render.
+&lt;/p&gt;
+
+&lt;p&gt;
+With this app, Trails belong to Parks. So we can pass data from a Park component to any of that Park’s trails. In App.js, add a trail attribute to Yellowstone Park component, like so: &lt;code&gt;trail=&quot;Mammoth Hot Springs&quot;&lt;/code&gt;. In Park.js, update the arguments to include 'trail', like so: &lt;code&gt;{name, trail}&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+This doesn’t change anything yet, that’s because the name of this trail needs to get passed down to Trail component, where we want it render. In Park.js, add a name attribute to Trail and pass the name of the trail variable to it, like so: &lt;code&gt;&amp;lt;Trail name={ trail }/&amp;gt;&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+So, this name of this trail has gone by two different names as it has been passed. First it was set to trail, as it was passed to Park. Then, it was passed on to the Trail component as ‘name’.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, to get the name to render, go to Trail.js and modify the h2 element to display the name, like so: &lt;code&gt;&amp;lt;h2&amp;gt;I'm { name } trail!&amp;lt;/h2&amp;gt;&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/react/react-data.png&quot; alt=&quot;screenshot of code editor with current state of App.js, Park.js and Trail.js&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;
+Data was just passed all the way from App.js to Park.js, then down to Trail.js!
+&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Aug 2020 05:00:00 -0700</pubDate>
+        <link>http://localhost:4000/react-components2</link>
+        <guid isPermaLink="true">http://localhost:4000/react-components2</guid>
+        
+        <category>javascript</category>
+        
+        <category>web</category>
+        
+        <category>frontend</category>
+        
+        
+        <category>react</category>
+        
+      </item>
+    
+      <item>
+        <title>React Essentials Part 1: Components</title>
+        <description>&lt;p&gt;&lt;em&gt;
+This is the first post in a series touching on essential parts of React.js to know when getting started. The series will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
+&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;The Project&lt;/h2&gt;
 &lt;p&gt;
 We will be building the front-end for an app that lets users view information about parks, and the trails inside each park. Users can also leave reviews for parks and trails.
 &lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
-&lt;h2&gt; Setup &lt;/h2&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
 &lt;p&gt;
 Use this &lt;a alt=&quot;Tutorial's github repository&quot; target=&quot;_blank&quot; href=&quot;https://github.com/PilgrimMemoirs/essential-react-tutorial&quot;&gt;GitHub repository&lt;/a&gt; to follow along or use as a reference. I recommend forking and cloning so you have your own copy. There will be a branch for each part of this tutorial that will have the complete solution for that part. So if you switch to the 'components' branch, you will see all the code that this part of the tutorial will end with.
 &lt;p&gt;
@@ -39,7 +108,9 @@ Use this &lt;a alt=&quot;Tutorial's github repository&quot; target=&quot;_blank&
 Now that you have the repository cloned onto your computer, navigate inside of the essential-react-tutorial directory and, in your terminal, and run this command:
 &lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;$ npx create create-react-app .&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;$ npx create create-react-app .&lt;/code&gt;&amp;lt;
+/p&amp;gt;
 
 &lt;p&gt;
 This command creates everything you need to quickly start using React, without it we'd have to cover a lot more material to setup. Using the Create React App project is ideal for learning React, so we can jump straight into coding. You can visit the &lt;a alt=&quot;create-react-app documentation&quot; target=&quot;_blank&quot; href=&quot;https://create-react-app.dev/&quot;&gt;docs for create-react-app&lt;/a&gt; to learn more about it.
@@ -63,23 +134,20 @@ In your browser, go to &lt;a alt=&quot;localhost 3000&quot; target=&quot;_blank&
 &lt;br /&gt;
 &lt;br /&gt;
 &lt;h2&gt;Components&lt;/h2&gt;
+
 &lt;p&gt;
-The very first concept to understanding react, is knowing about components. What makes any library/framework worth using is following the conventions to have DRY, maintainable code that boost your productivity. With React, parts of the UI (user interface) will be split into components to isolate how we will handle the data, structure and functionality around that part.
+The very first concept to understand react is getting familiar with components. What makes any library/framework worth using is following it's conventions to have DRY, maintainable code that will boost your productivity while developing your app. With React, parts of the UI (user interface) will be split into their own components to isolate how it handles data and functionality.
 &lt;/p&gt;
+
 &lt;p&gt; For example, the app we are going to be building will focus on content around parks, trails and reviews. At minimum, each one of those will have it's own component. They will have their own set of data, functionality and design. As we continue to develop, and as those components start getting more complex, it is very likely some parts inside those components will need to be split into new components. For example, with reviews we are going to want to display reviews and be able to submit a review with a form. Those are going to be two separate components.  
 &lt;/p&gt;
 
-&lt;!-- TODO: Have a wireframe with labels for each planned component --&gt;
-&lt;!-- &lt;figure&gt;
-  &lt;img src=&quot;../images/react/ls.png&quot; alt=&quot;screenshot of terminal after entering ls&quot;&gt;
-&lt;/figure&gt; --&gt;
-
 &lt;p&gt;
-Everything we need is in the /src directory. In app.js, we already have our first component. Notice that it is setup as a function, where it returns everything we want this component to render. The component is defined in this file, but only having the code in this file is not what is making it show up in the browser.
+Everything we need is in the /src directory. In app.js, we already have our first component. Notice that it is setup as a function, where it returns everything we want this component to render. The component is defined in this file, but having the code in this file is not what is making it show up in the browser. This is only defining the component.
 &lt;/p&gt;
 
 &lt;p&gt;
-Instead, in index.js, notice line 4 &amp;amp; and 9 &lt;em&gt;(can reference in photo below)&lt;/em&gt;. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice &lt;em&gt;how&lt;/em&gt; it is being rendered. Using HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntx is &lt;b&gt;JSX&lt;/b&gt;.
+In index.js, notice line 4 &amp;amp; and 9 &lt;em&gt;(can reference in photo below)&lt;/em&gt;. Line 4 is importing the component from the app.js file. That gives us access to be able to render the component on line 9. Now, notice &lt;em&gt;how&lt;/em&gt; it is being rendered. Using an HTML-like syntax, it's able to be called with the name of the component in a self-closing tag. This syntax is known as &lt;b&gt;JSX&lt;/b&gt;.
 &lt;/p&gt;
 
 &lt;figure&gt;
@@ -87,19 +155,19 @@ Instead, in index.js, notice line 4 &amp;amp; and 9 &lt;em&gt;(can reference in 
 &lt;/figure&gt;
 
 &lt;p&gt;
-&lt;b&gt;JSX&lt;/b&gt; allows us to use HTML syntax, instead of complicated JS, to render elements from JavaScript files. All the code, in app.js, between lines 6-23 is also JSX! While we are looking at app.js, change the text on line 19 to something else (I change it to Hello!). If your server is still running, you should see the text change automatically when you visit &lt;a alt=&quot;localhost 3000&quot; target=&quot;_blank&quot; href=&quot;http://localhost:3000&quot;&gt;localhost:3000&lt;/a&gt;.
+&lt;b&gt;JSX&lt;/b&gt; allows us to use HTML-like syntax, instead of complicated JS, to render elements from JavaScript. All the code, in app.js, between lines 6-23 is also JSX! While we are looking at app.js, change the text on line 19 to something else (I change it to 'Hello!'). If your server is still running, you should see the text change automatically when you visit &lt;a alt=&quot;localhost 3000&quot; target=&quot;_blank&quot; href=&quot;http://localhost:3000&quot;&gt;localhost:3000&lt;/a&gt;.
 &lt;/p&gt;
 
 &lt;br /&gt;
 &lt;br /&gt;
-&lt;h2&gt; Create New Components &lt;/h2&gt;
+&lt;h2&gt; Create new components &lt;/h2&gt;
 
 &lt;p&gt;
-It's time to get to business and start building out app! We will start by creating a new component for park, trail and review.
+It's time to get to business and start building out app! We will start by creating new components for park, trail and review.
 &lt;/p&gt;
 
 &lt;p&gt;
-To keep our files more organized, start with making a /components directory inside of /src: &lt;code&gt;$ mkdir src/components&lt;/code&gt;.  Lets go ahead and create a file for each of our components, within our new components directory:
+To keep our files more organized, start with making a /components directory inside of /src: &lt;code&gt;$ mkdir src/components&lt;/code&gt;.  Go ahead and create a file for each of the components, within the new components directory:
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -116,13 +184,16 @@ Open the new Park.js file you created. Based on what you saw with the App compon
 We made the component, but now we have to explicitly call the function to tell it where to render. Let's go back to App.js, import Park.js at the top, and then use JSX to render the Park component. I suggest removing the code on lines 8-21, in App.js. &lt;a alt=&quot;&quot; target=&quot;_blank&quot; href=&quot;https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-02components-js&quot;&gt;Click here for the solution&lt;/a&gt;.
 &lt;/p&gt;
 
-&lt;p&gt; Right now, your localhost:3000 should be showing 'I'm a park!', or whatever you returned from the Park component. Your code should look like this:
+&lt;p&gt; Right now, your localhost:3000 should be showing 'I'm a park!', or whatever you returned from the Park component. Your code should look something like this:
 &lt;/p&gt;
+
 &lt;figure&gt;
   &lt;img src=&quot;../images/react/app-park.png&quot; alt=&quot;screenshot of a app.js and park.js react component&quot; /&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Note that when defining and calling a component, the component name has to be capitalized&lt;/p&gt;
+&lt;p&gt;
+Note that when defining and calling a component, the component name has to be capitalized
+&lt;/p&gt;
 
 &lt;p&gt;
 Use this same pattern to build the Trail and Review classes. They should look something like this:
@@ -131,20 +202,20 @@ Use this same pattern to build the Trail and Review classes. They should look so
 &lt;figure&gt;
   &lt;img src=&quot;../images/react/new-components.png&quot; alt=&quot;screenshot of a app.js and park.js react component&quot; /&gt;
 &lt;/figure&gt;
-&lt;br /&gt;
-&lt;br /&gt;
 
-&lt;h2&gt;Load Components within Each Other&lt;/h2&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;h2&gt;Load components within each other&lt;/h2&gt;
 &lt;p&gt;
 If we want to be able to see trails that belong to a park, it makes sense to load trails within parks. How would you do that? Try it out! &lt;a alt=&quot;&quot; target=&quot;_blank&quot; href=&quot;https://gist.github.com/PilgrimMemoirs/01ce60bf85cede9a821109f61a6fc60b#file-02components-js&quot;&gt;Refer to this solution&lt;/a&gt; if you get stuck.
 &lt;/p&gt;
 
 &lt;p&gt;
-Now do the same, but with Park and Trail each having a Review component render with it. You might run into this &lt;b&gt;parsing error&lt;/b&gt;: &lt;code&gt;Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment &amp;lt;&amp;gt;...&amp;lt;/&amp;gt;?&lt;/code&gt;. When returning from a component, all elements must be wrapped in a single element (typically a div or section).
+Now do the same, but with Park and Trail each having a Review component render with it. You might run into this &lt;b&gt;parsing error&lt;/b&gt;: &lt;code&gt;Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment &amp;lt;&amp;gt;...&amp;lt;/&amp;gt;?&lt;/code&gt;. When returning from a component, all elements must be wrapped in a single element (a div or section is commonly used).
 &lt;/p&gt;
 
 &lt;p&gt;
-If it doesn't make sense to have a wrapping element, use &lt;b&gt;React.Fragment&lt;/b&gt; to wrap around the elements instead, when returning. Fragments won't be used in this tutorial, but they're good to know about. Look at &lt;a alt=&quot;React docs for fragment&quot; target=&quot;_blank&quot; href=&quot;https://reactjs.org/docs/fragments.html&quot;&gt;this page of the docs&lt;/a&gt; to know when it's appropriate to use.
+If it doesn't make sense to have a wrapping element, use &lt;b&gt;React.Fragment&lt;/b&gt; to wrap around the elements instead, when returning. Fragments won't be used in this tutorial, but they're good to know about. Look at &lt;a alt=&quot;React docs for fragment&quot; target=&quot;_blank&quot; href=&quot;https://reactjs.org/docs/fragments.html&quot;&gt;this page of the React docs&lt;/a&gt; to know when it's appropriate to use.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -161,10 +232,9 @@ This is a good spot to pause and make sure everything mentioned so far makes sen
 
 &lt;br /&gt;
 &lt;br /&gt;
-
-&lt;h3&gt;A Note on Functional vs Class Components&lt;/h3&gt;
+&lt;h2&gt;A note on functional vs class components&lt;/h2&gt;
 &lt;p&gt;
-This project is going to strictly use functional components. Before React Hooks were released in 2019, using ES6 classes were typically preferred for more complex components. Many code examples and code bases built before then will likely use class components. It's good to be aware of when searching for help online and when working in other code bases. This topic can lead you down an entire rabbit hole but, for now, just know that when a component starts with 'function' it's a functional component, and when it starts with 'class', it's a class component. Easy peasy!
+This project is going to strictly use functional components. Before React Hooks were released in 2019, using ES6 classes were typically preferred for more complex components. Many code examples and code bases built before then will likely use class components. It's good to be aware of when searching for help online and when working in other code bases. This topic can lead you down an entire rabbit hole but, for now, just know that when a component starts with 'function' it's a functional component, and when it starts with 'class', it's a class component.
 &lt;/p&gt;
 
 &lt;figure&gt;
@@ -175,7 +245,7 @@ This project is going to strictly use functional components. Before React Hooks 
 
 &lt;h3&gt;Next up...&lt;/h3&gt;
 &lt;p&gt;The next section of this tutorial will cover handling data between components&lt;/p&gt;
-&lt;/p&gt;&lt;/p&gt;
+&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 03 May 2020 05:00:00 -0700</pubDate>
         <link>http://localhost:4000/react-components</link>
@@ -757,71 +827,6 @@ All the above and then some were taken to a whole new level with this class. Let
         <pubDate>Sun, 16 Aug 2015 22:25:00 -0700</pubDate>
         <link>http://localhost:4000/fourth-class</link>
         <guid isPermaLink="true">http://localhost:4000/fourth-class</guid>
-        
-        <category>Flatiron</category>
-        
-        <category>Teaching</category>
-        
-        <category>Culture</category>
-        
-        
-        <category>Teaching</category>
-        
-      </item>
-    
-      <item>
-        <title>Third Flatiron Class: Intro to SE</title>
-        <description>&lt;p&gt;&lt;em&gt; My second round of the Intro to Software Engineering class with my new co-teacher was yet another successful chapter in this amazing experience.  &lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;!-- Classtime  --&gt;
-
-&lt;h2&gt;It's all about the Experience &lt;/h2&gt;
-
-&lt;p&gt; In June I started teaching high schoolers the ins and out of web development in two week long, intensive courses. Now, they're by no means experts by the end, however, they left with a solid foundation and, more importantly, enthusiasm to continue learning! &lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0044.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0038.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
-  &lt;figcaption&gt; Forming groups and whiteboarding final project ideas  &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; The Code is Incidental &lt;/h2&gt;
-
-&lt;p&gt;In our classes, as molded by many other coding bootcamps, the culture is just as essential as the code itself. The goal is not only to get kids engaged in coding, but to also form strong relationships with thier peers. Doing so  helps so so soooooo much more for building a strong classroom culture that opens up discussion, questions and self discovering. &lt;/p&gt;
-
-&lt;p&gt; The less dependant the students become on me and the more the rely on thier peers, the less work to do. Win win. &lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Final Projects &lt;/h2&gt;
-
-&lt;p&gt; In the end, we had four AMAZING final projects that were bulit in only a couple days, including ideation to the final  touches. Each group had their own twist on what they chose to focus on. Having a lot of natural designers, many latched on to displaying their content beautifly while other had very intericite logic  on thier backend. &lt;/p&gt;
-
-&lt;!-- Science Fair &amp; Graduation --&gt;
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0030.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0041.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
-  &lt;figcaption&gt; Final projects are setup for demonstration to visiting family and guests. &lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Serious Developers &lt;/h2&gt;
-
-&lt;p&gt; Seriously, these kids knocked out AMAZING projects and absorbed so much in the two weeks we had them. It's crazy to think that we still managed to fit in improv games and just be silly with each other.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_00202.jpg&quot; alt=&quot;Serious Group Photo&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0023.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
-  &lt;img src=&quot;../images/flatiron/class_3/DSC_0021.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt; It was sad to let yet another class go, especially one so unique and diverse in thier talents. That said, I'm incredibly proud of the work they did and how well they all joined forces to make incredible projects! &lt;/p&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 30 Jul 2015 22:25:00 -0700</pubDate>
-        <link>http://localhost:4000/third-class</link>
-        <guid isPermaLink="true">http://localhost:4000/third-class</guid>
         
         <category>Flatiron</category>
         
