@@ -5,7 +5,7 @@ permalink: /topics/
 ---
 
 <ul id="cat-list">
-  {% for category in site.categories %}
+  {% for category in site.categories reversed %}
     <li class="category"><h2>{{ category | first | upcase}}</h2>
       <ul>
       {% for posts in category %}
