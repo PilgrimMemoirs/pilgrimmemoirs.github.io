@@ -30,7 +30,7 @@ layout: default
 
   <h2><strong>Topics</strong></h2>
   <ul id="tag-list">
-  {% for tag in site.tags %}
+  {% for tag in site.tags reversed %}
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
 

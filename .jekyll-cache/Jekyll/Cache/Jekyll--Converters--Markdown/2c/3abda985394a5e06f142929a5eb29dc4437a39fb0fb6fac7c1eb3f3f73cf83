@@ -1,0 +1,6 @@
+I"º<p><em>
+This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended. Start with the <a href="/react-components" alt="first part of series, getting started with components" target="_blank">first part</a> of the series. If you get stuck, use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">repository</a>, the branch titled 'data' will have the final solution for this part of the series.
+<br /><br />
+In the last post you should have set up the project along with 3 components (Park, Trail, and Review). This post is going to focus on delegating data to the appropriate component, and then having that component handle displaying the data.
+</em></p>
+:ET

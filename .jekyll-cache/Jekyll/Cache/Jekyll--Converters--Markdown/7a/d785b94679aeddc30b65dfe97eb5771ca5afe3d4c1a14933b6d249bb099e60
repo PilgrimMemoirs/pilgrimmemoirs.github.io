@@ -1,22 +1,10 @@
----
-layout: post
-title:  "React Essentials Part 2: Data"
-date:   2020-08-15 12:00:00
-categories: react
-tags: javascript web frontend
-author: Jamie Pilgrim
-comments: true
-photo: "../images/cats/welcome/codingcatbw.jpg"
----
-
-<p><em>
-This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended. Start with the <a href="{{page.previous.url}}" alt="first part of series, getting started with components" target="_blank">first part</a> of the series. If you get stuck, use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial" target="_blank">repository</a>, the branch titled 'data' will have the final solution for this part of the series.
-<br><br>
+I"�*<p><em>
+This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended. Start with the <a href="/react-components" alt="first part of series, getting started with components" target="_blank">first part</a> of the series. If you get stuck, use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">repository</a>, the branch titled 'data' will have the final solution for this part of the series.
+<br /><br />
 In the last post you should have set up the project along with 3 components (Park, Trail, and Review). This post is going to focus on delegating data to the appropriate component, and then having that component handle displaying the data.
 </em></p>
 
-<br>
-
+<p><br /></p>
 
 <h2> Setting up a component to handle data</h2>
 
@@ -25,11 +13,7 @@ In the last post you should have set up the project along with 3 components (Par
 </p>
 
 <p>
-To display the name of this park we go into Park.js. On line 5, put ‘{name}’ in as the argument of the component, so that it looks like this<code>function Park({name}) {</code>.
-</p>
-
-<p>
-Note the syntax, the name variable is being defined within curly braces. This using an ES6 feature called <i>destructuring</i> to handle the <i>props</i> of this component. In other React code bases you may see 'props' (without any curly braces) as the argument. Data is then accessed within the component by being called on props, ex: props.name. We can use destructuring instead, since the data being passed in is an object. So it sets a variables based on the keys of the data coming in (any attributes we set on our components). we can then access data with just the variable and and no need to prefix with 'props.'.
+To display the name of this park we go into Park.js. On line 5, put ‘{name}’ in as the parameter of the component, to look like this<code>function Park({name}) {</code>. The argument must have the same name as the attribute when rendering the component (like we did in App.js).
 </p>
 
 <p>
@@ -40,8 +24,8 @@ Now we can update the JSX to look like <code>&lt;h1&gt;I'm { name } park!&lt;/h1
 What should we do if we also wanted to display Central Park and Stanley Park? Try it out and, afterwards, you can compare your code with this <a href="" alt="sample solution for setting up a component to render data" target="_blank">sample solution</a>!
 </p>
 
-<br>
-<br>
+<p><br />
+<br /></p>
 <h2>Passing data between components</h2>
 
 <p>
@@ -49,39 +33,35 @@ When setting up components, it’s good to be mindful of the relationship betwee
 </p>
 
 <p>
-With this app, Trails belong to Parks. So we can pass data from a Park component to any of that Park’s trails. In App.js, add a trail attribute to Yellowstone Park component, like so: <code>trail="Mammoth Hot Springs"</code>.
+With this app, Trails belong to Parks. So we can pass data from a Park component to any of that Park’s trails. In App.js, add a trail attribute to Yellowstone Park component, like so: <code>trail="Mammoth Hot Springs"</code>. In Park.js, update the arguments to include 'trail', like so: <code>{name, trail}</code>.
 </p>
 
 <p>
-In Park.js, update the props to include 'trail', like so: <code>{name, trail}</code>.
+This doesn’t change anything yet, that’s because the name of this trail needs to get passed down to Trail component, where we want it render. In Park.js, add a name attribute to Trail and pass the name of the trail variable to it, like so: <code>&lt;Trail name={ trail }/&gt;</code>
 </p>
 
 <p>
-This doesn’t change anything yet, that’s because the name of this trail needs to get passed down to Trail component, where we want it render. In Park.js, add a name attribute to Trail and pass the name of the trail variable to it, like so: <code><Trail name={ trail }/></code>
+So, this name of this trail has gone by two different names as it has been passed. First it was set to trail, as it was passed to Park. Then, it was passed on to the Trail component as ‘name’.
 </p>
 
 <p>
-Note how the name of the trail has gone by two different variable names as it has been passed between components. First it was set to trail, as it was passed to Park. Then it was passed on to the Trail component as ‘name’.
-</p>
-
-<p>
-To get the name to render, go to Trail.js and modify the h2 element to display the name, like so: <code>&lt;h2&gt;I'm { name } trail!&lt;/h2&gt;</code>
+Finally, to get the name to render, go to Trail.js and modify the h2 element to display the name, like so: <code>&lt;h2&gt;I'm { name } trail!&lt;/h2&gt;</code>
 </p>
 
 <figure>
-  <img src="../images/react/react-data.png" alt="screenshot of code editor with current state of App.js, Park.js and Trail.js">
+  <img src="../images/react/react-data.png" alt="screenshot of code editor with current state of App.js, Park.js and Trail.js" />
 </figure>
 
 <p>
 Data was just passed all the way from App.js to Park.js, then down to Trail.js!
 </p>
 
-<br>
-<br>
+<p><br />
+<br /></p>
 <h2>Structuring the Data</h2>
 
 <p>
-Now is a good time to step back and observe what can be improved. Look at the way we’re passing data and notice ways that it is very limiting. Notice how Park is only able to display one Trail. Parks typically have more than one trail, so we will need to refactor to be able to render multiple trails.
+Now that we’ve come this far, it’s time to step back and observe what can be improved. There is something with the way we’re passing data that is very limiting to it’s functionality. Notice how Park is only able to display one trail. Parks typically have more than one trail, so we will need to refactor to be able to render multiple trails.
 </p>
 
 <p>
@@ -89,21 +69,19 @@ We might also want to include more information on both the Park and each Trail, 
 </p>
 
 <p>
-Instead, to pass multiple trails, refactor the trail attribute of the Park component, in App.js, to take in an array of objects, where each object will have data on a different trail. Also, update the attribute name to 'trails', to better represent the list of trails it is now handling. Use the code below to reference:
+Instead, to pass multiple trails, refactor the trail attribute of the Park component, in App.js, to take in an array of hashes, where each hash will have data on a different trail. Also, update the attribute name to 'trails', to better represent the list of trails it is now handling. Use the code below to reference:
 </p>
-
 
 <pre>
   <code>
-    <Park name="Yellowstone"  trails={[{name: "Mammoth Springs", difficulty: easy}, {name: "North Rim Trail", difficulty: "moderate"}]}/>
-    <Park name="Central" trails={[{name: "North Woods", difficulty: "moderate"}]}/><
-    <Park name="Stanley" trails={[{name: "Lost Lagoon", difficulty: “easy”}]}/>
+    &lt;Park name="Yellowstone"  trails={[{name: "Mammoth Springs", difficulty: easy}, {name: "North Rim Trail", difficulty: "moderate"}]}/&gt;
+    &lt;Park name="Central" trails={[{name: "North Woods", difficulty: "moderate"}]}/&gt;&lt;
+    &lt;Park name="Stanley" trails={[{name: "Lost Lagoon", difficulty: “easy”}]}/&gt;
   </code>
 </pre>
 
-
 <p>
-With this new format the Trail component needs to be refactored. In Park.js, change the parameter from 'trail' to 'trails', then update the Trail element to have both a name and difficult attribute. Pass the data from 'trail' to the Trail component,  like so: <code><Trail name={ trails[0].name } difficulty={ trails[0].difficulty }/></code>. Update Trail.js to show the difficulty anyway you please.
+With this new format the Trail component needs to be refactored. In Park.js, change the parameter from 'trail' to 'trails', then update the Trail element to have both a name and difficult attribute. Pass the data from 'trail' to the Trail component,  like so: <code>&lt;Trail name={ trails[0].name } difficulty={ trails[0].difficulty }/&gt;</code>. Update Trail.js to show the difficulty anyway you please.
 </p>
 
 <p>
@@ -120,8 +98,8 @@ The best way to make this happen is to loop over the array and create a Park ele
 
 <pre>
   <code>
-    {trails.map(trail => (
-      <Trail name={trail.name} difficulty={trail.difficulty}/>
+    {trails.map(trail =&gt; (
+      &lt;Trail name={trail.name} difficulty={trail.difficulty}/&gt;
     ))}
   </code>
 </pre>
@@ -134,8 +112,8 @@ Before moving on, make sure to understand how this code works. In short, <a href
 Continue experimenting by adding more trails to each park. Add another attribute to Parks and/or Trails and have it rendered.
 </p>
 
-<br>
-<br>
+<p><br />
+<br /></p>
 <h2>Handling more data</h2>
 
 <p>
@@ -192,11 +170,14 @@ In App.js, loop through and define Park components like so:
 
 <pre>
   <code>
-    &lt;div className="App"&gt;
-      {parkData.map(park => (
-        <Park name={park.name} trails={park.trails}/>
+    <div classname="App">
+      {parkData.map(park =&gt; (
+      &lt;Park
+        name={park.name}
+        trails={park.trails}
+      /&gt;
       ))};
-    &lt;/div&gt;
+    </div>
   </code>
 </pre>
 
@@ -205,25 +186,25 @@ In Park.js, loop through trails and make new Trail components like so:
 </p>
 <pre>
   <code>
-    &lt;div className="Park"&gt;
-      &lt;h1&gt;I'm { name } park!&lt;/h1&gt;
-      {trails.map(trail => (
-        <Trail name={trail.name} difficulty={trail.difficulty}/>
+    <div classname="Park">
+      <h1>I'm { name } park!</h1>
+      {trails.map(trail =&gt; (
+        &lt;Trail name={trail.name} difficulty={trail.difficulty}/&gt;
       ))}
-    &lt;/div&gt;
+    </div>
   </code>
 </pre>
 
 <p>
-Reviews are still missing, take a go at altering both the data and the components so that there are parks and trails that show a few reviews. Decide what data should be included for reviews, how it should be defined in parkData, and how it will be rendered.
+We’re still missing reviews, take a stab at altering both the data and the components so that there are parks and trails that show a few reviews.
 </p>
 
 <p>
 Here is a <a href="" alt="sample solution with large data set" target="_blank">sample solution</a> to compare once you’re finished.
 </p>
 
-<br>
-<br>
+<p><br />
+<br /></p>
 <h2>Pass data from JSON file</h2>
 
 <p>
@@ -235,16 +216,14 @@ Since we’re not concerned about a backend or API with this tutorial, so we’r
 </p>
 
 <p>
-For App.js to access the data, it needs to be imported. At the top, under the last import statement, paste: <code>`import parkData from './data.json';`</code>
+For App.js to access the data, it needs to be imported. At the top, under the last import statement, paste: `import parkData from './data.json';`
 </p>
 
 <p>
 And everything should be working as expected! If it’s not, check out the full solution code.
 </p>
 
-<br>
-<br>
-<h2> Next up... </h2>
-<p>
-Now that we know how to pass and render data between components, the next post in the series will go over hooks. Hooks will allow us to jazz up the components even more by having more advanced ways of handling the data.
-</p>
+<p><br />
+<br /></p>
+<h2> Review </h2>
+:ET

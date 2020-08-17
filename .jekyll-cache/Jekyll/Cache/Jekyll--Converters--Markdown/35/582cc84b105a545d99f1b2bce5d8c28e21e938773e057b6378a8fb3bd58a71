@@ -1,0 +1,141 @@
+I"�"<p><em>
+This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended. Start with the <a href="/react-components" alt="first part of series, getting started with components" target="_blank">first part</a> of the series. If you get stuck, use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">repository</a>, the branch titled 'data' will have the final solution for this part of the series.
+<br /><br />
+In the last post you should have set up the project along with 3 components (Park, Trail, and Review). This post is going to focus on delegating data to the appropriate component, and then having that component handle displaying the data.
+</em></p>
+
+<p><br /></p>
+
+<h2> Setting up a component to handle data</h2>
+
+<p>
+ In App.js, on line 9, add a name attribute to the Park component, with the name of the park you want that component to render, like so: <code>&lt;Park name="Yellowstone"/&gt;’</code>. This how to pass data we want that specific component to handle.
+</p>
+
+<p>
+To display the name of this park we go into Park.js. On line 5, put ‘{name}’ in as the parameter of the component, to look like this<code>function Park({name}) {</code>. The argument must have the same name as the attribute when rendering the component (like we did in App.js).
+</p>
+
+<p>
+Now we can update the JSX to look like <code>&lt;h1&gt;I'm { name } park!&lt;/h1&gt;</code>. In JSX, when you want to use JavaScript it needs to be wrapped by curly braces. After you save, the page should refresh to show "I'm Yellowstone park!"!
+</p>
+
+<p>
+What should we do if we also wanted to display Central Park and Stanley Park? Try it out and, afterwards, you can compare your code with this <a href="" alt="sample solution for setting up a component to render data" target="_blank">sample solution</a>!
+</p>
+
+<p><br />
+<br /></p>
+<h2>Passing data between components</h2>
+
+<p>
+When setting up components, it’s good to be mindful of the relationship between the components and which ones will render other components. That’s because, when it comes to handling data, it is best to pass information from the top-most components down to the components they render.
+</p>
+
+<p>
+With this app, Trails belong to Parks. So we can pass data from a Park component to any of that Park’s trails. In App.js, add a trail attribute to Yellowstone Park component, like so: <code>trail="Mammoth Hot Springs"</code>. In Park.js, update the arguments to include 'trail', like so: <code>{name, trail}</code>.
+</p>
+
+<p>
+This doesn’t change anything yet, that’s because the name of this trail needs to get passed down to Trail component, where we want it render. In Park.js, add a name attribute to Trail and pass the name of the trail variable to it, like so: <code>&lt;Trail name={ trail }/&gt;</code>
+</p>
+
+<p>
+So, this name of this trail has gone by two different names as it has been passed. First it was set to trail, as it was passed to Park. Then, it was passed on to the Trail component as ‘name’.
+</p>
+
+<p>
+Finally, to get the name to render, go to Trail.js and modify the h2 element to display the name, like so: <code>&lt;h2&gt;I'm { name } trail!&lt;/h2&gt;</code>
+</p>
+
+<figure>
+  <img src="../images/react/react-data.png" alt="screenshot of code editor with current state of App.js, Park.js and Trail.js" />
+</figure>
+
+<p>
+Data was just passed all the way from App.js to Park.js, then down to Trail.js!
+</p>
+
+<p><br />
+<br /></p>
+<h2>Structuring the Data</h2>
+
+<p>
+Now that we’ve come this far, it’s time to step back and observe what can be improved. There is something with the way we’re passing data that is very limiting to it’s functionality. Notice how Park is only able to display one trail. Parks typically have more than one trail, so we will need to refactor to be able to render multiple trails.
+</p>
+
+<p>
+We might also want to include more information on both the Park and each Trail, like a description, location, fees, hours of operation, etc. And we haven’t even considered how we’re going to pass the data for reviews on each. There’s a lot data that we are likely going to want to include with each component and having a separate attribute for each isn’t very sustainable.
+</p>
+
+<p>
+Instead, to pass multiple trails, refactor the trail attribute of the Park component, in App.js, to take in an array of hashes, where each hash will have data on a different trail. Also, update the attribute name to 'trails', to better represent the list of trails it is now handling. Use the code below to reference:
+</p>
+
+<pre>
+  <code>
+    &lt;Park name="Yellowstone"  trails={[{name: "Mammoth Springs", difficulty: easy}, {name: "North Rim Trail", difficulty: "moderate"}]}/&gt;
+    &lt;Park name="Central" trails={[{name: "North Woods", difficulty: moderate}]}/&gt;&lt;
+    &lt;Park name="Stanley" trails={[{name: "Lost Lagoon", difficulty: “easy”}]}/&gt;
+  </code>
+</pre>
+
+<p>
+With this new format the Trail component needs to be refactored. In Park.js, change the parameter from 'trail' to 'trails', then update the Trail element to have both a name and difficult attribute. Pass the data from 'trail' to the Trail component,  like so: <code>&lt;Trail name={ trails[0].name } difficulty={ trails[0].difficulty }/&gt;</code>. Update Trail.js to show the difficulty anyway you please.
+</p>
+
+<p>
+Volia! We now have Trail data being rendered after being passed through a data structure!
+</p>
+
+<p>
+Now is a good time to pause again and notice the flaws in the current design. There are a few things that aren’t as dynamic as they should be. The most notable is how a Trail is being rendered. Currently it is rendering one within each Park. This app should dynamically render the multiple Trails for each Park.
+</p>
+
+<p>
+The best way to make this happen is to loop over the array and create a Park element for each object inside of the array. Replace the single Trail component with the following code:
+</p>
+
+<pre>
+  <code>
+    {trails.map(trail =&gt; (
+      &lt;Trail name={trail.name} difficulty={trail.difficulty}/&gt;
+    ))}
+  </code>
+</pre>
+
+<p>
+Before moving on, make sure to understand how this code works. In short, <a href="https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d" alt="A blog post on the map function" target="_blank">the map function</a> is being called on the array of trails and where a <a href="https://www.freecodecamp.org/news/javascript-callback-functions-what-are-callbacks-in-js-and-how-to-use-them/" alt="Free code camp post on callback functions" target="_blank">callback function</a> is used to create a new Trail component for each item/hike in the array. The callback function is using the new <a href="https://scotch.io/tutorials/es6-arrow-functions-in-javascript-getting-started" alt="scotch.io tutorial on arrow functions" target="_blank">ES6 arrow function</a> syntax. This code needs to be wrapped in curly braces, as does all JavaScript code within JSX.
+</p>
+
+<p>
+Continue experimenting by adding more trails to each park. Add another attribute to Parks and/or Trails and have it rendered.
+</p>
+
+<p><br />
+<br /></p>
+<h2>Handling More Data</h2>
+
+<p>Ideally this app will be able to handle thousands of parks, trails and reviews. In order to get it to do so, some more refactoring is necessary. Similarly to what was done with rending multiple trails for each park, we’re going to render multiple parks iteratively.</p>
+
+<p>Before doing that, we’re going to change the way we are defining the data to be shown. Instead of having all of it hard coded in the components, we’re going to define all of it in one large data structure in App.js.</p>
+
+<p>Copy and paste the following code in App.js after line 4 and before <code class="language-plaintext highlighter-rouge">function App() …</code></p>
+
+<p>[[ insert large data structure ]]</p>
+
+<p>This data is meant to replace all the other data used so far. From this point, loops will be used to create new components, based on the data defined in this parkData. If you want to add new parks, trails or reviews, add the data for the new component within this data structure.</p>
+
+<p>In App.js, look through and define park components like so:
+– Loop through parkData, create new Park components with attributes name and trails</p>
+
+<p>In Park.js, loop through trails and make new Trail components like so:
+– Loop through trails</p>
+
+<p>We’re still missing reviews, take a stab at altering both the data and the components so that there are parks and trails that show a few reviews.</p>
+
+<p>Here is a sample solution to compare once you’re finished.</p>
+
+<p><br />
+<br /></p>
+:ET

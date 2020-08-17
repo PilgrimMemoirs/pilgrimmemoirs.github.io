@@ -1,112 +1,4 @@
-<!DOCTYPE html>
-
-<html>
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-
-  <title>React Essentials Part 2: Data</title>
-  <meta name="description" content="This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component ..."/>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="/css/main.css">
-
-  <link rel="canonical" href="http://localhost:4000/react-components2">
-
-  <link rel="alternate" type="application/rss+xml" title="Cats on Code" href="http://localhost:4000/feed.xml" />
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
- 
-<script type="text/javascript">google.load("jquery", "1.3.2");</script>
-
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
-</head>
-
-
-  <body>
-
-    <header class="site-header" style="background-image: url(../images/cats/welcome/codingcatbw.jpg)";>
-
-
-  <div class="wrapper">
-
-    <a class="site-title" href="/">Cats on Code</a>
-
-    <nav class="site-nav">
-      <div class="trigger">
-        
-          
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a class="page-link" href="/posts/">Posts</a>
-          
-        
-          
-          <a class="page-link" href="/topics/">Topics</a>
-          
-        
-      </div>
-    </nav>
-  </div>
-
-<div id="pgtitle"> <h1><strong><mark>React Essentials Part 2: Data </mark></strong></h1> </div>
-
-
-
-<div class="social-icons">
-        <ul class="social-media-list">
-          
-          <li>
-            <a href="https://github.com/pilgrimmemoirs">
-              <span class="username">Github</span>
-            </a>
-          </li>
-          
-
-          
-          <li>
-            <a href="https://twitter.com/pilgrimmemoirs">
-              <span class="username">Twitter</span>
-            </a>
-          </li>
-          
-          <li><a href="mailto:hello@jamiepilgrim.com">Email</a></li>
-        </ul>
-      </div>
-</header>
-
-
-
-
-
-
-
-
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">React Essentials Part 2: Data</h1>
-    <p class="post-meta">Aug 15, 2020 • Jamie Pilgrim</p>
-  </header>
-
-  <article class="post-content">
-    <p><em>
+I"	-<p><em>
 This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended. Start with the <a href="/react-components" alt="first part of series, getting started with components" target="_blank">first part</a> of the series. If you get stuck, use this <a alt="Tutorial's github repository" target="_blank" href="https://github.com/PilgrimMemoirs/essential-react-tutorial">repository</a>, the branch titled 'data' will have the final solution for this part of the series.
 <br /><br />
 In the last post you should have set up the project along with 3 components (Park, Trail, and Review). This post is going to focus on delegating data to the appropriate component, and then having that component handle displaying the data.
@@ -125,7 +17,7 @@ To display the name of this park we go into Park.js. On line 5, put ‘{name}’
 </p>
 
 <p>
-Note the syntax, the name variable is being defined within curly braces. This using an ES6 feature called <i>destructuring</i> to handle the <i>props</i> of this component. In other React code bases you may see 'props' (without any curly braces) as the argument. Data is then accessed within the component by being called on props, ex: props.name. We can use destructuring instead, since the data being passed in is an object. So it sets a variables based on the keys of the data coming in (any attributes we set on our components). we can then access data with just the variable and and no need to prefix with 'props.'.
+Note the syntax, the name variable is being defined within curly braces. This using an ES6 feature called <i>destructuring</i> to handle the <i>props</i> of this component. In other code bases you may see 'props' as the argument, where any data accessed within the component has to be called on props, ex: props.name. With destructuring, it sets a variable based on the keys of the data coming in (any attributes we set on our components), so we can access data with just the variable and and no need to prefix with 'props.'. 
 </p>
 
 <p>
@@ -185,7 +77,7 @@ We might also want to include more information on both the Park and each Trail, 
 </p>
 
 <p>
-Instead, to pass multiple trails, refactor the trail attribute of the Park component, in App.js, to take in an array of objects, where each object will have data on a different trail. Also, update the attribute name to 'trails', to better represent the list of trails it is now handling. Use the code below to reference:
+Instead, to pass multiple trails, refactor the trail attribute of the Park component, in App.js, to take in an array of hashes, where each hash will have data on a different trail. Also, update the attribute name to 'trails', to better represent the list of trails it is now handling. Use the code below to reference:
 </p>
 
 <pre>
@@ -286,11 +178,14 @@ In App.js, loop through and define Park components like so:
 
 <pre>
   <code>
-    &lt;div className="App"&gt;
+    <div classname="App">
       {parkData.map(park =&gt; (
-        &lt;Park name={park.name} trails={park.trails}/&gt;
+      &lt;Park
+        name={park.name}
+        trails={park.trails}
+      /&gt;
       ))};
-    &lt;/div&gt;
+    </div>
   </code>
 </pre>
 
@@ -299,12 +194,12 @@ In Park.js, loop through trails and make new Trail components like so:
 </p>
 <pre>
   <code>
-    &lt;div className="Park"&gt;
-      &lt;h1&gt;I'm { name } park!&lt;/h1&gt;
+    <div classname="Park">
+      <h1>I'm { name } park!</h1>
       {trails.map(trail =&gt; (
         &lt;Trail name={trail.name} difficulty={trail.difficulty}/&gt;
       ))}
-    &lt;/div&gt;
+    </div>
   </code>
 </pre>
 
@@ -338,133 +233,5 @@ And everything should be working as expected! If it’s not, check out the full 
 
 <p><br />
 <br /></p>
-<h2> Next up... </h2>
-<p>
-Now that we know how to pass and render data between components, the next post in the series will go over hooks. Hooks will allow us to jazz up the components even more by having more advanced ways of handling the data.
-</p>
-
-  </article>
-
-  <div class="bottom">
-      <div id="next-prev">
-  
-    <div id="prev"> 
-    <a href="/react-components"> 
-      <h4>Previous Post: </h4>
-      <h3>React Essentials Part 1: Components </h3>
-      <h4> May 3, 2020</h4>
-      </a>
-    </div>
-  
-
-
-  
-  <div class="clearfix"></div>
-  </div>
-
-
-    <div class="share-page">
-
-    <h4> Love it? Share it! </h4>
-
-    <a id="twitter" href="https://twitter.com/intent/tweet?text=React Essentials Part 2: Data&via=pilgrimmemoirs&url=http://catsoncode.com/react-components2&hashtags=catsoncode" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
-
-    <a id="facebook" href="https://facebook.com/sharer.php?u=http://localhost:4000/react-components2" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
-
-    <a id="google" href="https://plus.google.com/share?url=http://localhost:4000/react-components2" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
-</div>
-
-
-  </div>
-    
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'catsoncode';
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-  
-
-</div>
-
-
-<script>
-  $('div.page-content').scroll(function() {
-      if ($('div.page-content').scrollTop() < 100) {
-          $('#pgtitle').hide();
-      } else {
-          $('#pgtitle').show();
-      }
-  });
-</script>
-      </div>
-    </div>
-
-    <footer>
-  <h3 id="menu"><a> Menu </a></h3>
-  <ul>
-    <div class="mobile-nav">
-      <li><h4><a href="/"> Home </a></h4></li>
-        
-          
-          <li><h4><a class="page-link" href="/about/">About</a></h4></li>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <li><h4><a class="page-link" href="/posts/">Posts</a></h4></li>
-          
-        
-          
-          <li><h4><a class="page-link" href="/topics/">Topics</a></h4></li>
-          
-        
-        
-          <li><h4>
-            <a href="https://github.com/pilgrimmemoirs">
-              <span class="username">Github</span>
-            </a></h4>
-          </li>
-          
-
-          
-          <li>
-            <h4><a href="https://twitter.com/pilgrimmemoirs">
-              <span class="username">Twitter</span>
-            </a></h4>
-          </li>
-          
-          <li><h4><a href="mailto:hello@jamiepilgrim.com">Email</a></h4></li>
-        <li id="down"><h4><a> Down </a></h4></li>
-    </div>
-  </ul>
-
-<script type="text/javascript">
-  $('#menu').click(function() {
-    $('footer ul').css("display", "block");
-    console.log("hey");
-  });
-
-  $('#down').click(function(){
-    $('footer ul').css('display', 'none');
-    console.log("Whoah!")
-  })
-</script>
-</footer>
-   
-  </body>
-
-</html>
+<h2> Review </h2>
+:ET
