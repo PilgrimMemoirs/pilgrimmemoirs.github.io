@@ -6,268 +6,14 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Aug 2020 00:49:06 -0700</pubDate>
-    <lastBuildDate>Mon, 17 Aug 2020 00:49:06 -0700</lastBuildDate>
+    <pubDate>Mon, 17 Aug 2020 23:54:16 -0700</pubDate>
+    <lastBuildDate>Mon, 17 Aug 2020 23:54:16 -0700</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
-    
-      <item>
-        <title>React Essentials Part 2: Data</title>
-        <description>&lt;p&gt;&lt;em&gt;
-This part two of a series touching on essential parts of React.js to known when getting started. This will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended. Start with the &lt;a href=&quot;/react-components&quot; alt=&quot;first part of series, getting started with components&quot; target=&quot;_blank&quot;&gt;first part&lt;/a&gt; of the series. If you get stuck, use this &lt;a alt=&quot;Tutorial's github repository&quot; target=&quot;_blank&quot; href=&quot;https://github.com/PilgrimMemoirs/essential-react-tutorial&quot;&gt;repository&lt;/a&gt;, the branch titled 'data' will have the final solution for this part of the series.
-&lt;br /&gt;&lt;br /&gt;
-In the last post you should have set up the project along with 3 components (Park, Trail, and Review). This post is going to focus on delegating data to the appropriate component, and then having that component handle displaying the data.
-&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2&gt; Setting up a component to handle data&lt;/h2&gt;
-
-&lt;p&gt;
- In App.js, on line 9, add a name attribute to the Park component, with the name of the park you want that component to render, like so: &lt;code&gt;&amp;lt;Park name=&quot;Yellowstone&quot;/&amp;gt;’&lt;/code&gt;. This how to pass data we want that specific component to handle.
-&lt;/p&gt;
-
-&lt;p&gt;
-To display the name of this park we go into Park.js. On line 5, put ‘{name}’ in as the argument of the component, so that it looks like this&lt;code&gt;function Park({name}) {&lt;/code&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Note the syntax, the name variable is being defined within curly braces. This using an ES6 feature called &lt;i&gt;destructuring&lt;/i&gt; to handle the &lt;i&gt;props&lt;/i&gt; of this component. In other React code bases you may see 'props' (without any curly braces) as the argument. Data is then accessed within the component by being called on props, ex: props.name. We can use destructuring instead, since the data being passed in is an object. So it sets a variables based on the keys of the data coming in (any attributes we set on our components). we can then access data with just the variable and and no need to prefix with 'props.'.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now we can update the JSX to look like &lt;code&gt;&amp;lt;h1&amp;gt;I'm { name } park!&amp;lt;/h1&amp;gt;&lt;/code&gt;. In JSX, when you want to use JavaScript it needs to be wrapped by curly braces. After you save, the page should refresh to show &quot;I'm Yellowstone park!&quot;!
-&lt;/p&gt;
-
-&lt;p&gt;
-What should we do if we also wanted to display Central Park and Stanley Park? Try it out and, afterwards, you can compare your code with this &lt;a href=&quot;&quot; alt=&quot;sample solution for setting up a component to render data&quot; target=&quot;_blank&quot;&gt;sample solution&lt;/a&gt;!
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;h2&gt;Passing data between components&lt;/h2&gt;
-
-&lt;p&gt;
-When setting up components, it’s good to be mindful of the relationship between the components and which ones will render other components. That’s because, when it comes to handling data, it is best to pass information from the top-most components down to the components they render.
-&lt;/p&gt;
-
-&lt;p&gt;
-With this app, Trails belong to Parks. So we can pass data from a Park component to any of that Park’s trails. In App.js, add a trail attribute to Yellowstone Park component, like so: &lt;code&gt;trail=&quot;Mammoth Hot Springs&quot;&lt;/code&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-In Park.js, update the props to include 'trail', like so: &lt;code&gt;{name, trail}&lt;/code&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-This doesn’t change anything yet, that’s because the name of this trail needs to get passed down to Trail component, where we want it render. In Park.js, add a name attribute to Trail and pass the name of the trail variable to it, like so: &lt;code&gt;&amp;lt;Trail name={ trail }/&amp;gt;&lt;/code&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-Note how the name of the trail has gone by two different variable names as it has been passed between components. First it was set to trail, as it was passed to Park. Then it was passed on to the Trail component as ‘name’.
-&lt;/p&gt;
-
-&lt;p&gt;
-To get the name to render, go to Trail.js and modify the h2 element to display the name, like so: &lt;code&gt;&amp;lt;h2&amp;gt;I'm { name } trail!&amp;lt;/h2&amp;gt;&lt;/code&gt;
-&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../images/react/react-data.png&quot; alt=&quot;screenshot of code editor with current state of App.js, Park.js and Trail.js&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;
-Data was just passed all the way from App.js to Park.js, then down to Trail.js!
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;h2&gt;Structuring the Data&lt;/h2&gt;
-
-&lt;p&gt;
-Now is a good time to step back and observe what can be improved. Look at the way we’re passing data and notice ways that it is very limiting. Notice how Park is only able to display one Trail. Parks typically have more than one trail, so we will need to refactor to be able to render multiple trails.
-&lt;/p&gt;
-
-&lt;p&gt;
-We might also want to include more information on both the Park and each Trail, like a description, location, fees, hours of operation, etc. And we haven’t even considered how we’re going to pass the data for reviews on each. There’s a lot data that we are likely going to want to include with each component and having a separate attribute for each isn’t very sustainable.
-&lt;/p&gt;
-
-&lt;p&gt;
-Instead, to pass multiple trails, refactor the trail attribute of the Park component, in App.js, to take in an array of objects, where each object will have data on a different trail. Also, update the attribute name to 'trails', to better represent the list of trails it is now handling. Use the code below to reference:
-&lt;/p&gt;
-
-&lt;pre&gt;
-  &lt;code&gt;
-    &amp;lt;Park name=&quot;Yellowstone&quot;  trails={[{name: &quot;Mammoth Springs&quot;, difficulty: easy}, {name: &quot;North Rim Trail&quot;, difficulty: &quot;moderate&quot;}]}/&amp;gt;
-    &amp;lt;Park name=&quot;Central&quot; trails={[{name: &quot;North Woods&quot;, difficulty: &quot;moderate&quot;}]}/&amp;gt;&amp;lt;
-    &amp;lt;Park name=&quot;Stanley&quot; trails={[{name: &quot;Lost Lagoon&quot;, difficulty: “easy”}]}/&amp;gt;
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;
-With this new format the Trail component needs to be refactored. In Park.js, change the parameter from 'trail' to 'trails', then update the Trail element to have both a name and difficult attribute. Pass the data from 'trail' to the Trail component,  like so: &lt;code&gt;&amp;lt;Trail name={ trails[0].name } difficulty={ trails[0].difficulty }/&amp;gt;&lt;/code&gt;. Update Trail.js to show the difficulty anyway you please.
-&lt;/p&gt;
-
-&lt;p&gt;
-Volia! We now have Trail data being rendered after being passed through a data structure!
-&lt;/p&gt;
-
-&lt;p&gt;
-Now is a good time to pause again and notice the flaws in the current design. There are a few things that aren’t as dynamic as they should be. The most notable is how a Trail is being rendered. Currently it is rendering one within each Park. This app should dynamically render the multiple Trails for each Park.
-&lt;/p&gt;
-
-&lt;p&gt;
-The best way to make this happen is to loop over the array and create a Park element for each object inside of the array. Replace the single Trail component with the following code:
-&lt;/p&gt;
-
-&lt;pre&gt;
-  &lt;code&gt;
-    {trails.map(trail =&amp;gt; (
-      &amp;lt;Trail name={trail.name} difficulty={trail.difficulty}/&amp;gt;
-    ))}
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;
-Before moving on, make sure to understand how this code works. In short, &lt;a href=&quot;https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d&quot; alt=&quot;A blog post on the map function&quot; target=&quot;_blank&quot;&gt;the map function&lt;/a&gt; is being called on the array of trails and where a &lt;a href=&quot;https://www.freecodecamp.org/news/javascript-callback-functions-what-are-callbacks-in-js-and-how-to-use-them/&quot; alt=&quot;Free code camp post on callback functions&quot; target=&quot;_blank&quot;&gt;callback function&lt;/a&gt; is used to create a new Trail component for each item/hike in the array. The callback function is using the new &lt;a href=&quot;https://scotch.io/tutorials/es6-arrow-functions-in-javascript-getting-started&quot; alt=&quot;scotch.io tutorial on arrow functions&quot; target=&quot;_blank&quot;&gt;ES6 arrow function&lt;/a&gt; syntax. This code needs to be wrapped in curly braces, as does all JavaScript code within JSX.
-&lt;/p&gt;
-
-&lt;p&gt;
-Continue experimenting by adding more trails to each park. Add another attribute to Parks and/or Trails and have it rendered.
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;h2&gt;Handling more data&lt;/h2&gt;
-
-&lt;p&gt;
-Ideally this app will be able to handle thousands of parks, trails and reviews. In order to get it to do so, some more refactoring is necessary. Similarly to what was done with rending multiple trails for each park, we’re going to render multiple parks iteratively.
-&lt;/p&gt;
-
-&lt;p&gt;
-Before doing that, we’re going to change the way we are defining the data to be shown. Instead of having all of it hard coded in the components, we’re going to define all of it in one large data structure in App.js.
-&lt;/p&gt;
-
-&lt;p&gt;
-Copy and paste the following code in App.js after line 4 and before `function App() …`
-&lt;/p&gt;
-
-&lt;pre&gt;
-const parkData = [
-  {
-    name: &quot;Yellowstone&quot;,
-    trails: [
-      {name: &quot;Mammoth Hot Springs&quot;, difficulty: &quot;easy&quot;, reviews: []},
-      {name: &quot;North Rim&quot;, difficulty: &quot;moderate&quot;, reviews: []},
-      {name: &quot;Avalanche Peak Trail&quot;, difficulty: &quot;hard&quot;, reviews: []},
-      {name: &quot;Fairy Falls&quot;, difficulty: &quot;easy&quot;, reviews: []}
-    ],
-    reviews: []
-  },
-  {
-    name: &quot;Central&quot;,
-    trails: [
-      {name: &quot;North Woods&quot;, difficulty: &quot;moderate&quot;, reviews: []},
-      {name: &quot;Outer Loop&quot;, difficulty: &quot;easy&quot;, reviews: []},
-    ],
-    reviews: []
-  },
-  {
-    name: &quot;Stanley&quot;,
-    trails: [
-      {name: &quot;Lost Lagoon&quot;, difficulty: &quot;easy&quot;, reviews: []},
-      {name: &quot;Seawall Path&quot;, difficulty: &quot;easy&quot;, reviews: []},
-      {name: &quot;Lover's Walk&quot;, difficulty: &quot;easy&quot;, reviews: []}
-    ],
-    reviews: []
-  }
-]
-&lt;/pre&gt;
-
-&lt;p&gt;
-This data is meant to replace all the other data used so far. From this point, loops will be used to create new components, based on the data defined in this parkData. If you want to add new parks, trails or reviews, add the data for the new component within this data structure.
-&lt;/p&gt;
-
-&lt;p&gt;
-In App.js, loop through and define Park components like so:
-&lt;/p&gt;
-
-&lt;pre&gt;
-  &lt;code&gt;
-    &amp;lt;div className=&quot;App&quot;&amp;gt;
-      {parkData.map(park =&amp;gt; (
-        &amp;lt;Park name={park.name} trails={park.trails}/&amp;gt;
-      ))};
-    &amp;lt;/div&amp;gt;
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;
-In Park.js, loop through trails and make new Trail components like so:
-&lt;/p&gt;
-&lt;pre&gt;
-  &lt;code&gt;
-    &amp;lt;div className=&quot;Park&quot;&amp;gt;
-      &amp;lt;h1&amp;gt;I'm { name } park!&amp;lt;/h1&amp;gt;
-      {trails.map(trail =&amp;gt; (
-        &amp;lt;Trail name={trail.name} difficulty={trail.difficulty}/&amp;gt;
-      ))}
-    &amp;lt;/div&amp;gt;
-  &lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;
-Reviews are still missing, take a go at altering both the data and the components so that there are parks and trails that show a few reviews. Decide what data should be included for reviews, how it should be defined in parkData, and how it will be rendered.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here is a &lt;a href=&quot;&quot; alt=&quot;sample solution with large data set&quot; target=&quot;_blank&quot;&gt;sample solution&lt;/a&gt; to compare once you’re finished.
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;h2&gt;Pass data from JSON file&lt;/h2&gt;
-
-&lt;p&gt;
-Data is not typically defined within a file like this. It’s more common to have it called from a server, via an API or the backend of an application. It may come in the form of JSON, which is the perfect format to provide to a frontend application, since it uses JavaScript.
-&lt;/p&gt;
-
-&lt;p&gt;
-Since we’re not concerned about a backend or API with this tutorial, so we’re going to move this data to a JSON file. Make a new file, within /src, called data.json. Copy and paste the data structure currently being stored as ‘parkData’ (don’t include the variable assignment in the JSOn file).
-&lt;/p&gt;
-
-&lt;p&gt;
-For App.js to access the data, it needs to be imported. At the top, under the last import statement, paste: &lt;code&gt;`import parkData from './data.json';`&lt;/code&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-And everything should be working as expected! If it’s not, check out the full solution code.
-&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;h2&gt; Next up... &lt;/h2&gt;
-&lt;p&gt;
-Now that we know how to pass and render data between components, the next post in the series will go over hooks. Hooks will allow us to jazz up the components even more by having more advanced ways of handling the data.
-&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Aug 2020 05:00:00 -0700</pubDate>
-        <link>http://localhost:4000/react-components2</link>
-        <guid isPermaLink="true">http://localhost:4000/react-components2</guid>
-        
-        <category>javascript</category>
-        
-        <category>web</category>
-        
-        <category>frontend</category>
-        
-        
-        <category>react</category>
-        
-      </item>
     
       <item>
         <title>React Essentials Part 1: Components</title>
         <description>&lt;p&gt;&lt;em&gt;
-This is the first post in a series touching on essential parts of React.js to know when getting started. The series will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
+This is the first post in a series touching on the essential parts of React.js to know when getting started. The series will cover making components, handling data, component lifecycle, and using modern best practices to do so. Comfort with using terminal, Git, Github, HTML and JavaScript are recommended.
 &lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -1006,6 +752,71 @@ All the above and then some were taken to a whole new level with this class. Let
         <pubDate>Sun, 16 Aug 2015 22:25:00 -0700</pubDate>
         <link>http://localhost:4000/fourth-class</link>
         <guid isPermaLink="true">http://localhost:4000/fourth-class</guid>
+        
+        <category>Flatiron</category>
+        
+        <category>Teaching</category>
+        
+        <category>Culture</category>
+        
+        
+        <category>Teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Third Flatiron Class: Intro to SE</title>
+        <description>&lt;p&gt;&lt;em&gt; My second round of the Intro to Software Engineering class with my new co-teacher was yet another successful chapter in this amazing experience.  &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!-- Classtime  --&gt;
+
+&lt;h2&gt;It's all about the Experience &lt;/h2&gt;
+
+&lt;p&gt; In June I started teaching high schoolers the ins and out of web development in two week long, intensive courses. Now, they're by no means experts by the end, however, they left with a solid foundation and, more importantly, enthusiasm to continue learning! &lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0044.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0038.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
+  &lt;figcaption&gt; Forming groups and whiteboarding final project ideas  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; The Code is Incidental &lt;/h2&gt;
+
+&lt;p&gt;In our classes, as molded by many other coding bootcamps, the culture is just as essential as the code itself. The goal is not only to get kids engaged in coding, but to also form strong relationships with thier peers. Doing so  helps so so soooooo much more for building a strong classroom culture that opens up discussion, questions and self discovering. &lt;/p&gt;
+
+&lt;p&gt; The less dependant the students become on me and the more the rely on thier peers, the less work to do. Win win. &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Final Projects &lt;/h2&gt;
+
+&lt;p&gt; In the end, we had four AMAZING final projects that were bulit in only a couple days, including ideation to the final  touches. Each group had their own twist on what they chose to focus on. Having a lot of natural designers, many latched on to displaying their content beautifly while other had very intericite logic  on thier backend. &lt;/p&gt;
+
+&lt;!-- Science Fair &amp; Graduation --&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0030.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0041.jpg&quot; alt=&quot;Jamie Pilgrim&quot; /&gt;
+  &lt;figcaption&gt; Final projects are setup for demonstration to visiting family and guests. &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt; Serious Developers &lt;/h2&gt;
+
+&lt;p&gt; Seriously, these kids knocked out AMAZING projects and absorbed so much in the two weeks we had them. It's crazy to think that we still managed to fit in improv games and just be silly with each other.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_00202.jpg&quot; alt=&quot;Serious Group Photo&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0023.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
+  &lt;img src=&quot;../images/flatiron/class_3/DSC_0021.jpg&quot; alt=&quot;Silly Group Photo&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt; It was sad to let yet another class go, especially one so unique and diverse in thier talents. That said, I'm incredibly proud of the work they did and how well they all joined forces to make incredible projects! &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 22:25:00 -0700</pubDate>
+        <link>http://localhost:4000/third-class</link>
+        <guid isPermaLink="true">http://localhost:4000/third-class</guid>
         
         <category>Flatiron</category>
         
